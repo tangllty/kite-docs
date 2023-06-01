@@ -22,5 +22,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# VitePress
+docs/.vitepress/cache
+docs/.vitepress/dist
+
 package-lock.json
 yarn.lock
