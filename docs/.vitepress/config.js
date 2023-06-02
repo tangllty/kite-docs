@@ -1,7 +1,7 @@
-export default {
-  title: 'VitePress',
-  description: 'Just playing around.',
+import { defineConfig } from 'vitepress'
 
-  themeConfig: {
-  }
-}
+export default defineConfig({
+  title: '糖猫猫后台管理系统文档',
+  description: '糖猫猫后台管理系统文档',
+  cleanUrls: true
+})
