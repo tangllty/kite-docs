@@ -9,7 +9,7 @@ hero:
   text: 糖猫猫后台管理系统
   tagline: 使用最新的技术栈，开发一套后台管理系统
   image:
-    src: /public/Tang.png
+    src: /Tang.png
     alt: Tang
   actions:
     - theme: brand
