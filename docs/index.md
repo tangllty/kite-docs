@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /components/
+      link: /guide/introduction
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/tangllty/
