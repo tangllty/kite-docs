@@ -6,8 +6,8 @@ editLink: true
 lastUpdated: true
 hero:
   name: Tang
-  text: 糖猫猫后台管理系统
-  tagline: 使用最新的技术栈，开发一套后台管理系统
+  text: 糖猫猫权限管理系统
+  tagline: 使用最新的技术栈，开发一套权限管理系统
   image:
     src: /Tang.png
     alt: Tang
