@@ -14,10 +14,6 @@ layout: doc
 
 - 微信
 
-  - 
+  - ![WeChat](image/wechat.png)
 - Telegram
-
-  - 
 - QQ
-
-  - 
