@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
 
+// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '糖猫猫权限管理系统文档',
   description: '糖猫猫权限管理系统文档',
   cleanUrls: true,
   themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '介绍', link: '/guide/introduction', activeMatch: '/guide/introduction' },
       { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
@@ -26,7 +28,17 @@ export default defineConfig({
             { text: '安卓', link: '/guide/tang-app' },
             { text: '微服务', link: '/guide/tang-cloud' }
           ],
-          collapsible: true
+          collapsed: false
+        }
+      ],
+      '/tang-boot/': [
+        {
+          text: '介绍',
+          items: [
+            { text: '开始', link: '/tang-boot/getting-started' },
+            { text: '特性', link: '/tang-boot/features' },
+          ],
+          collapsed: false
         }
       ]
     },
