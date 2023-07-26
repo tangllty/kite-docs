@@ -2,8 +2,7 @@
 layout: home
 
 title: Tang
-editLink: true
-lastUpdated: true
+
 hero:
   name: Tang
   text: 糖猫猫权限管理系统
@@ -21,6 +20,7 @@ hero:
     - theme: alt
       text: 在 Gitee 上查看
       link: https://gitee.com/tangllty/
+
 features:
   - icon: 🧩
     title: tang-boot
@@ -30,5 +30,4 @@ features:
     title: tang-vue
     details: tang-vue 是基于 Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
     link: https://gitee.com/tangllty/tang-vue
-footer: 111
 ---

@@ -2,8 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: '糖猫猫权限管理系统文档',
-  description: '糖猫猫权限管理系统文档',
   cleanUrls: true,
   lang: 'zh-CN',
   locales: {
@@ -11,6 +9,8 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       link: '/',
+      title: '糖猫猫权限管理系统文档',
+      description: '基于最新的技术栈，开发一套前后端分离的权限管理系统。',
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
@@ -52,7 +52,9 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      link: '/en',
+      link: '/en/',
+      title: 'TangMaoMao',
+      description: 'Based on the latest technology stack, a set of rights management system with front end and back end separation is developed.',
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',

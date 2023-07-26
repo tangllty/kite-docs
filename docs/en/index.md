@@ -2,33 +2,32 @@
 layout: home
 
 title: Tang
-editLink: true
-lastUpdated: true
+
 hero:
   name: Tang
-  text: 糖猫猫权限管理系统
-  tagline: 使用最新的技术栈，开发一套权限管理系统
+  text: TangMaoMao
+  tagline: Based on the latest technology stack, a set of rights management system with front end and back end separation is developed.
   image:
     src: /Tang.png
     alt: Tang
   actions:
     - theme: brand
-      text: 开始
+      text: Get Started
       link: /en/guide/introduction
     - theme: alt
-      text: 在 GitHub 上查看
+      text: Check it out on GitHub
       link: https://github.com/tangllty/
     - theme: alt
-      text: 在 Gitee 上查看
+      text: Check it out on Gitee
       link: https://gitee.com/tangllty/
+
 features:
   - icon: 🧩
     title: tang-boot
-    details: tang-boot 是基于 Spring Boot3 + Spring Security + MyBatis + Redis + Jwt 的前后端分离权限管理系统
-    link: https://gitee.com/tangllty/tang-boot
+    details: tang-boot is a front-end and back-end separation permission management system based on Spring Boot3 + Spring Security + MyBatis + Redis + Jwt
+    link: https://github.com/tangllty/tang-boot
   - icon: 🔨
     title: tang-vue
-    details: tang-vue 是基于 Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
-    link: https://gitee.com/tangllty/tang-vue
-footer: 111
+    details: tang-vue is a front-end and back-end separation permission management system based on Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus
+    link: https://github.com/tangllty/tang-vue
 ---
