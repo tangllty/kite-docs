@@ -5,47 +5,100 @@ export default defineConfig({
   title: '糖猫猫权限管理系统文档',
   description: '糖猫猫权限管理系统文档',
   cleanUrls: true,
+  lang: 'zh-CN',
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      link: '/',
+      themeConfig: {
+        editLink: {
+          pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
+          text: '在 GitHub 上编辑此页'
+        },
+        nav: [
+          { text: '介绍', link: '/guide/introduction', activeMatch: '/guide/introduction' },
+          { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
+          { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
+          { text: '安卓', link: '/tang-app/introduction', activeMatch: '/tang-app/introduction' },
+          { text: '微服务', link: '/tang-cloud/introduction', activeMatch: '/tang-cloud/introduction' },
+        ],
+        sidebar: {
+          '/guide/': [
+            {
+              text: '介绍',
+              items: [
+                { text: '前端', link: '/guide/tang-vue' },
+                { text: '后端', link: '/guide/tang-boot' },
+                { text: '安卓', link: '/guide/tang-app' },
+                { text: '微服务', link: '/guide/tang-cloud' }
+              ],
+              collapsed: false
+            }
+          ],
+          '/tang-boot/': [
+            {
+              text: '介绍',
+              items: [
+                { text: '开始', link: '/tang-boot/getting-started' },
+                { text: '特性', link: '/tang-boot/features' },
+              ],
+              collapsed: false
+            }
+          ]
+        },
+      }
+    },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      link: '/en',
+      themeConfig: {
+        editLink: {
+          pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
+          text: 'Edit this page on GitHub',
+        },
+        nav: [
+          { text: 'Introduction', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
+          { text: 'Frontend', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
+          { text: 'Backend', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
+          { text: 'Android', link: '/en/tang-app/introduction', activeMatch: '/en/tang-app/introduction' },
+          { text: 'Microservice', link: '/en/tang-cloud/introduction', activeMatch: '/en/tang-cloud/introduction' },
+        ],
+        sidebar: {
+          '/en/guide/': [
+            {
+              text: 'Introduction',
+              items: [
+                { text: 'Frontend', link: '/en/guide/tang-vue' },
+                { text: 'Backend', link: '/en/guide/tang-boot' },
+                { text: 'Android', link: '/en/guide/tang-app' },
+                { text: 'Microservice', link: '/en/guide/tang-cloud' }
+              ],
+              collapsed: false
+            }
+          ],
+          '/en/tang-boot/': [
+            {
+              text: 'Introduction',
+              items: [
+                { text: 'Getting Started', link: '/en/tang-boot/getting-started' },
+                { text: 'Features', link: '/en/tang-boot/features' },
+              ],
+              collapsed: false
+            }
+          ]
+        },
+      }
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    editLink: {
-      pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
-      text: '在 GitHub 上编辑此页',
-    },
     lastUpdated: {},
-    nav: [
-      { text: '介绍', link: '/guide/introduction', activeMatch: '/guide/introduction' },
-      { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
-      { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
-      { text: '安卓', link: '/tang-app/introduction', activeMatch: '/tang-app/introduction' },
-      { text: '微服务', link: '/tang-cloud/introduction', activeMatch: '/tang-cloud/introduction' },
-    ],
+    i18nRouting: true,
     socialLinks: [
       { icon: "github", link: "https://github.com/tangllty/" },
       { icon: "github", link: "https://gitee.com/tangllty/" }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          text: '介绍',
-          items: [
-            { text: '前端', link: '/guide/tang-vue' },
-            { text: '后端', link: '/guide/tang-boot' },
-            { text: '安卓', link: '/guide/tang-app' },
-            { text: '微服务', link: '/guide/tang-cloud' }
-          ],
-          collapsed: false
-        }
-      ],
-      '/tang-boot/': [
-        {
-          text: '介绍',
-          items: [
-            { text: '开始', link: '/tang-boot/getting-started' },
-            { text: '特性', link: '/tang-boot/features' },
-          ],
-          collapsed: false
-        }
-      ]
-    },
   },
 })
