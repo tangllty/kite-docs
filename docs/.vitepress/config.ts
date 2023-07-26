@@ -7,6 +7,11 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    editLink: {
+      pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
+      text: '在 GitHub 上编辑此页',
+    },
+    lastUpdated: {},
     nav: [
       { text: '介绍', link: '/guide/introduction', activeMatch: '/guide/introduction' },
       { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
