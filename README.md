@@ -1,37 +1,46 @@
 # tang-docs
 
-#### 介绍
-tang-docs 是...
+**简体中文** | [**English**](./README.en.md)
 
-#### 软件架构
-软件架构说明
+## 项目简介
 
+tang-docs 是基于 VitePress 的糖猫猫权限管理系统文档
 
-#### 安装教程
+您可以阅读[文档](https://tangllty.eu.org/)获取更多信息
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+* 采用 VitePress
 
-#### 使用说明
+## 环境要求
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+* Node.js 18.15.0
 
-#### 参与贡献
+## 项目启动
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1. ```bash
+   yarn && yarn run docs:dev
+   ```
+2. 访问 [http://localhost:5173/](http://localhost:5173/)
 
+## 贡献
 
-#### 特技
+如果你有任何问题、建议或发现了 bug，请提交 [Issues](https://gitee.com/tangllty/tang-docs/issues/new) 或提供 [Pull Request](https://gitee.com/tangllty/tang-docs/pull/new) 来帮助改进该项目。
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 许可证
+
+tang-docs 使用 MIT 许可证。更多详情请查阅 [LICENSE](https://gitee.com/tangllty/tang-docs/blob/master/LICENSE) 文件。
+
+## 项目地址
+
+| 项目 | Gitee                                          | GitHub                                          |
+| ---- | ---------------------------------------------- | ----------------------------------------------- |
+| 后端 | [tang-boot](https://gitee.com/tangllty/tang-boot) | [tang-boot](https://github.com/tangllty/tang-boot) |
+| 前端 | [tang-vue](https://gitee.com/tangllty/tang-vue)   | [tang-vue](https://github.com/tangllty/tang-vue)   |
+| 文档 | [tang-docs](https://gitee.com/tangllty/tang-docs) | [tang-docs](https://github.com/tangllty/tang-docs) |
+
+## 交流群
+
+- 微信
+
+  - ![WeChat](https://gitee.com/tangllty/tang-docs/raw/master/docs/public/wechat.png)
+- Telegram
+- QQ

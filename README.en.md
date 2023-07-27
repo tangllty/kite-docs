@@ -1,36 +1,46 @@
 # tang-docs
 
-#### Description
-tang-docs 是...
+[**简体中文**](./README.md) | **English**
 
-#### Software Architecture
-Software architecture description
+## 项目简介
 
-#### Installation
+tang-docs is a TangMaoMao permission management system documentation based on VitePress
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+You can read the [documentation](https://tangllty.eu.org/) for more information
 
-#### Instructions
+* Using VitePress
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Environment Requirements
 
-#### Contribution
+* Node.js 18.15.0
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+## Project Startup
 
+1. ```bash
+   yarn && yarn run docs:dev
+   ```
+2. Visit [http://localhost:5173/](http://localhost:5173/)
 
-#### Gitee Feature
+## Contributing
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/tang-docs/issues/new) or provide a [Pull Request](https://github.com/tangllty/tang-docs/pull/new) to help improve the project.
+
+## License
+
+tang-docs uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/tang-docs/blob/master/LICENSE) files.
+
+## Project Address
+
+| Project   | Gitee                                          | GitHub                                          |
+| --------- | ---------------------------------------------- | ----------------------------------------------- |
+| Back End  | [tang-boot](https://gitee.com/tangllty/tang-boot) | [tang-boot](https://github.com/tangllty/tang-boot) |
+| Front End | [tang-vue](https://gitee.com/tangllty/tang-vue)   | [tang-vue](https://github.com/tangllty/tang-vue)   |
+| Documentation | [tang-docs](https://gitee.com/tangllty/tang-docs) | [tang-docs](https://github.com/tangllty/tang-docs) |
+
+## Discussion Group
+
+- WeChat
+
+  - ![WeChat](https://github.com/tangllty/tang-docs/raw/master/docs/public/wechat.png)
+- Telegram
+- QQ
