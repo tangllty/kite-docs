@@ -22,11 +22,11 @@ hero:
       link: https://gitee.com/tangllty/
 
 features:
-  - icon: 🧩
+  - icon: ❤️
     title: tang-boot
     details: tang-boot 是基于 Spring Boot3 + Spring Security + MyBatis + Redis + Jwt 的前后端分离权限管理系统
     link: https://gitee.com/tangllty/tang-boot
-  - icon: 🔨
+  - icon: ❤️
     title: tang-vue
     details: tang-vue 是基于 Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
     link: https://gitee.com/tangllty/tang-vue

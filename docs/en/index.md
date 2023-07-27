@@ -22,11 +22,11 @@ hero:
       link: https://gitee.com/tangllty/
 
 features:
-  - icon: 🧩
+  - icon: ❤️
     title: tang-boot
     details: tang-boot is a front-end and back-end separation permission management system based on Spring Boot3 + Spring Security + MyBatis + Redis + Jwt
     link: https://github.com/tangllty/tang-boot
-  - icon: 🔨
+  - icon: ❤️
     title: tang-vue
     details: tang-vue is a front-end and back-end separation permission management system based on Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus
     link: https://github.com/tangllty/tang-vue
