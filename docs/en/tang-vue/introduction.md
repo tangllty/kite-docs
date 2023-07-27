@@ -25,10 +25,10 @@
 | File-saver       | File download                    | [https://github.com/eligrey/FileSaver.js/](https://github.com/eligrey/FileSaver.js/) |
 | Yarn             | Dependency management            | [https://yarnpkg.com/](https://yarnpkg.com/)                                         |
 
-## 贡献
+## Contributing
 
-如果你有任何问题、建议或发现了 bug，请提交 [Issues](https://gitee.com/tangllty/tang-vue/issues/new) 或提供 [Pull Request](https://gitee.com/tangllty/tang-vue/pull/new) 来帮助改进该项目。
+If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/tang-vue/issues/new) or provide a [Pull Request](https://github.com/tangllty/tang-vue/pull/new) to help improve the project.
 
-## 许可证
+## License
 
-tang-vue 使用 MIT 许可证。更多详情请查阅 [LICENSE](https://gitee.com/tangllty/tang-vue/blob/master/LICENSE) 文件。
+tang-vue uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/tang-vue/blob/master/LICENSE) files.
