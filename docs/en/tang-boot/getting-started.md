@@ -71,7 +71,17 @@ server:
 <property name="LOG_PATH" value="/home/tang/logs/tang-boot" />
 ```
 
-5. Run tang-admin/src/main/java/com/tang/AdminApplication.java to start the project
+## Start Project
+
+* Run tang-admin/src/main/java/com/tang/admin/AdminApplication.java in IDE
+
+OR
+
+* Execute the following command in the project root directory
+
+```bash
+mvn clean package && sh bin/start.sh
+```
 
 ## Build Project
 

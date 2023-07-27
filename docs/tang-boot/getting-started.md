@@ -71,7 +71,17 @@ server:
 <property name="LOG_PATH" value="/home/tang/logs/tang-boot" />
 ```
 
-5. 运行 tang-admin/src/main/java/com/tang/AdminApplication.java 启动项目
+## 运行项目
+
+* 在 IDE 中运行 tang-admin/src/main/java/com/tang/admin/AdminApplication.java
+
+或者
+
+* 在项目根目录下执行
+
+```bash
+sh bin/package.sh && sh bin/start.sh
+```
 
 ## 打包项目
 
