@@ -16,6 +16,10 @@ export default defineConfig({
           pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
           text: '在 GitHub 上编辑此页'
         },
+        footer: {
+          message: '由 Tang 用 ❤️ 构建',
+          copyright: '© 2023 Tang'
+        },
         nav: [
           { text: '介绍', link: '/guide/introduction', activeMatch: '/guide/introduction' },
           { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
@@ -59,6 +63,10 @@ export default defineConfig({
         editLink: {
           pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
           text: 'Edit this page on GitHub',
+        },
+        footer: {
+          message: 'Built with ❤️ by Tang',
+          copyright: '© 2023 Tang'
         },
         nav: [
           { text: 'Introduction', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
