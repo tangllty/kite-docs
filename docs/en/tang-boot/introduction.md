@@ -10,24 +10,24 @@
 
 ## Technology Stack
 
-| Technology Stack | Description | Website |
-| --- | --- | --- |
-| Spring Boot | Simplify Spring | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
-| Spring Security | Authentication and authorization framework | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security) |
-| MyBatis | ORM framework | [https://mybatis.org/mybatis-3/zh/index.html](https://mybatis.org/mybatis-3/zh/index.html) |
-| PageHelper | MyBatis paging plugins | [https://pagehelper.github.io/](https://pagehelper.github.io/) |
-| Maven | Project management | [https://maven.apache.org/](https://maven.apache.org/) |
-| MySQL | Relational database | [https://www.mysql.com/](https://www.mysql.com/) |
-| Redis | Cache database | [https://redis.io/](https://redis.io/) |
-| Jwt | Jwt login support | [https://jwt.io/](https://jwt.io/) |
-| Spring Doc | Interface document generation | [https://springdoc.org/](https://springdoc.org/) |
-| Hutool | Java toolkit | [https://hutool.cn/](https://hutool.cn/) |
-| Ip2Region | offline IP address location | [https://gitee.com/lionsoul/ip2region/](https://gitee.com/lionsoul/ip2region/) |
-| Velocity | Template engine | [https://velocity.apache.org/](https://velocity.apache.org/) |
-| Poi-OOXML | Excel operation | [https://poi.apache.org/](https://poi.apache.org/) |
-| Guava | Google toolkit | [https://github.com/google/guava/](https://github.com/google/guava/) |
-| Commons-Lang3 | Commons toolkit | [https://commons.apache.org/proper/commons-lang/](https://commons.apache.org/proper/commons-lang/) |
-| Commons-IO | IO operation | [https://commons.apache.org/proper/commons-io/](https://commons.apache.org/proper/commons-io/) |
+| Technology Stack | Description                                | Website                                                                                         |
+| ---------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Spring Boot      | Simplify Spring                            | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                   |
+| Spring Security  | Authentication and authorization framework | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)           |
+| MyBatis          | ORM framework                              | [https://mybatis.org/mybatis-3/zh/index.html](https://mybatis.org/mybatis-3/zh/index.html)         |
+| PageHelper       | MyBatis paging plugins                     | [https://pagehelper.github.io/](https://pagehelper.github.io/)                                     |
+| Maven            | Project management                         | [https://maven.apache.org/](https://maven.apache.org/)                                             |
+| MySQL            | Relational database                        | [https://www.mysql.com/](https://www.mysql.com/)                                                   |
+| Redis            | Cache database                             | [https://redis.io/](https://redis.io/)                                                             |
+| Jwt              | Jwt login support                          | [https://jwt.io/](https://jwt.io/)                                                                 |
+| Spring Doc       | Interface document generation              | [https://springdoc.org/](https://springdoc.org/)                                                   |
+| Hutool           | Java toolkit                               | [https://hutool.cn/](https://hutool.cn/)                                                           |
+| Ip2Region        | offline IP address location                | [https://gitee.com/lionsoul/ip2region/](https://gitee.com/lionsoul/ip2region/)                     |
+| Velocity         | Template engine                            | [https://velocity.apache.org/](https://velocity.apache.org/)                                       |
+| Poi-OOXML        | Excel operation                            | [https://poi.apache.org/](https://poi.apache.org/)                                                 |
+| Guava            | Google toolkit                             | [https://github.com/google/guava/](https://github.com/google/guava/)                               |
+| Commons-Lang3    | Commons toolkit                            | [https://commons.apache.org/proper/commons-lang/](https://commons.apache.org/proper/commons-lang/) |
+| Commons-IO       | IO operation                               | [https://commons.apache.org/proper/commons-io/](https://commons.apache.org/proper/commons-io/)     |
 
 ## Contributing
 
