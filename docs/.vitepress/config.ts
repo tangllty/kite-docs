@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   cleanUrls: true,
   lang: 'zh-CN',
+  ignoreDeadLinks: [
+    /^https?:\/\/localhost/
+  ],
   locales: {
     root: {
       label: '简体中文',
@@ -58,6 +61,13 @@ export default defineConfig({
                 { text: '介绍', link: '/tang-boot/introduction' },
                 { text: '开始', link: '/tang-boot/getting-started' },
                 { text: '特性', link: '/tang-boot/features' },
+              ],
+              collapsed: false
+            },
+            {
+              text: '开发手册',
+              items: [
+                { text: '分页', link: '/tang-boot/pagination' },
               ],
               collapsed: false
             }
