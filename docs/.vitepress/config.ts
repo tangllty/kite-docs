@@ -42,8 +42,9 @@ export default defineConfig({
           ],
           '/tang-boot/': [
             {
-              text: '介绍',
+              text: '指引',
               items: [
+                { text: '介绍', link: '/tang-boot/introduction' },
                 { text: '开始', link: '/tang-boot/getting-started' },
                 { text: '特性', link: '/tang-boot/features' },
               ],
@@ -90,8 +91,9 @@ export default defineConfig({
           ],
           '/en/tang-boot/': [
             {
-              text: 'Introduction',
+              text: 'Guide',
               items: [
+                { text: 'Introduction', link: '/en/tang-boot/introduction'},
                 { text: 'Getting Started', link: '/en/tang-boot/getting-started' },
                 { text: 'Features', link: '/en/tang-boot/features' },
               ],
