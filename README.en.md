@@ -2,7 +2,7 @@
 
 [**简体中文**](./README.md) | **English**
 
-## 项目简介
+## Project Description
 
 tang-docs is a TangMaoMao permission management system documentation based on VitePress
 
@@ -31,10 +31,10 @@ tang-docs uses the MIT license. For more details, please refer to [LICENSE](http
 
 ## Project Address
 
-| Project   | Gitee                                          | GitHub                                          |
-| --------- | ---------------------------------------------- | ----------------------------------------------- |
-| Back End  | [tang-boot](https://gitee.com/tangllty/tang-boot) | [tang-boot](https://github.com/tangllty/tang-boot) |
-| Front End | [tang-vue](https://gitee.com/tangllty/tang-vue)   | [tang-vue](https://github.com/tangllty/tang-vue)   |
+| Project       | Gitee                                          | GitHub                                          |
+| ------------- | ---------------------------------------------- | ----------------------------------------------- |
+| Back End      | [tang-boot](https://gitee.com/tangllty/tang-boot) | [tang-boot](https://github.com/tangllty/tang-boot) |
+| Front End     | [tang-vue](https://gitee.com/tangllty/tang-vue)   | [tang-vue](https://github.com/tangllty/tang-vue)   |
 | Documentation | [tang-docs](https://gitee.com/tangllty/tang-docs) | [tang-docs](https://github.com/tangllty/tang-docs) |
 
 ## Discussion Group
