@@ -40,6 +40,17 @@ export default defineConfig({
               collapsed: false
             }
           ],
+          '/tang-vue/': [
+            {
+              text: '指引',
+              items: [
+                { text: '介绍', link: '/tang-vue/introduction' },
+                { text: '开始', link: '/tang-vue/getting-started' },
+                { text: '特性', link: '/tang-vue/features' },
+              ],
+              collapsed: false
+            }
+          ],
           '/tang-boot/': [
             {
               text: '指引',
@@ -85,6 +96,17 @@ export default defineConfig({
                 { text: 'Backend', link: '/en/guide/tang-boot' },
                 { text: 'Android', link: '/en/guide/tang-app' },
                 { text: 'Microservice', link: '/en/guide/tang-cloud' }
+              ],
+              collapsed: false
+            }
+          ],
+          '/en/tang-vue/': [
+            {
+              text: 'Guide',
+              items: [
+                { text: 'Introduction', link: '/en/tang-vue/introduction'},
+                { text: 'Getting Started', link: '/en/tang-vue/getting-started' },
+                { text: 'Features', link: '/en/tang-vue/features' },
               ],
               collapsed: false
             }
