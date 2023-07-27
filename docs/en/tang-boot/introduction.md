@@ -22,7 +22,7 @@
 | Jwt | Jwt login support | [https://jwt.io/](https://jwt.io/) |
 | Spring Doc | Interface document generation | [https://springdoc.org/](https://springdoc.org/) |
 | Hutool | Java toolkit | [https://hutool.cn/](https://hutool.cn/) |
-| Ip2Region | offline IP address location | [https://gitee.com/lionsoul/ip2region/]([https://gitee.com/lionsoul/ip2region/]) |
+| Ip2Region | offline IP address location | [https://gitee.com/lionsoul/ip2region/](https://gitee.com/lionsoul/ip2region/) |
 | Velocity | Template engine | [https://velocity.apache.org/](https://velocity.apache.org/) |
 | Poi-OOXML | Excel operation | [https://poi.apache.org/](https://poi.apache.org/) |
 | Guava | Google toolkit | [https://github.com/google/guava/](https://github.com/google/guava/) |

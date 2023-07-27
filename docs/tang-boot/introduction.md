@@ -22,7 +22,7 @@
 | Jwt             | JWT 登录支持     | [https://jwt.io/](https://jwt.io/)                                                                 |
 | Spring Doc      | 接口文档生成     | [https://springdoc.org/](https://springdoc.org/)                                                   |
 | Hutool          | Java 工具包      | [https://hutool.cn/](https://hutool.cn/)                                                           |
-| Ip2Region       | 离线 IP 地址定位 | [https://gitee.com/lionsoul/ip2region/]([https://gitee.com/lionsoul/ip2region/])                   |
+| Ip2Region       | 离线 IP 地址定位 | [https://gitee.com/lionsoul/ip2region/](https://gitee.com/lionsoul/ip2region/)                   |
 | Velocity        | 模板引擎         | [https://velocity.apache.org/](https://velocity.apache.org/)                                       |
 | Poi-OOXML       | Excel 操作       | [https://poi.apache.org/](https://poi.apache.org/)                                                 |
 | Guava           | Google 工具包    | [https://github.com/google/guava/](https://github.com/google/guava/)                               |
