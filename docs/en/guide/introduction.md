@@ -1,7 +1,4 @@
----
-layout: doc
----
-## Introduction
+# Introduction
 
 TangMaoMao Permission Management System is based on the latest technology stack to develop a set of front-end and back-end separation of permission management system.
 
