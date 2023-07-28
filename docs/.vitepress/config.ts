@@ -52,6 +52,13 @@ export default defineConfig({
                 { text: '特性', link: '/tang-vue/features' },
               ],
               collapsed: false
+            },
+            {
+              text: '开发手册',
+              items: [
+                { text: '分页', link: '/tang-vue/pagination' },
+              ],
+              collapsed: false
             }
           ],
           '/tang-boot/': [
@@ -117,6 +124,13 @@ export default defineConfig({
                 { text: 'Introduction', link: '/en/tang-vue/introduction'},
                 { text: 'Getting Started', link: '/en/tang-vue/getting-started' },
                 { text: 'Features', link: '/en/tang-vue/features' },
+              ],
+              collapsed: false
+            },
+            {
+              text: 'Development',
+              items: [
+                { text: 'Pagination', link: '/en/tang-vue/pagination' },
               ],
               collapsed: false
             }
