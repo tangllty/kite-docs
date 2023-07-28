@@ -50,3 +50,7 @@ yarn run build
 ::: tip Tip
 The bundled file is in the dist directory
 :::
+
+## Run Backend
+
+[Refer to run backend](/en/tang-boot/getting-started.md)

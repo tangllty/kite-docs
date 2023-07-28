@@ -93,3 +93,7 @@ sh bin/package.sh
 ::: tip 提示
 打包后的文件在 tang-admin/target 目录下
 :::
+
+## 运行前端
+
+[参考前端开始](/tang-vue/getting-started.md)

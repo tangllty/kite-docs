@@ -50,3 +50,7 @@ yarn run build
 ::: tip 提示
 打包后的文件在 dist 目录下
 :::
+
+## 运行后端
+
+[参考后端运行](/tang-boot/getting-started.md)

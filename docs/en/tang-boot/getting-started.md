@@ -93,3 +93,7 @@ sh bin/package.sh
 ::: tip Tip
 The packaged file is in the tang-admin/target directory
 :::
+
+## Run Frontend
+
+[Refer to run frontend](/en/tang-vue/getting-started.md)
