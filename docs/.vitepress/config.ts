@@ -35,7 +35,8 @@ export default defineConfig({
             {
               text: '开始',
               items: [
-                { text: '介绍', link: '/guide/introduction' }
+                { text: '介绍', link: '/guide/introduction' },
+                { text: '交流群', link: '/guide/discussion-group' },
               ],
               collapsed: false
             }
@@ -106,7 +107,8 @@ export default defineConfig({
             {
               text: 'Getting Started',
               items: [
-                { text: 'Introduction', link: '/en/guide/introduction'}
+                { text: 'Introduction', link: '/en/guide/introduction'},
+                { text: 'Discussion Group', link: '/en/guide/discussion-group' },
               ],
               collapsed: false
             }
