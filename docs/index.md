@@ -15,6 +15,9 @@ hero:
       text: 开始
       link: /guide/introduction
     - theme: alt
+      text: 交流群
+      link: /guide/discussion-group
+    - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/tangllty/
     - theme: alt

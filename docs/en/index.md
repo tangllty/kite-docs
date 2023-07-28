@@ -15,10 +15,13 @@ hero:
       text: Get Started
       link: /en/guide/introduction
     - theme: alt
-      text: Check it out on GitHub
+      text: Group
+      link: /en/guide/discussion-group
+    - theme: alt
+      text: View on GitHub
       link: https://github.com/tangllty/
     - theme: alt
-      text: Check it out on Gitee
+      text: View on Gitee
       link: https://gitee.com/tangllty/
 
 features:
