@@ -32,4 +32,4 @@ public TableDataResult list(Custom custom){
 
 ## Frontend Pagination
 
-[Refer to Frontend Pagination](/eu/tang-vue/pagination.md)
+[Refer to Frontend Pagination](/en/tang-vue/pagination.md)
