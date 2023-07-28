@@ -24,7 +24,7 @@ export default defineConfig({
           copyright: '© 2023 Tang'
         },
         nav: [
-          { text: '介绍', link: '/guide/introduction', activeMatch: '/guide/introduction' },
+          { text: '开始', link: '/guide/introduction', activeMatch: '/guide/introduction' },
           { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
           { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
           { text: '安卓', link: '/tang-app/introduction', activeMatch: '/tang-app/introduction' },
@@ -33,12 +33,9 @@ export default defineConfig({
         sidebar: {
           '/guide/': [
             {
-              text: '介绍',
+              text: '开始',
               items: [
-                { text: '前端', link: '/guide/tang-vue' },
-                { text: '后端', link: '/guide/tang-boot' },
-                { text: '安卓', link: '/guide/tang-app' },
-                { text: '微服务', link: '/guide/tang-cloud' }
+                { text: '介绍', link: '/guide/introduction' }
               ],
               collapsed: false
             }
@@ -98,7 +95,7 @@ export default defineConfig({
           copyright: '© 2023 Tang'
         },
         nav: [
-          { text: 'Introduction', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
+          { text: 'Getting Started', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
           { text: 'Frontend', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
           { text: 'Backend', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
           { text: 'Android', link: '/en/tang-app/introduction', activeMatch: '/en/tang-app/introduction' },
@@ -107,12 +104,9 @@ export default defineConfig({
         sidebar: {
           '/en/guide/': [
             {
-              text: 'Introduction',
+              text: 'Getting Started',
               items: [
-                { text: 'Frontend', link: '/en/guide/tang-vue' },
-                { text: 'Backend', link: '/en/guide/tang-boot' },
-                { text: 'Android', link: '/en/guide/tang-app' },
-                { text: 'Microservice', link: '/en/guide/tang-cloud' }
+                { text: 'Introduction', link: '/en/guide/introduction'}
               ],
               collapsed: false
             }
