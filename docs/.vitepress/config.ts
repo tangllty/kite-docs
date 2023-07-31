@@ -142,6 +142,13 @@ export default defineConfig({
                 { text: 'Features', link: '/en/tang-boot/features' },
               ],
               collapsed: false
+            },
+            {
+              text: 'Development',
+              items: [
+                { text: 'Pagination', link: '/en/tang-boot/pagination' },
+              ],
+              collapsed: false
             }
           ]
         },
