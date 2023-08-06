@@ -56,6 +56,7 @@ export default defineConfig({
               items: [
                 { text: '分页', link: '/tang-vue/pagination' },
                 { text: '使用当前实例', link: '/tang-vue/use-current-instance' },
+                { text: 'WebSocket', link: '/tang-vue/websocket' },
               ],
               collapsed: false
             }
@@ -74,6 +75,7 @@ export default defineConfig({
               text: '开发手册',
               items: [
                 { text: '分页', link: '/tang-boot/pagination' },
+                { text: 'WebSocket', link: '/tang-boot/websocket' },
               ],
               collapsed: false
             }
@@ -128,7 +130,8 @@ export default defineConfig({
               text: 'Development',
               items: [
                 { text: 'Pagination', link: '/en/tang-vue/pagination' },
-                { text: 'Use Current Instance', link: '/en/tang-vue/use-current-instance'}
+                { text: 'Use Current Instance', link: '/en/tang-vue/use-current-instance'},
+                { text: 'WebSocket', link: '/en/tang-vue/websocket'},
               ],
               collapsed: false
             }
@@ -147,6 +150,7 @@ export default defineConfig({
               text: 'Development',
               items: [
                 { text: 'Pagination', link: '/en/tang-boot/pagination' },
+                { text: 'WebSocket', link: '/tang-boot/websocket' },
               ],
               collapsed: false
             }
