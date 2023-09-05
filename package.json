@@ -2,6 +2,7 @@
   "name": "tang-docs",
   "version": "1.6.0",
   "description": "糖猫猫权限管理系统文档",
+  "type": "module",
   "main": "index.js",
   "author": {
     "name": "Tang",
