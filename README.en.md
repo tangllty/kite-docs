@@ -10,6 +10,15 @@ You can read the [documentation](https://tangllty.eu.org/) for more information
 
 * Using VitePress
 
+## Project Preview
+
+* Online Preview: [http://116.196.102.213/](http://116.196.102.213/)
+* Account password: admin / 123456
+
+### Server Sponsorship
+
+* [@RyanHo97](https://github.com/RyanHo97/)
+
 ## Environment Requirements
 
 * Node.js 18.15.0

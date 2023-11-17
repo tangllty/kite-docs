@@ -10,6 +10,15 @@ tang-docs 是基于 VitePress 的糖猫猫权限管理系统文档
 
 * 采用 VitePress
 
+## 项目预览
+
+* 在线预览：[http://116.196.102.213/](http://116.196.102.213/)
+* 账号密码：admin / 123456
+
+### 服务器赞助
+
+* [@RyanHo97](https://github.com/RyanHo97/)
+
 ## 环境要求
 
 * Node.js 18.15.0
