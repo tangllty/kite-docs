@@ -53,3 +53,5 @@ tang-docs uses the MIT license. For more details, please refer to [LICENSE](http
   - ![WeChat](https://github.com/tangllty/tang-docs/raw/master/docs/public/wechat.png)
 - Telegram
 - QQ
+
+  - ![QQ](https://github.com/tangllty/tang-docs/raw/master/docs/public/qq.png)
