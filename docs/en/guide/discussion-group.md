@@ -8,7 +8,7 @@ Welcome to join our discussion group. If you have any questions or suggestions, 
 
 ## Telegram
 
-Not yet.
+![Telegram](/telegram.png)
 
 ## QQ
 

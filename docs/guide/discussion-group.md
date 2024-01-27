@@ -8,7 +8,7 @@
 
 ## Telegram
 
-暂无
+![Telegram](/telegram.png)
 
 ## QQ
 
