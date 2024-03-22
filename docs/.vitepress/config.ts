@@ -7,6 +7,7 @@ export default defineConfig({
   ignoreDeadLinks: [
     /^https?:\/\/localhost/
   ],
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/tang.svg' }]],
   locales: {
     root: {
       label: '简体中文',
