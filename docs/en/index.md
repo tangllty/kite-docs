@@ -33,4 +33,12 @@ features:
     title: tang-vue
     details: tang-vue is a front-end and back-end separation permission management system based on Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus
     link: https://github.com/tangllty/tang-vue
+  - icon: ❤️
+    title: tang-docs
+    details: tang-docs is a Tang Permission Management System documentation based on VitePress
+    link: https://github.com/tangllty/tang-docs
+  - icon: ❤️
+    title: vite-plugin-svg
+    details: A lightweight Vite 5 plugin for SVG sprites.
+    link: https://github.com/tangllty/vite-plugin-svg
 ---

@@ -33,6 +33,14 @@ features:
     title: tang-vue
     details: tang-vue 是基于 Vue3 + Vite5 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
     link: https://gitee.com/tangllty/tang-vue
+  - icon: ❤️
+    title: tang-docs
+    details: tang-docs 是基于 VitePress 的糖猫猫权限管理系统文档
+    link: https://gitee.com/tangllty/tang-docs
+  - icon: ❤️
+    title: vite-plugin-svg
+    details: vite-plugin-svg 是一个基于 Vite5 的 SVG 插件
+    link: https://gitee.com/tangllty/vite-plugin-svg
 ---
 
 <style>
