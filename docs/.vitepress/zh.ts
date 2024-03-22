@@ -23,7 +23,7 @@ const sidebar = {
       items: [
         { text: '介绍', link: '/tang-vue/introduction' },
         { text: '开始', link: '/tang-vue/getting-started' },
-        { text: '特性', link: '/tang-vue/features' },
+        { text: '部署', link: '/tang-vue/deployment' },
       ],
       collapsed: false
     },
@@ -43,7 +43,7 @@ const sidebar = {
       items: [
         { text: '介绍', link: '/tang-boot/introduction' },
         { text: '开始', link: '/tang-boot/getting-started' },
-        { text: '特性', link: '/tang-boot/features' },
+        { text: '部署', link: '/tang-boot/deployment' },
       ],
       collapsed: false
     },
