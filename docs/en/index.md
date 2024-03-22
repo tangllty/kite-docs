@@ -8,13 +8,13 @@ hero:
   text: Tang Permission Management System
   tagline: Based on the latest technology stack, a set of rights management system with front end and back end separation is developed.
   image:
-    src: /Tang.png
+    src: /tang.svg
     alt: Tang
   actions:
     - theme: brand
       text: Get Started
       link: /en/guide/introduction
-    - theme: alt
+    - theme: sponsor
       text: Group
       link: /en/guide/discussion-group
     - theme: alt
