@@ -15,13 +15,15 @@ export default defineConfig({
       title: '糖猫猫权限管理系统文档',
       description: '基于最新的技术栈，开发一套前后端分离的权限管理系统。',
       themeConfig: {
+        logo: '/tang.svg',
+        siteTitle: '糖猫猫权限管理系统文档',
         editLink: {
           pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
           text: '在 GitHub 上编辑此页'
         },
         footer: {
           message: '由 Tang 用 ❤️ 构建',
-          copyright: '© 2023 Tang'
+          copyright: '© 2024 Tang'
         },
         nav: [
           { text: '开始', link: '/guide/introduction', activeMatch: '/guide/introduction' },
@@ -87,9 +89,11 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
-      title: 'TangMaoMao',
+      title: 'Tang Permission Management System',
       description: 'Based on the latest technology stack, a set of rights management system with front end and back end separation is developed.',
       themeConfig: {
+        logo: '/tang.svg',
+        siteTitle: 'Tang Permission Management System',
         editLink: {
           pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
           text: 'Edit this page on GitHub',

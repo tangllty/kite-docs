@@ -4,7 +4,7 @@
 
 ## Project Description
 
-tang-docs is a TangMaoMao permission management system documentation based on VitePress
+tang-docs is a Tang Permission Management System documentation based on VitePress
 
 You can read the [documentation](https://tangllty.eu.org/) for more information
 
