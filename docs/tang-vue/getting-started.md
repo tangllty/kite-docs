@@ -12,30 +12,24 @@ git clone https://gitee.com/tangllty/tang-vue.git
 
 ## 修改配置
 
-修改 vue.config.ts 后端接口地址
+修改 .env.development 后端接口地址
 
 ```typescript
-server: {
-  ......
-  proxy: {
-    [env.VITE_APP_BASE_API]: {
-      target: 'http://127.0.0.1:8080',
-      ......
-    }
-  }
-}
+......
+VITE_APP_URL = 'http://127.0.0.1:8080'
+......
 ```
 
 ## 安装依赖
 
 ```bash
-yarn
+pnpm install
 ```
 
 ## 启动项目
 
 ```bash
-yarn run dev
+pnpm run dev
 ```
 
 访问 [http://localhost:5173/](http://localhost:5173/)
@@ -44,7 +38,7 @@ yarn run dev
 
 ```bash
 # 生产环境
-yarn run build
+pnpm run build
 ```
 
 ::: tip 提示

@@ -12,30 +12,24 @@ git clone https://gitee.com/tangllty/tang-vue.git
 
 ## Modify Configuration
 
-Modify vue.config.ts backend interface address
+Modify .env.development backend interface address
 
 ```typescript
-server: {
-  ......
-  proxy: {
-    [env.VITE_APP_BASE_API]: {
-      target: 'http://127.0.0.1:8080',
-      ......
-    }
-  }
-}
+......
+VITE_APP_URL = 'http://127.0.0.1:8080'
+......
 ```
 
 ## Install Dependencies
 
 ```bash
-yarn
+pnpm install
 ```
 
 ## Start Project
 
 ```bash
-yarn run dev
+pnpm run dev
 ```
 
 Visit [http://localhost:5173/](http://localhost:5173/)
@@ -44,7 +38,7 @@ Visit [http://localhost:5173/](http://localhost:5173/)
 
 ```bash
 # Production environment
-yarn run build
+pnpm run build
 ```
 
 ::: tip Tip
