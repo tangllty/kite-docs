@@ -14,7 +14,7 @@ hero:
     - theme: brand
       text: 开始
       link: /guide/introduction
-    - theme: alt
+    - theme: sponsor
       text: 交流群
       link: /guide/discussion-group
     - theme: alt
@@ -31,7 +31,7 @@ features:
     link: https://gitee.com/tangllty/tang-boot
   - icon: ❤️
     title: tang-vue
-    details: tang-vue 是基于 Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
+    details: tang-vue 是基于 Vue3 + Vite5 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
     link: https://gitee.com/tangllty/tang-vue
 ---
 
