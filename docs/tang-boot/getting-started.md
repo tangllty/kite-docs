@@ -4,8 +4,8 @@
 
 * OpenJDK 17.0.7
 * Apache Maven 3.8.7
-* MySQL 8.0.33
-* Redis 7.0.11
+* MySQL 8.3.0
+* Redis 7.2.3
 
 ## 获取项目
 
