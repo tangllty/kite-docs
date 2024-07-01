@@ -1,6 +1,6 @@
 # 简介
 
-[tang-vue](https://gitee.com/tangllty/tang-vue/) 是基于 [Vue3](https://cn.vuejs.org/) + [Vite4](https://vitejs.dev/) + [Vue Router4](https://router.vuejs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Pinia](https://pinia.vuejs.org/) + [Element Plus](https://element-plus.org/) 的前后端分离权限管理系统
+[tang-vue](https://gitee.com/tangllty/tang-vue/) 是基于 [Vue3](https://cn.vuejs.org/) + [Vite5](https://vitejs.dev/) + [Vue Router4](https://router.vuejs.org/) + [TypeScript5](https://www.typescriptlang.org/) + [Pinia](https://pinia.vuejs.org/) + [Element Plus](https://element-plus.org/) 的前后端分离权限管理系统
 
 ## 功能
 
@@ -13,9 +13,9 @@
 | 技术栈       | 说明               | 官网                                                                              |
 | ------------ | ------------------ | --------------------------------------------------------------------------------- |
 | Vue3         | 前端框架           | [https://cn.vuejs.org/](https://cn.vuejs.org/)                                       |
-| Vite4        | 下一代的前端工具链 | [https://cn.vitejs.dev/](https://cn.vitejs.dev/)                                     |
+| Vite5        | 下一代的前端工具链 | [https://cn.vitejs.dev/](https://cn.vitejs.dev/)                                     |
 | Vue Router4  | 路由框架           | [https://router.vuejs.org/zh/](https://router.vuejs.org/zh/)                         |
-| TypeScript   | JavaScript超集     | [https://www.typescriptlang.org/](https://www.typescriptlang.org/)                   |
+| TypeScript5  | JavaScript 超集    | [https://www.typescriptlang.org/](https://www.typescriptlang.org/)                   |
 | Pinia        | 状态管理           | [https://pinia.vuejs.org/zh/](https://pinia.vuejs.org/zh/)                           |
 | Element Plus | 组件库             | [https://element-plus.org/zh-CN/](https://element-plus.org/zh-CN/)                   |
 | Axios        | 网络请求库         | [https://axios-http.com/](https://axios-http.com/)                                   |
@@ -23,7 +23,7 @@
 | Echarts      | 图表框架           | [https://echarts.apache.org/zh/index.html](https://echarts.apache.org/zh/index.html) |
 | NProgress    | 进度条             | [https://github.com/rstacruz/nprogress/](https://github.com/rstacruz/nprogress/)     |
 | File-saver   | 文件下载           | [https://github.com/eligrey/FileSaver.js/](https://github.com/eligrey/FileSaver.js/) |
-| Yarn         | 依赖管理           | [https://yarnpkg.com/](https://yarnpkg.com/)                                         |
+| Pnpm         | 依赖管理           | [https://pnpm.io/zh/](https://pnpm.io/zh/)                                         |
 
 ## 贡献
 
