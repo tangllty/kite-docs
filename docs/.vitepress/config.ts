@@ -23,4 +23,8 @@ export default defineConfig({
       { icon: "github", link: "https://gitee.com/tangllty/" }
     ],
   },
+  // https://vitepress.dev/reference/site-config#markdown
+  markdown: {
+    lineNumbers: true
+  }
 })
