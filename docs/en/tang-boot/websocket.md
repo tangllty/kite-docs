@@ -4,7 +4,9 @@
 
 ## Inject
 
-```java
+::: code-group
+
+```java [Java]
 import org.springframework.stereotype.Service;
 
 import com.tang.commons.websocket.WebSocket;
@@ -21,16 +23,40 @@ public class CustomServiceImpl implements CustomService {
 }
 ```
 
+```kotlin [Kotlin]
+import org.springframework.stereotype.Service
+
+import com.tang.commons.websocket.WebSocket
+
+@Service
+class CustomServiceImpl(private val webSocket: WebSocket) : CustomService
+```
+
+:::
+
 ## Push message
 
-```java
-// Push message to specified user
+::: code-group
+
+```java [Java]
+// 推送消息到指定用户
 webSocket.sendMessage(args);
-// Push message to all users
+// 推送消息到所有用户
 webSocket.sendAllMessage(args);
 ```
 
+```kotlin [Kotlin]
+// 推送消息到指定用户
+webSocket.sendMessage(args)
+// 推送消息到所有用户
+webSocket.sendAllMessage(args)
+```
+
+:::
+
 ## Subscribe message
+
+::: code-group
 
 ```java
 @PostConstruct
@@ -40,3 +66,14 @@ public void init() {
     });
 }
 ```
+
+```kotlin
+@PostConstruct
+fun init() {
+    webSocket.subscribe(MessageType.CUSTOM) {
+        ......
+    }
+}
+```
+
+:::
