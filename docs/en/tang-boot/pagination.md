@@ -17,18 +17,31 @@ Add the dependency for `pagehelper-spring-boot-starter` in the `tang-commons/pom
 
 ## Usage
 
-1. The return type is `TableDataResult`, which represents the pagination result set that includes pagination information and data list.
+1. The return type is `PageResult`, which represents the pagination result set that includes pagination information and data list.
 2. Use `PageUtils.startPage()` to enable pagination. `PageUtils.startPage()` automatically retrieves the pagination parameters (`pageNum` and `pageSize`). The default values for these parameters are `pageNum = 1` and `pageSize = 10`.
 3. Use `PageUtils.getDataTable(list)` to get the pagination result set. Here, `list` is the data list for pagination.
 
-```java
+::: code-group
+
+```java [Java]
 @GetMapping("/list")
-public TableDataResult list(Custom custom){
+public PageResult list(Custom custom){
     PageUtils.startPage();
     var list = customService.selectCustomList(custom);
     return PageUtils.getDataTable(list);
 }
 ```
+
+```kotlin [Kotlin]
+@GetMapping("/list")
+fun list(custom: Custom): PageResult {
+    PageUtils.startPage()
+    val list = customService.selectCustomList(custom)
+    return PageUtils.getDataTable(list)
+}
+```
+
+:::
 
 ## Frontend Pagination
 
