@@ -2,4 +2,4 @@
 
 ### Dependencies
 
- * Bump vitepress from 1.0.0 to 1.2.3
+ * Bump vitepress from 1.0.0 to 1.4.2
