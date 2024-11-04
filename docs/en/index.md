@@ -5,8 +5,8 @@ title: Tang
 
 hero:
   name: Tang
-  text: Tang Permission Management System
-  tagline: Based on the latest technology stack, a set of rights management system with front end and back end separation is developed.
+  text: Tang Documentation
+  tagline: All project documentation is here
   image:
     src: /tang.svg
     alt: Tang
@@ -41,4 +41,30 @@ features:
     title: vite-plugin-svg
     details: A lightweight Vite 5 plugin for SVG sprites.
     link: https://github.com/tangllty/vite-plugin-svg
+  - icon: ❤️
+    title: jkorm
+    details: jkorm is an ORM framework based on Kotlin
+    link: https://github.com/tangllty/jkorm
 ---
+
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>

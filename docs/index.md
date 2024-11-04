@@ -5,8 +5,8 @@ title: Tang
 
 hero:
   name: Tang
-  text: 糖猫猫权限管理系统
-  tagline: 使用最新的技术栈，开发一套权限管理系统
+  text: 糖猫猫文档
+  tagline: 所有项目的文档都在这里
   image:
     src: /tang.svg
     alt: Tang
@@ -41,6 +41,10 @@ features:
     title: vite-plugin-svg
     details: vite-plugin-svg 是一个基于 Vite5 的 SVG 插件
     link: https://gitee.com/tangllty/vite-plugin-svg
+  - icon: ❤️
+    title: jkorm
+    details: jkorm 是一个基于 Kotlin 的 ORM 框架
+    link: https://gitee.com/tangllty/jkorm
 ---
 
 <style>

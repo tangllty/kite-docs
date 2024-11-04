@@ -1,9 +1,8 @@
 const nav = [
   { text: '开始', link: '/guide/introduction', activeMatch: '/guide/introduction' },
-  { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
-  { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
-  { text: '安卓', link: '/tang-app/introduction', activeMatch: '/tang-app/introduction' },
-  { text: '微服务', link: '/tang-cloud/introduction', activeMatch: '/tang-cloud/introduction' },
+  { text: 'Tang Vue', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
+  { text: 'Tang Boot', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
+  { text: 'JkOrm', link: '/jkorm/introduction', activeMatch: '/jkorm/introduction' },
 ]
 
 const sidebar = {
@@ -62,11 +61,11 @@ export default {
   label: '简体中文',
   lang: 'zh-CN',
   link: '/',
-  title: '糖猫猫权限管理系统文档',
-  description: '基于最新的技术栈，开发一套前后端分离的权限管理系统。',
+  title: '糖猫猫文档',
+  description: '所有项目的文档都在这里。',
   themeConfig: {
     logo: '/tang.svg',
-    siteTitle: '糖猫猫权限管理系统文档',
+    siteTitle: '糖猫猫文档',
     editLink: {
       pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
       text: '在 GitHub 上编辑此页'

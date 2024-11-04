@@ -1,9 +1,8 @@
 const nav = [
   { text: 'Getting Started', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
-  { text: 'Frontend', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
-  { text: 'Backend', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
-  { text: 'Android', link: '/en/tang-app/introduction', activeMatch: '/en/tang-app/introduction' },
-  { text: 'Microservice', link: '/en/tang-cloud/introduction', activeMatch: '/en/tang-cloud/introduction' },
+  { text: 'Tang Vue', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
+  { text: 'Tang Boot', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
+  { text: 'JkOrm', link: '/en/jkorm/introduction', activeMatch: '/en/jkorm/introduction' },
 ]
 
 const sidebar = {
@@ -62,11 +61,11 @@ export default {
   label: 'English',
   lang: 'en-US',
   link: '/en/',
-  title: 'Tang Permission Management System',
-  description: 'Based on the latest technology stack, a set of rights management system with front end and back end separation is developed.',
+  title: 'Tang Documentation',
+  description: 'All project documentation is here.',
   themeConfig: {
     logo: '/tang.svg',
-    siteTitle: 'Tang Docs',
+    siteTitle: 'Tang Documentation',
     editLink: {
       pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
       text: 'Edit this page on GitHub',
