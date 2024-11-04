@@ -2,8 +2,14 @@ import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '开始', link: '/guide/introduction', activeMatch: '/guide/introduction' },
-  { text: 'Tang Vue', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
-  { text: 'Tang Boot', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
+  {
+    text: 'Tang Boot',
+    items: [
+      { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
+      { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
+    ]
+  },
+  { text: 'vite-plugin-svg', link: '/vite-plugin-svg/introduction', activeMatch: '/vite-plugin-svg/introduction' },
   { text: 'JkOrm', link: '/jkorm/introduction', activeMatch: '/jkorm/introduction' },
 ]
 
@@ -56,7 +62,17 @@ const sidebar: DefaultTheme.Sidebar = {
       ],
       collapsed: false
     }
-  ]
+  ],
+  '/vite-plugin-svg/': [
+    {
+      text: '指引',
+      items: [
+        { text: '介绍', link: '/vite-plugin-svg/introduction' },
+        { text: '开始', link: '/vite-plugin-svg/getting-started' },
+      ],
+      collapsed: false
+    }
+  ],
 }
 
 export default {
@@ -74,7 +90,7 @@ export default {
     },
     footer: {
       message: '由 Tang 用 ❤️ 构建',
-      copyright: '© 2024 Tang'
+      copyright: '© 2023-2024 Tang'
     },
     nav,
     sidebar

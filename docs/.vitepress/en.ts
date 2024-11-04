@@ -2,8 +2,14 @@ import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: 'Getting Started', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
-  { text: 'Tang Vue', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
-  { text: 'Tang Boot', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
+  {
+    text: 'Tang Boot',
+    items: [
+      { text: 'Frontend', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
+      { text: 'Backend', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
+    ]
+  },
+  { text: 'vite-plugin-svg', link: '/en/vite-plugin-svg/introduction', activeMatch: '/en/vite-plugin-svg/introduction' },
   { text: 'JkOrm', link: '/en/jkorm/introduction', activeMatch: '/en/jkorm/introduction' },
 ]
 
@@ -56,7 +62,17 @@ const sidebar: DefaultTheme.Sidebar = {
       ],
       collapsed: false
     }
-  ]
+  ],
+  '/en/vite-plugin-svg/': [
+    {
+      text: 'Guide',
+      items: [
+        { text: 'Introduction', link: '/en/vite-plugin-svg/introduction'},
+        { text: 'Getting Started', link: '/en/vite-plugin-svg/getting-started' },
+      ],
+      collapsed: false
+    }
+  ],
 }
 
 export default {
@@ -74,7 +90,7 @@ export default {
     },
     footer: {
       message: 'Built with ❤️ by Tang',
-      copyright: '© 2023 Tang'
+      copyright: '© 2023-2024 Tang'
     },
     nav,
     sidebar
