@@ -1,11 +1,13 @@
-const nav = [
+import type { DefaultTheme } from 'vitepress'
+
+const nav: DefaultTheme.NavItem[] = [
   { text: 'Getting Started', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
   { text: 'Tang Vue', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
   { text: 'Tang Boot', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
   { text: 'JkOrm', link: '/en/jkorm/introduction', activeMatch: '/en/jkorm/introduction' },
 ]
 
-const sidebar = {
+const sidebar: DefaultTheme.Sidebar = {
   '/en/guide/': [
     {
       text: 'Getting Started',
