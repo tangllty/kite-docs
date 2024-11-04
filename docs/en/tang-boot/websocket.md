@@ -4,9 +4,11 @@
 
 ## Inject
 
-::: code-group
+:::tabs key:tabs
 
-```java [Java]
+== Java
+
+```java
 import org.springframework.stereotype.Service;
 
 import com.tang.commons.websocket.WebSocket;
@@ -23,7 +25,9 @@ public class CustomServiceImpl implements CustomService {
 }
 ```
 
-```kotlin [Kotlin]
+== Kotlin
+
+```kotlin
 import org.springframework.stereotype.Service
 
 import com.tang.commons.websocket.WebSocket
@@ -36,16 +40,20 @@ class CustomServiceImpl(private val webSocket: WebSocket) : CustomService
 
 ## Push message
 
-::: code-group
+:::tabs key:tabs
 
-```java [Java]
+== Java
+
+```java
 // 推送消息到指定用户
 webSocket.sendMessage(args);
 // 推送消息到所有用户
 webSocket.sendAllMessage(args);
 ```
 
-```kotlin [Kotlin]
+== Kotlin
+
+```kotlin
 // 推送消息到指定用户
 webSocket.sendMessage(args)
 // 推送消息到所有用户
@@ -56,7 +64,9 @@ webSocket.sendAllMessage(args)
 
 ## Subscribe message
 
-::: code-group
+:::tabs key:tabs
+
+== Java
 
 ```java
 @PostConstruct
@@ -66,6 +76,8 @@ public void init() {
     });
 }
 ```
+
+== Kotlin
 
 ```kotlin
 @PostConstruct

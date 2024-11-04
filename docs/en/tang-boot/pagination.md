@@ -21,9 +21,11 @@ Add the dependency for `pagehelper-spring-boot-starter` in the `tang-commons/pom
 2. Use `PageUtils.startPage()` to enable pagination. `PageUtils.startPage()` automatically retrieves the pagination parameters (`pageNum` and `pageSize`). The default values for these parameters are `pageNum = 1` and `pageSize = 10`.
 3. Use `PageUtils.getDataTable(list)` to get the pagination result set. Here, `list` is the data list for pagination.
 
-::: code-group
+:::tabs key:tabs
 
-```java [Java]
+== Java
+
+```java
 @GetMapping("/list")
 public PageResult list(Custom custom){
     PageUtils.startPage();
@@ -32,7 +34,9 @@ public PageResult list(Custom custom){
 }
 ```
 
-```kotlin [Kotlin]
+== Kotlin
+
+```kotlin
 @GetMapping("/list")
 fun list(custom: Custom): PageResult {
     PageUtils.startPage()

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import zh from './zh'
 import en from './en'
 
@@ -25,6 +26,9 @@ export default defineConfig({
   },
   // https://vitepress.dev/reference/site-config#markdown
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    config: (md) => {
+      md.use(tabsMarkdownPlugin)
+    }
   }
 })

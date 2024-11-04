@@ -9,9 +9,21 @@
 
 ## 获取项目
 
+::: tabs key:repository
+
+== GitHub
+
+```bash
+git clone https://github.com/tangllty/tang-boot.git
+```
+
+== Gitee
+
 ```bash
 git clone https://gitee.com/tangllty/tang-boot.git
 ```
+
+:::
 
 ## 修改配置
 

@@ -6,9 +6,21 @@
 
 ## Get Project
 
+::: tabs key:repository
+
+== GitHub
+
+```bash
+git clone https://github.com/tangllty/tang-vue.git
+```
+
+== Gitee
+
 ```bash
 git clone https://gitee.com/tangllty/tang-vue.git
 ```
+
+:::
 
 ## Modify Configuration
 

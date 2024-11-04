@@ -6,9 +6,21 @@
 
 ## 获取项目
 
+::: tabs key:repository
+
+== GitHub
+
+```bash
+git clone https://github.com/tangllty/tang-vue.git
+```
+
+== Gitee
+
 ```bash
 git clone https://gitee.com/tangllty/tang-vue.git
 ```
+
+:::
 
 ## 修改配置
 

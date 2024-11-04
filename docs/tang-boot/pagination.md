@@ -21,9 +21,11 @@
 2. 使用 `PageUtils.startPage()` 开启分页，`PageUtils.startPage()` 会自动获取分页参数，分页参数为 `pageNum` 和 `pageSize`，分页参数默认值为 `pageNum = 1` 和 `pageSize = 10`
 3. 使用 `PageUtils.getDataTable(list)` 获取分页结果集，`list` 为分页数据列表
 
-::: code-group
+:::tabs key:tabs
 
-```java [Java]
+== Java
+
+```java
 @GetMapping("/list")
 public PageResult list(Custom custom){
     PageUtils.startPage();
@@ -32,7 +34,9 @@ public PageResult list(Custom custom){
 }
 ```
 
-```kotlin [Kotlin]
+== Kotlin
+
+```kotlin
 @GetMapping("/list")
 fun list(custom: Custom): PageResult {
     PageUtils.startPage()
