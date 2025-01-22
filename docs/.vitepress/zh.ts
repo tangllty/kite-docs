@@ -73,6 +73,16 @@ const sidebar: DefaultTheme.Sidebar = {
       collapsed: false
     }
   ],
+  '/jkorm/': [
+    {
+      text: '指引',
+      items: [
+        { text: '介绍', link: '/jkorm/introduction' },
+        { text: '快速开始', link: '/jkorm/getting-started' },
+      ],
+      collapsed: false
+    }
+  ],
 }
 
 export default {

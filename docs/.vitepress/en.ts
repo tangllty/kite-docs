@@ -73,6 +73,16 @@ const sidebar: DefaultTheme.Sidebar = {
       collapsed: false
     }
   ],
+  '/en/jkorm/': [
+    {
+      text: 'Guide',
+      items: [
+        { text: 'Introduction', link: '/en/jkorm/introduction'},
+        { text: 'Getting Started', link: '/en/jkorm/getting-started' },
+      ],
+      collapsed: false
+    }
+  ],
 }
 
 export default {
