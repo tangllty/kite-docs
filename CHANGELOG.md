@@ -9,4 +9,4 @@
 
  * Add tabs plugin to support syntax show content
  * Add vite-plugin-svg plugin documentation
- * Add `jkorm` introduction and getting started guides
+ * Add `kite` introduction and getting started guides

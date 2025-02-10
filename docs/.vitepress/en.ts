@@ -10,7 +10,7 @@ const nav: DefaultTheme.NavItem[] = [
     ]
   },
   { text: 'vite-plugin-svg', link: '/en/vite-plugin-svg/introduction', activeMatch: '/en/vite-plugin-svg/introduction' },
-  { text: 'JkOrm', link: '/en/jkorm/introduction', activeMatch: '/en/jkorm/introduction' },
+  { text: 'Kite', link: '/en/kite/introduction', activeMatch: '/en/kite/introduction' },
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
@@ -73,12 +73,12 @@ const sidebar: DefaultTheme.Sidebar = {
       collapsed: false
     }
   ],
-  '/en/jkorm/': [
+  '/en/kite/': [
     {
       text: 'Guide',
       items: [
-        { text: 'Introduction', link: '/en/jkorm/introduction'},
-        { text: 'Getting Started', link: '/en/jkorm/getting-started' },
+        { text: 'Introduction', link: '/en/kite/introduction'},
+        { text: 'Getting Started', link: '/en/kite/getting-started' },
       ],
       collapsed: false
     }

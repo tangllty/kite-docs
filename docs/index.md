@@ -42,9 +42,9 @@ features:
     details: vite-plugin-svg 是一个基于 Vite5 的 SVG 插件
     link: https://gitee.com/tangllty/vite-plugin-svg
   - icon: ❤️
-    title: jkorm
-    details: jkorm 是一个基于 Kotlin 的 ORM 框架
-    link: https://gitee.com/tangllty/jkorm
+    title: kite
+    details: kite 是一个基于 Kotlin 的 ORM 框架
+    link: https://gitee.com/tangllty/kite
 ---
 
 <style>

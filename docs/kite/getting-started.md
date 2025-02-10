@@ -4,7 +4,7 @@
 
 ## 使用
 
- > Maven central: [jkorm-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/jkorm-spring-boot-starter)
+ > Maven central: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
 
  1. 将以下依赖添加到您的项目中：
 
@@ -13,15 +13,15 @@
 ```xml
 <dependency>
    <groupId>io.github.tangllty</groupId>
-   <artifactId>jkorm-spring-boot-starter</artifactId>
-   <version>${jkorm.version}</version>
+   <artifactId>kite-spring-boot-starter</artifactId>
+   <version>${kite.version}</version>
 </dependency>
 ```
 
  * Gradle
 
 ```kts
-implementation("io.github.tangllty:jkorm-spring-boot-starter:${jkorm.version}")
+implementation("io.github.tangllty:kite-spring-boot-starter:${kite.version}")
 ```
 
   2. 在数据库中创建以下表
@@ -44,18 +44,18 @@ create table account (
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/jkorm-test
+    url: jdbc:mysql://127.0.0.1:3306/kite-test
     username: root
     password: password
 ```
 
  3. 集成 `BaseMapper` 接口以创建一个 Mapper 接口
 
-:::tabs key:jkorm
+:::tabs key:kite
 == Java
 
 ```java
-import com.tang.jkorm.mapper.BaseMapper;
+import com.tang.kite.mapper.BaseMapper;
 
 public interface AccountMapper extends BaseMapper<Account> {
 }
@@ -64,7 +64,7 @@ public interface AccountMapper extends BaseMapper<Account> {
 == Kotlin
 
 ```kotlin
-import com.tang.jkorm.mapper.BaseMapper
+import com.tang.kite.mapper.BaseMapper
 
 interface AccountMapper : BaseMapper<Account>
 ```

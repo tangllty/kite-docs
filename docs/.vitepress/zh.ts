@@ -10,7 +10,7 @@ const nav: DefaultTheme.NavItem[] = [
     ]
   },
   { text: 'vite-plugin-svg', link: '/vite-plugin-svg/introduction', activeMatch: '/vite-plugin-svg/introduction' },
-  { text: 'JkOrm', link: '/jkorm/introduction', activeMatch: '/jkorm/introduction' },
+  { text: 'Kite', link: '/kite/introduction', activeMatch: '/kite/introduction' },
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
@@ -73,12 +73,12 @@ const sidebar: DefaultTheme.Sidebar = {
       collapsed: false
     }
   ],
-  '/jkorm/': [
+  '/kite/': [
     {
       text: '指引',
       items: [
-        { text: '介绍', link: '/jkorm/introduction' },
-        { text: '快速开始', link: '/jkorm/getting-started' },
+        { text: '介绍', link: '/kite/introduction' },
+        { text: '快速开始', link: '/kite/getting-started' },
       ],
       collapsed: false
     }

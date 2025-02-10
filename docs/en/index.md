@@ -42,9 +42,9 @@ features:
     details: A lightweight Vite 5 plugin for SVG sprites.
     link: https://github.com/tangllty/vite-plugin-svg
   - icon: ❤️
-    title: jkorm
-    details: jkorm is an ORM framework based on Kotlin
-    link: https://github.com/tangllty/jkorm
+    title: kite
+    details: kite is an ORM framework based on Kotlin
+    link: https://github.com/tangllty/kite
 ---
 
 <style>
