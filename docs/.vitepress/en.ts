@@ -100,7 +100,7 @@ export default {
     },
     footer: {
       message: 'Built with ❤️ by Tang',
-      copyright: '© 2023-2024 Tang'
+      copyright: '© 2023-2025 Tang'
     },
     nav,
     sidebar
