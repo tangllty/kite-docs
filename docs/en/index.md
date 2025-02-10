@@ -26,6 +26,10 @@ hero:
 
 features:
   - icon: ❤️
+    title: kite
+    details: kite is an lightweight ORM framework written in Kotlin
+    link: https://github.com/tangllty/kite
+  - icon: ❤️
     title: tang-boot
     details: tang-boot is a front-end and back-end separation permission management system based on Spring Boot3 + Spring Security + MyBatis + Redis + Jwt
     link: https://github.com/tangllty/tang-boot
@@ -41,10 +45,6 @@ features:
     title: vite-plugin-svg
     details: A lightweight Vite 5 plugin for SVG sprites.
     link: https://github.com/tangllty/vite-plugin-svg
-  - icon: ❤️
-    title: kite
-    details: kite is an ORM framework based on Kotlin
-    link: https://github.com/tangllty/kite
 ---
 
 <style>

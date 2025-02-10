@@ -26,6 +26,10 @@ hero:
 
 features:
   - icon: ❤️
+    title: kite
+    details: Kite 是一个由 Kotlin 编写的轻量级 ORM 框架
+    link: https://gitee.com/tangllty/kite
+  - icon: ❤️
     title: tang-boot
     details: tang-boot 是基于 Spring Boot3 + Spring Security + MyBatis + Redis + Jwt 的前后端分离权限管理系统
     link: https://gitee.com/tangllty/tang-boot
@@ -41,10 +45,6 @@ features:
     title: vite-plugin-svg
     details: vite-plugin-svg 是一个基于 Vite5 的 SVG 插件
     link: https://gitee.com/tangllty/vite-plugin-svg
-  - icon: ❤️
-    title: kite
-    details: kite 是一个基于 Kotlin 的 ORM 框架
-    link: https://gitee.com/tangllty/kite
 ---
 
 <style>
