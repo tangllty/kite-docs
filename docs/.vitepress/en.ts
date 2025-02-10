@@ -2,6 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: 'Getting Started', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
+  { text: 'Kite', link: '/en/kite/introduction', activeMatch: '/en/kite/introduction' },
   {
     text: 'Tang Boot',
     items: [
@@ -9,8 +10,7 @@ const nav: DefaultTheme.NavItem[] = [
       { text: 'Backend', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
     ]
   },
-  { text: 'vite-plugin-svg', link: '/en/vite-plugin-svg/introduction', activeMatch: '/en/vite-plugin-svg/introduction' },
-  { text: 'Kite', link: '/en/kite/introduction', activeMatch: '/en/kite/introduction' },
+  { text: 'Vite Plugin Svg', link: '/en/vite-plugin-svg/introduction', activeMatch: '/en/vite-plugin-svg/introduction' },
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
@@ -20,6 +20,16 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'Introduction', link: '/en/guide/introduction'},
         { text: 'Discussion Group', link: '/en/guide/discussion-group' },
+      ],
+      collapsed: false
+    }
+  ],
+  '/en/kite/': [
+    {
+      text: 'Guide',
+      items: [
+        { text: 'Introduction', link: '/en/kite/introduction'},
+        { text: 'Getting Started', link: '/en/kite/getting-started' },
       ],
       collapsed: false
     }
@@ -69,16 +79,6 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'Introduction', link: '/en/vite-plugin-svg/introduction'},
         { text: 'Getting Started', link: '/en/vite-plugin-svg/getting-started' },
-      ],
-      collapsed: false
-    }
-  ],
-  '/en/kite/': [
-    {
-      text: 'Guide',
-      items: [
-        { text: 'Introduction', link: '/en/kite/introduction'},
-        { text: 'Getting Started', link: '/en/kite/getting-started' },
       ],
       collapsed: false
     }

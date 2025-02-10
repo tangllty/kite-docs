@@ -2,6 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '开始', link: '/guide/introduction', activeMatch: '/guide/introduction' },
+  { text: 'Kite', link: '/kite/introduction', activeMatch: '/kite/introduction' },
   {
     text: 'Tang Boot',
     items: [
@@ -9,8 +10,7 @@ const nav: DefaultTheme.NavItem[] = [
       { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
     ]
   },
-  { text: 'vite-plugin-svg', link: '/vite-plugin-svg/introduction', activeMatch: '/vite-plugin-svg/introduction' },
-  { text: 'Kite', link: '/kite/introduction', activeMatch: '/kite/introduction' },
+  { text: 'Vite Plugin Svg', link: '/vite-plugin-svg/introduction', activeMatch: '/vite-plugin-svg/introduction' },
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
@@ -20,6 +20,16 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '介绍', link: '/guide/introduction' },
         { text: '交流群', link: '/guide/discussion-group' },
+      ],
+      collapsed: false
+    }
+  ],
+  '/kite/': [
+    {
+      text: '指引',
+      items: [
+        { text: '介绍', link: '/kite/introduction' },
+        { text: '快速开始', link: '/kite/getting-started' },
       ],
       collapsed: false
     }
@@ -73,16 +83,6 @@ const sidebar: DefaultTheme.Sidebar = {
       collapsed: false
     }
   ],
-  '/kite/': [
-    {
-      text: '指引',
-      items: [
-        { text: '介绍', link: '/kite/introduction' },
-        { text: '快速开始', link: '/kite/getting-started' },
-      ],
-      collapsed: false
-    }
-  ],
 }
 
 export default {
@@ -100,7 +100,7 @@ export default {
     },
     footer: {
       message: '由 Tang 用 ❤️ 构建',
-      copyright: '© 2023-2024 Tang'
+      copyright: '© 2023-2025 Tang'
     },
     nav,
     sidebar
