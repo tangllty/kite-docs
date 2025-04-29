@@ -1,25 +1,25 @@
-# Pagination
+# 分页
 
-## Introduction
+## 简介
 
-Encapsulate the `el-pagination` component as the `pagination` component and register it globally for displaying pagination information, used in conjunction with `el-table` for pagination.
+封装 `el-pagination` 组件 `pagination` 组件并全局注册，用于展示分页信息，配合 `el-table` 分页使用。
 
-## Usage
+## 使用
 
-1. Declare the type of query parameters in `@/api/custom/custom/types.ts` and inherit the `PageQuery` type.
+1. 在 `@/api/custom/custom/types.ts` 中声明查询参数的类型, 并继承 `PageQuery` 类型
 
 ```typescript
-// Custom query parameters
+// 自定义查询参数
 export interface CustomQuery extends PageQuery {
   customId: number
   customName: string
 }
 ```
 
-2. Declare the object type in `@/api/custom/custom/types.ts`.
+2. 在 `@/api/custom/custom/types.ts` 中声明对象类型
 
 ```typescript
-// Custom object
+// 自定义对象
 export interface Custom {
   customId: number
   customName: string
@@ -27,10 +27,10 @@ export interface Custom {
 }
 ```
 
-3. Declare the query method in `@/api/custom/custom/index.ts`.
+3. 在 `@/api/custom/custom/index.ts` 中声明查询方法
 
 ```typescript
-// Query the custom list
+// 查询自定义列表
 export const listCustom = (queryParams: CustomQuery) => {
   return request({
     url: '/custom/custom/list',
@@ -40,25 +40,25 @@ export const listCustom = (queryParams: CustomQuery) => {
 }
 ```
 
-4. Import the pagination query method, types, and query parameters in the page that requires pagination.
+4. 在需要分页的页面中引入分页查询方法、类型和查询参数
 
 ```typescript
 import { listCustom } from '@/api/custom/custom'
 import { Custom, CustomQuery } from '@/api/custom/custom/types'
 ```
 
-5. Declare the object list and query parameters.
+5. 声明对象列表和查询参数
 
 ```typescript
 const state = reactive({
   ......
-  // Loading mask
+  // 遮罩层
   loading: true,
-  // Total count
+  // 总条数
   total: 0,
-  // Custom table data
+  // 自定义表格数据
   customList: [] as Custom[],
-  // Query parameters
+  // 查询参数
   queryParams: {} as SysUserQuery,
   ......
 })
@@ -73,10 +73,10 @@ const {
 } = toRefs(state)
 ```
 
-6. Declare the method for querying the list.
+6. 声明查询列表方法
 
 ```typescript
-// Query the custom list
+// 查询自定义列表
 const handleList = async () => {
   state.loading = true
   const res: any = await listCustom(state.queryParams)
@@ -86,7 +86,7 @@ const handleList = async () => {
 }
 ```
 
-7. Declare the form instance.
+7. 声明表单实例
 
 ```typescript
 import { FormInstance } from 'element-plus'
@@ -94,32 +94,32 @@ import { FormInstance } from 'element-plus'
 const customQueryFormRef = ref<FormInstance>()
 ```
 
-8. Declare the method for resetting the query.
+8. 声明重置查询方法
 
 ```typescript
-// Reset the form
+// 重置表单
 const resetQuery = async () => {
   customQueryFormRef.value?.resetFields()
   await handleList()
 }
 ```
 
-8. Write the form.
+8. 编写form表单
 
 ```html
 <el-form ref="customQueryFormRef" :model="queryParams" inline>
-  <el-form-item label="Custom ID" prop="customId">
+  <el-form-item label="自定义ID" prop="customId">
     <el-input
       v-model="queryParams.customId"
-      placeholder="Custom ID"
+      placeholder="自定义ID"
       clearable
       @keyup.enter="handleList"
     />
   </el-form-item>
-  <el-form-item label="Custom Name" prop="customName">
+  <el-form-item label="自定义名称" prop="customName">
     <el-input
       v-model="queryParams.customName"
-      placeholder="Custom Name"
+      placeholder="自定义名称"
       clearable
       @keyup.enter="handleList"
     />
@@ -130,37 +130,37 @@ const resetQuery = async () => {
       type="primary"
       :icon="Search"
       @click="handleList"
-    >Search</el-button>
+    >搜索</el-button>
     <el-button
       :icon="Refresh"
       @click="resetQuery"
-    >Reset</el-button>
+    >重置</el-button>
   </el-form-item>
 </el-form>
 ```
 
-9. Write the table.
+9. 编写表格
 
 ```html
-<!-- Custom table -->
+<!-- 自定义表格 -->
 <el-table
   v-loading="loading"
   :data="customList"
 >
   <el-table-column
-    label="Custom ID"
+    label="自定义ID"
     prop="customId"
     align="center"
   />
   <el-table-column
-    label="Custom Name"
+    label="自定义名称"
     prop="customName"
     align="center"
   />
  ......
 </el-table>
 
-<!-- Pagination -->
+<!-- 分页 -->
 <pagination
   v-if="total > 0"
   :total="total"
@@ -170,6 +170,6 @@ const resetQuery = async () => {
 />
 ```
 
-## Backend pagination
+## 后端分页
 
-[Refer to backend pagination](/tang-boot/pagination.md)
+[参考后端分页](/tang-boot/pagination.md)

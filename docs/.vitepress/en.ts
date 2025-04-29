@@ -1,84 +1,74 @@
 import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
-  { text: 'Getting Started', link: '/en/guide/introduction', activeMatch: '/en/guide/introduction' },
-  { text: 'Kite', link: '/en/kite/introduction', activeMatch: '/en/kite/introduction' },
+  { text: 'Getting Started', link: '/guide/introduction', activeMatch: '/guide/introduction' },
   {
     text: 'Tang Boot',
     items: [
-      { text: 'Frontend', link: '/en/tang-vue/introduction', activeMatch: '/en/tang-vue/introduction' },
-      { text: 'Backend', link: '/en/tang-boot/introduction', activeMatch: '/en/tang-boot/introduction' },
+      { text: 'Frontend', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
+      { text: 'Backend', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
     ]
   },
-  { text: 'Vite Plugin Svg', link: '/en/vite-plugin-svg/introduction', activeMatch: '/en/vite-plugin-svg/introduction' },
+  { text: 'Vite Plugin Svg', link: '/vite-plugin-svg/introduction', activeMatch: '/vite-plugin-svg/introduction' },
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
-  '/en/guide/': [
+  '/guide/': [
     {
       text: 'Getting Started',
       items: [
-        { text: 'Introduction', link: '/en/guide/introduction'},
-        { text: 'Discussion Group', link: '/en/guide/discussion-group' },
+        { text: 'Introduction', link: '/guide/introduction'},
+        { text: 'Getting Started', link: '/guide/getting-started' },
+        { text: 'Discussion Group', link: '/guide/discussion-group' },
       ],
       collapsed: false
     }
   ],
-  '/en/kite/': [
+  '/tang-vue/': [
     {
       text: 'Guide',
       items: [
-        { text: 'Introduction', link: '/en/kite/introduction'},
-        { text: 'Getting Started', link: '/en/kite/getting-started' },
-      ],
-      collapsed: false
-    }
-  ],
-  '/en/tang-vue/': [
-    {
-      text: 'Guide',
-      items: [
-        { text: 'Introduction', link: '/en/tang-vue/introduction'},
-        { text: 'Getting Started', link: '/en/tang-vue/getting-started' },
-        { text: 'Deployment', link: '/en/tang-vue/deployment' },
+        { text: 'Introduction', link: '/tang-vue/introduction'},
+        { text: 'Getting Started', link: '/tang-vue/getting-started' },
+        { text: 'Deployment', link: '/tang-vue/deployment' },
       ],
       collapsed: false
     },
     {
       text: 'Development',
       items: [
-        { text: 'Pagination', link: '/en/tang-vue/pagination' },
-        { text: 'Use Current Instance', link: '/en/tang-vue/use-current-instance'},
-        { text: 'WebSocket', link: '/en/tang-vue/websocket'},
+        { text: 'Pagination', link: '/tang-vue/pagination' },
+        { text: 'Use Current Instance', link: '/tang-vue/use-current-instance'},
+        { text: 'WebSocket', link: '/tang-vue/websocket'},
       ],
       collapsed: false
     }
   ],
-  '/en/tang-boot/': [
+  '/tang-boot/': [
     {
       text: 'Guide',
       items: [
-        { text: 'Introduction', link: '/en/tang-boot/introduction'},
-        { text: 'Getting Started', link: '/en/tang-boot/getting-started' },
-        { text: 'Deployment', link: '/en/tang-boot/deployment' },
+        { text: 'Introduction', link: '/tang-boot/introduction'},
+        { text: 'Getting Started', link: '/tang-boot/getting-started' },
+        { text: 'Deployment', link: '/tang-boot/deployment' },
       ],
       collapsed: false
     },
     {
       text: 'Development',
       items: [
-        { text: 'Pagination', link: '/en/tang-boot/pagination' },
+        { text: 'Pagination', link: '/tang-boot/pagination' },
         { text: 'WebSocket', link: '/tang-boot/websocket' },
       ],
       collapsed: false
     }
   ],
-  '/en/vite-plugin-svg/': [
+  '/vite-plugin-svg/': [
     {
       text: 'Guide',
       items: [
-        { text: 'Introduction', link: '/en/vite-plugin-svg/introduction'},
-        { text: 'Getting Started', link: '/en/vite-plugin-svg/getting-started' },
+        { text: 'Introduction', link: '/vite-plugin-svg/introduction'},
+        { text: 'Getting Started', link: '/vite-plugin-svg/getting-started' },
       ],
       collapsed: false
     }
@@ -88,12 +78,11 @@ const sidebar: DefaultTheme.Sidebar = {
 export default {
   label: 'English',
   lang: 'en-US',
-  link: '/en/',
-  title: 'Tang Documentation',
-  description: 'All project documentation is here.',
+  link: '/',
+  title: 'Tang Official Documentation',
   themeConfig: {
     logo: '/tang.svg',
-    siteTitle: 'Tang Documentation',
+    siteTitle: 'Kite',
     editLink: {
       pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
       text: 'Edit this page on GitHub',

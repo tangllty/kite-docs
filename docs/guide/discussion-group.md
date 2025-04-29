@@ -1,8 +1,8 @@
-# 交流群
+# Discussion Group
 
-欢迎加入我们的交流群，如果您有任何问题或建议，都可以在群内进行讨论。
+Welcome to join our discussion group. If you have any questions or suggestions, you can discuss them in the group.
 
-## 微信
+## WeChat
 
 ![WeChat](/wechat.png)
 

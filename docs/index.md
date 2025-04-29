@@ -1,50 +1,50 @@
 ---
 layout: home
 
-title: Tang
+title: Kite
 
 hero:
-  name: Tang
-  text: 糖猫猫文档
-  tagline: 所有项目的文档都在这里
+  name: Kite
+  text: Next Generation ORM Framework
+  tagline: Elegant, lightweight, and efficient database operations made simple
   image:
     src: /tang.svg
     alt: Tang
   actions:
     - theme: brand
-      text: 开始
+      text: Get Started
       link: /guide/introduction
     - theme: sponsor
-      text: 交流群
+      text: Group
       link: /guide/discussion-group
     - theme: alt
-      text: 在 GitHub 上查看
+      text: View on GitHub
       link: https://github.com/tangllty/
     - theme: alt
-      text: 在 Gitee 上查看
+      text: View on Gitee
       link: https://gitee.com/tangllty/
 
 features:
   - icon: ❤️
     title: kite
-    details: Kite 是一个由 Kotlin 编写的轻量级 ORM 框架
-    link: https://gitee.com/tangllty/kite
+    details: kite is an lightweight ORM framework written in Kotlin
+    link: https://github.com/tangllty/kite
   - icon: ❤️
     title: tang-boot
-    details: tang-boot 是基于 Spring Boot3 + Spring Security + MyBatis + Redis + Jwt 的前后端分离权限管理系统
-    link: https://gitee.com/tangllty/tang-boot
+    details: tang-boot is a front-end and back-end separation permission management system based on Spring Boot3 + Spring Security + MyBatis + Redis + Jwt
+    link: https://github.com/tangllty/tang-boot
   - icon: ❤️
     title: tang-vue
-    details: tang-vue 是基于 Vue3 + Vite5 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
-    link: https://gitee.com/tangllty/tang-vue
+    details: tang-vue is a front-end and back-end separation permission management system based on Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus
+    link: https://github.com/tangllty/tang-vue
   - icon: ❤️
     title: tang-docs
-    details: tang-docs 是基于 VitePress 的糖猫猫权限管理系统文档
-    link: https://gitee.com/tangllty/tang-docs
+    details: tang-docs is a Tang Permission Management System documentation based on VitePress
+    link: https://github.com/tangllty/tang-docs
   - icon: ❤️
     title: vite-plugin-svg
-    details: vite-plugin-svg 是一个基于 Vite5 的 SVG 插件
-    link: https://gitee.com/tangllty/vite-plugin-svg
+    details: A lightweight Vite 5 plugin for SVG sprites.
+    link: https://github.com/tangllty/vite-plugin-svg
 ---
 
 <style>

@@ -6,14 +6,14 @@ import en from './en'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   cleanUrls: true,
-  lang: 'zh-CN',
+  lang: 'en-US',
   ignoreDeadLinks: [
     /^https?:\/\/localhost/
   ],
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/tang.svg' }]],
   locales: {
-    root: zh,
-    en: en,
+    root: en,
+    zh: zh,
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

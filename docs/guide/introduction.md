@@ -1,12 +1,11 @@
-# 简介
+# Introduction
 
-糖猫猫权限管理系统是基于最新的技术栈，开发一套前后端分离的权限管理系统。
+Kite is a lightweight ORM framework written in Kotlin, which is designed to simplify the development of database operations. It supports multiple databases, such as PostgreSQL, MySQL, Derby, etc., and provides a variety of APIs to facilitate the development of database operations.
 
-## 目的
+## Contributing
 
-持续以最新的技术栈构建、迭代，使用简洁的代码实现功能，提供简洁易用的界面和丰富的扩展接口，方便开发者根据自己的需求进行二次开发和定制化。
+If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/kite/issues/new) or provide a [Pull Request](https://github.com/tangllty/kite/pull/new) to help improve the project.
 
-## 主页地址
+## License
 
-- [GitHub](https://github.com/tangllty/)
-- [Gitee](https://gitee.com/tangllty/)
+Kite uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/kite/blob/master/LICENSE) files.

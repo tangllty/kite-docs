@@ -1,23 +1,23 @@
-# 简介
+# Introduction
 
-SVG sprites 轻量级 [Vite 5](https://vitejs.dev/) 插件。
+A lightweight [Vite 5](https://vitejs.dev/) plugin for SVG sprites.
 
-## 功能
+## Features
 
-* 支持自定义 SVG 图标
+* Support custom SVG icons
 
-## 技术栈
+## Technology Stack
 
-| 技术栈       | 说明               | 官网                                                                              |
-| ------------ | ------------------ | --------------------------------------------------------------------------------- |
-| Vite5        | 下一代的前端工具链 | [https://cn.vitejs.dev/](https://cn.vitejs.dev/)                                     |
-| TypeScript5  | JavaScript 超集    | [https://www.typescriptlang.org/](https://www.typescriptlang.org/)                   |
-| Pnpm         | 依赖管理           | [https://pnpm.io/zh/](https://pnpm.io/zh/)                                         |
+| Technology Stack | Description                      | Website                                                                              |
+| ---------------- | -------------------------------- | ------------------------------------------------------------------------------------ |
+| Vite5            | Next Generation Frontend Tooling | [https://vitejs.dev/](https://vitejs.dev/)                                           |
+| TypeScript5      | JavaScript with syntax for types | [https://www.typescriptlang.org/](https://www.typescriptlang.org/)                   |
+| Pnpm             | Dependency management            | [https://pnpm.io/](https://pnpm.io/)                                         |
 
-## 贡献
+## Contributing
 
-如果你有任何问题、建议或发现了 bug，请提交 [Issues](https://gitee.com/tangllty/vite-plugin-svg/issues/new) 或提供 [Pull Request](https://gitee.com/tangllty/vite-plugin-svg/pull/new) 来帮助改进该项目。
+If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/vite-plugin-svg/issues/new) or provide a [Pull Request](https://github.com/tangllty/vite-plugin-svg/pull/new) to help improve the project.
 
-## 许可证
+## License
 
-vite-plugin-svg 使用 MIT 许可证。更多详情请查阅 [LICENSE](https://gitee.com/tangllty/vite-plugin-svg/blob/master/LICENSE) 文件。
+vite-plugin-svg uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/vite-plugin-svg/blob/master/LICENSE) files.

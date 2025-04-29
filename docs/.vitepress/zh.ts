@@ -1,84 +1,74 @@
 import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
-  { text: '开始', link: '/guide/introduction', activeMatch: '/guide/introduction' },
-  { text: 'Kite', link: '/kite/introduction', activeMatch: '/kite/introduction' },
+  { text: '开始', link: '/zh/guide/introduction', activeMatch: '/zh/guide/introduction' },
   {
     text: 'Tang Boot',
     items: [
-      { text: '前端', link: '/tang-vue/introduction', activeMatch: '/tang-vue/introduction' },
-      { text: '后端', link: '/tang-boot/introduction', activeMatch: '/tang-boot/introduction' },
+      { text: '前端', link: '/zh/tang-vue/introduction', activeMatch: '/zh/tang-vue/introduction' },
+      { text: '后端', link: '/zh/tang-boot/introduction', activeMatch: '/zh/tang-boot/introduction' },
     ]
   },
-  { text: 'Vite Plugin Svg', link: '/vite-plugin-svg/introduction', activeMatch: '/vite-plugin-svg/introduction' },
+  { text: 'Vite Plugin Svg', link: '/zh/vite-plugin-svg/introduction', activeMatch: '/zh/vite-plugin-svg/introduction' },
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
-  '/guide/': [
+  '/zh/guide/': [
     {
       text: '开始',
       items: [
-        { text: '介绍', link: '/guide/introduction' },
-        { text: '交流群', link: '/guide/discussion-group' },
+        { text: '介绍', link: '/zh/guide/introduction' },
+        { text: '快速开始', link: '/zh/guide/getting-started' },
+        { text: '交流群', link: '/zh/guide/discussion-group' },
       ],
       collapsed: false
     }
   ],
-  '/kite/': [
+  '/zh/tang-vue/': [
     {
       text: '指引',
       items: [
-        { text: '介绍', link: '/kite/introduction' },
-        { text: '快速开始', link: '/kite/getting-started' },
-      ],
-      collapsed: false
-    }
-  ],
-  '/tang-vue/': [
-    {
-      text: '指引',
-      items: [
-        { text: '介绍', link: '/tang-vue/introduction' },
-        { text: '开始', link: '/tang-vue/getting-started' },
-        { text: '部署', link: '/tang-vue/deployment' },
+        { text: '介绍', link: '/zh/tang-vue/introduction' },
+        { text: '开始', link: '/zh/tang-vue/getting-started' },
+        { text: '部署', link: '/zh/tang-vue/deployment' },
       ],
       collapsed: false
     },
     {
       text: '开发手册',
       items: [
-        { text: '分页', link: '/tang-vue/pagination' },
-        { text: '使用当前实例', link: '/tang-vue/use-current-instance' },
-        { text: 'WebSocket', link: '/tang-vue/websocket' },
+        { text: '分页', link: '/zh/tang-vue/pagination' },
+        { text: '使用当前实例', link: '/zh/tang-vue/use-current-instance' },
+        { text: 'WebSocket', link: '/zh/tang-vue/websocket' },
       ],
       collapsed: false
     }
   ],
-  '/tang-boot/': [
+  '/zh/tang-boot/': [
     {
       text: '指引',
       items: [
-        { text: '介绍', link: '/tang-boot/introduction' },
-        { text: '开始', link: '/tang-boot/getting-started' },
-        { text: '部署', link: '/tang-boot/deployment' },
+        { text: '介绍', link: '/zh/tang-boot/introduction' },
+        { text: '开始', link: '/zh/tang-boot/getting-started' },
+        { text: '部署', link: '/zh/tang-boot/deployment' },
       ],
       collapsed: false
     },
     {
       text: '开发手册',
       items: [
-        { text: '分页', link: '/tang-boot/pagination' },
-        { text: 'WebSocket', link: '/tang-boot/websocket' },
+        { text: '分页', link: '/zh/tang-boot/pagination' },
+        { text: 'WebSocket', link: '/zh/tang-boot/websocket' },
       ],
       collapsed: false
     }
   ],
-  '/vite-plugin-svg/': [
+  '/zh/vite-plugin-svg/': [
     {
       text: '指引',
       items: [
-        { text: '介绍', link: '/vite-plugin-svg/introduction' },
-        { text: '开始', link: '/vite-plugin-svg/getting-started' },
+        { text: '介绍', link: '/zh/vite-plugin-svg/introduction' },
+        { text: '开始', link: '/zh/vite-plugin-svg/getting-started' },
       ],
       collapsed: false
     }
@@ -88,12 +78,11 @@ const sidebar: DefaultTheme.Sidebar = {
 export default {
   label: '简体中文',
   lang: 'zh-CN',
-  link: '/',
-  title: '糖猫猫文档',
-  description: '所有项目的文档都在这里。',
+  link: '/zh/',
+  title: 'Kite 官方中文文档',
   themeConfig: {
     logo: '/tang.svg',
-    siteTitle: '糖猫猫文档',
+    siteTitle: 'Kite',
     editLink: {
       pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',
       text: '在 GitHub 上编辑此页'

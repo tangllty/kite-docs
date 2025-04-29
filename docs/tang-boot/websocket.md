@@ -1,8 +1,8 @@
-# 简介
+# Introduction
 
-`WebSocket` 是一种网络通信协议，可在单个 TCP 连接上进行全双工通信。`WebSocket` 通信协议于 2011 年被 IETF 定为标准 RFC 6455，并由 RFC7936 补充规范。`WebSocket` API 也被 W3C 定为标准。
+`WebSocket` is a network communication protocol that enables full-duplex communication on a single TCP connection. The `WebSocket` communication protocol was standardized as RFC 6455 by IETF in 2011 and supplemented by RFC7936. The `WebSocket` API is also standardized by W3C.
 
-## 注入
+## Inject
 
 :::tabs key:tabs
 
@@ -38,7 +38,7 @@ class CustomServiceImpl(private val webSocket: WebSocket) : CustomService
 
 :::
 
-## 推送消息
+## Push message
 
 :::tabs key:tabs
 
@@ -62,7 +62,7 @@ webSocket.sendAllMessage(args)
 
 :::
 
-## 订阅消息
+## Subscribe message
 
 :::tabs key:tabs
 

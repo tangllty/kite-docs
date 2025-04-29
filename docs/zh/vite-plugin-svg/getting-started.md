@@ -1,6 +1,6 @@
-# Getting Started
+# 开始
 
-## install
+## 安装
 
 ```bash
 npm install @tangllty/vite-plugin-svg -D
@@ -10,9 +10,9 @@ yarn add @tangllty/vite-plugin-svg -D
 pnpm install @tangllty/vite-plugin-svg -D
 ```
 
-## Usage
+## 使用
 
-- Configuration plugin in vite.config.ts
+- 在 vite.config.ts 中配置插件
 
 ```ts
 import { svgIconsPlugin } from '@tangllty/vite-plugin-svg'
@@ -26,4 +26,5 @@ export default defineConfig({
   ]
 })
 ```
-- Using in component please see [SvgIcon](https://github.com/tangllty/vite-plugin-svg/blob/master/playground/src/components/SvgIcon/index.vue).
+
+- 在组件中使用请查看 [SvgIcon](https://gitee.com/tangllty/vite-plugin-svg/blob/master/playground/src/components/SvgIcon/index.vue)。

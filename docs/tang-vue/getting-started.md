@@ -1,10 +1,10 @@
-# 开始
+# Getting Started
 
-## 环境要求
+## Environment Requirements
 
 * Node.js 18.15.0
 
-## 获取项目
+## Get Project
 
 ::: tabs key:repository
 
@@ -22,9 +22,9 @@ git clone https://gitee.com/tangllty/tang-vue.git
 
 :::
 
-## 修改配置
+## Modify Configuration
 
-修改 .env.development 后端接口地址
+Modify .env.development backend interface address
 
 ```typescript
 ......
@@ -32,31 +32,31 @@ VITE_APP_URL = 'http://127.0.0.1:8080'
 ......
 ```
 
-## 安装依赖
+## Install Dependencies
 
 ```bash
 pnpm install
 ```
 
-## 启动项目
+## Start Project
 
 ```bash
 pnpm run dev
 ```
 
-访问 [http://localhost:5173/](http://localhost:5173/)
+Visit [http://localhost:5173/](http://localhost:5173/)
 
-## 打包项目
+## Build Project
 
 ```bash
-# 生产环境
+# Production environment
 pnpm run build
 ```
 
-::: tip 提示
-打包后的文件在 dist 目录下
+::: tip Tip
+The bundled file is in the dist directory
 :::
 
-## 运行后端
+## Run Backend
 
-[参考后端运行](/tang-boot/getting-started.md)
+[Refer to run backend](/en/tang-boot/getting-started.md)

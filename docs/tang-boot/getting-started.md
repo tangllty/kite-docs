@@ -1,13 +1,13 @@
-# 开始
+# Getting Started
 
-## 环境要求
+## Environment Requirements
 
 * OpenJDK 17.0.7
 * Apache Maven 3.8.7
 * MySQL 8.3.0
 * Redis 7.2.3
 
-## 获取项目
+## Get Project
 
 ::: tabs key:repository
 
@@ -25,22 +25,22 @@ git clone https://gitee.com/tangllty/tang-boot.git
 
 :::
 
-## 修改配置
+## Modify Configuration
 
-1. 执行 databases/20221210.sql 文件 ( **包含 drop database 语句, 请仔细查看后执行 sql 文件** )
-2. 修改 tang-admin/src/main/resources/application-dev.yml & application-prod.yml 数据库和 Redis 配置
+1. Execute the databases/20221210.sql file ( **contains drop database statement, please check it carefully and execute the sql file** )
+2. Modify tang-admin/src/main/resources/application-dev.yml & application-prod.yml database and Redis configuration
 
 ```yaml
-# Spring 配置
+# Spring configuration
 spring:
   ......
-  # 数据源配置
+  # Data source configuration
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/tang-boot?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     username: root
     password: password
-  # Redis 配置
+  # Redis configuration
   data:
     redis:
       host: localhost
@@ -49,63 +49,63 @@ spring:
   ......
 ```
 
-3. 修改 tang-admin/src/main/resources/application.yml 上传文件路径
+3. Modify tang-admin/src/main/resources/application.yml upload file path
 
 ```yaml
-# 项目配置
+# Project configuration
 tang:
   ......
-  # 文件上传路径
+  # File upload path
   uploads: /home/tang/uploads/tang-boot
   ......
 ```
 
-::: tip 提示
-如果 application.yml 中的配置开发环境和生产环境不一致, 可以在 application-dev.yml 或者 application-prod.yml 中覆盖 application.yml 中的配置（如端口号不一致）
+::: tip Tip
+if the configuration of application.yml is different between development environment and production environment, you can override the configuration in application-dev.yml or application-prod.yml (such as the port number is different)
 ```yaml
-# application.yml 中的配置
+# Configurations in application.yml
 server:
   port: 8080
 
-# application-dev.yml 中的配置
+# Configurations in application-dev.yml
 server:
   port: 8081
 
-# application-prod.yml 中的配置
+# Configurations in application-prod.yml
 server:
   port: 8082
 ```
 :::
 
-4. 修改 tang-admin/src/main/resources/logback.xml 日志存放路径
+4. Modify tang-admin/src/main/resources/logback.xml log path
 
 ```xml
 <property name="LOG_PATH" value="/home/tang/logs/tang-boot" />
 ```
 
-## 运行项目
+## Start Project
 
-* 在 IDE 中运行 tang-admin/src/main/java/com/tang/admin/AdminApplication.java
+* Run tang-admin/src/main/java/com/tang/admin/AdminApplication.java in IDE
 
-或者
+OR
 
-* 在项目根目录下执行
+* Execute the following command in the project root directory
 
 ```bash
-sh bin/package.sh && sh bin/start.sh
+mvn clean package && sh bin/start.sh
 ```
 
-## 打包项目
+## Build Project
 
 ```bash
-# 生产环境
+# Production environment
 sh bin/package.sh
 ```
 
-::: tip 提示
-打包后的文件在 tang-admin/target 目录下
+::: tip Tip
+The packaged file is in the tang-admin/target directory
 :::
 
-## 运行前端
+## Run Frontend
 
-[参考前端开始](/tang-vue/getting-started.md)
+[Refer to run frontend](/en/tang-vue/getting-started.md)

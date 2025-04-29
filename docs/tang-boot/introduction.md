@@ -1,38 +1,38 @@
-# 简介
+# Introduction
 
-[tang-boot](https://gitee.com/tangllty/tang-boot) 是基于 [Spring Boot3](https://spring.io/projects/spring-boot) + [Spring Security](https://spring.io/projects/spring-security) + [MyBatis](https://mybatis.org/mybatis-3/zh/index.html) + [Redis](https://redis.io/) + [Jwt](https://jwt.io/) 的前后端分离权限管理系统。
+[tang-boot](https://github.com/tangllty/tang-boot) is a front-end and back-end separation permission management system based on [Spring Boot3](https://spring.io/projects/spring-boot) + [Spring Security](https://spring.io/projects/spring-security) + [MyBatis](https://mybatis.org/mybatis-3/index.html) + [Redis](https://redis.io/) + [Jwt](https://jwt.io/).
 
-## 功能
+## Features
 
-* 自定义多种登录认证方式
-* 动态权限菜单
-* 代码生成器，一键生成前后端基本代码
+* Customized multiple login authentication methods
+* Dynamic permissions menu
+* Code generator, one click to generate the basic front-end and back-end code
 
-## 技术栈
+## Technology Stack
 
-| 技术栈          | 说明             | 官网                                                                                            |
-| --------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
-| Spring Boot     | 简化 Spring      | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                   |
-| Spring Security | 认证和授权框架   | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)           |
-| MyBatis         | ORM 框架         | [https://mybatis.org/mybatis-3/zh/index.html](https://mybatis.org/mybatis-3/zh/index.html)         |
-| PageHelper      | MyBatis 分页插件 | [https://pagehelper.github.io/](https://pagehelper.github.io/)                                     |
-| Maven           | 项目构建管理     | [https://maven.apache.org/](https://maven.apache.org/)                                             |
-| MySQL           | 关系型数据库     | [https://www.mysql.com/](https://www.mysql.com/)                                                   |
-| Redis           | 缓存数据库       | [https://redis.io/](https://redis.io/)                                                             |
-| Jwt             | JWT 登录支持     | [https://jwt.io/](https://jwt.io/)                                                                 |
-| Spring Doc      | 接口文档生成     | [https://springdoc.org/](https://springdoc.org/)                                                   |
-| Hutool          | Java 工具包      | [https://hutool.cn/](https://hutool.cn/)                                                           |
-| Ip2Region       | 离线 IP 地址定位 | [https://gitee.com/lionsoul/ip2region/](https://gitee.com/lionsoul/ip2region/)                   |
-| Velocity        | 模板引擎         | [https://velocity.apache.org/](https://velocity.apache.org/)                                       |
-| Poi-OOXML       | Excel 操作       | [https://poi.apache.org/](https://poi.apache.org/)                                                 |
-| Guava           | Google 工具包    | [https://github.com/google/guava/](https://github.com/google/guava/)                               |
-| Commons-Lang3   | 常用工具包       | [https://commons.apache.org/proper/commons-lang/](https://commons.apache.org/proper/commons-lang/) |
-| Commons-IO      | 流操作           | [https://commons.apache.org/proper/commons-io/](https://commons.apache.org/proper/commons-io/)     |
+| Technology Stack | Description                                | Website                                                                                         |
+| ---------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Spring Boot      | Simplify Spring                            | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                   |
+| Spring Security  | Authentication and authorization framework | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)           |
+| MyBatis          | ORM framework                              | [https://mybatis.org/mybatis-3/zh/index.html](https://mybatis.org/mybatis-3/zh/index.html)         |
+| PageHelper       | MyBatis paging plugins                     | [https://pagehelper.github.io/](https://pagehelper.github.io/)                                     |
+| Maven            | Project management                         | [https://maven.apache.org/](https://maven.apache.org/)                                             |
+| MySQL            | Relational database                        | [https://www.mysql.com/](https://www.mysql.com/)                                                   |
+| Redis            | Cache database                             | [https://redis.io/](https://redis.io/)                                                             |
+| Jwt              | Jwt login support                          | [https://jwt.io/](https://jwt.io/)                                                                 |
+| Spring Doc       | Interface document generation              | [https://springdoc.org/](https://springdoc.org/)                                                   |
+| Hutool           | Java toolkit                               | [https://hutool.cn/](https://hutool.cn/)                                                           |
+| Ip2Region        | offline IP address location                | [https://gitee.com/lionsoul/ip2region/](https://gitee.com/lionsoul/ip2region/)                     |
+| Velocity         | Template engine                            | [https://velocity.apache.org/](https://velocity.apache.org/)                                       |
+| Poi-OOXML        | Excel operation                            | [https://poi.apache.org/](https://poi.apache.org/)                                                 |
+| Guava            | Google toolkit                             | [https://github.com/google/guava/](https://github.com/google/guava/)                               |
+| Commons-Lang3    | Commons toolkit                            | [https://commons.apache.org/proper/commons-lang/](https://commons.apache.org/proper/commons-lang/) |
+| Commons-IO       | IO operation                               | [https://commons.apache.org/proper/commons-io/](https://commons.apache.org/proper/commons-io/)     |
 
-## 贡献
+## Contributing
 
-如果你有任何问题、建议或发现了 bug，请提交 [Issues](https://gitee.com/tangllty/tang-boot/issues/new) 或提供 [Pull Request](https://gitee.com/tangllty/tang-boot/pull/new) 来帮助改进该项目。
+If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/tang-boot/issues/new) or provide a [Pull Request](https://github.com/tangllty/tang-boot/pull/new) to help improve the project.
 
-## 许可证
+## License
 
-tang-boot 使用 MIT 许可证。更多详情请查阅 [LICENSE](https://gitee.com/tangllty/tang-boot/blob/master/LICENSE) 文件。
+tang-boot uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/tang-boot/blob/master/LICENSE) files.

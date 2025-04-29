@@ -1,12 +1,12 @@
-# 分页
+# Pagination
 
-## 简介
+## Introduction
 
-基于 `PageHelper` 实现分页, `PageHelper` 是一个 `MyBatis` 分页插件，支持多种数据库，用法简单，而且完全不依赖任何第三方组件。
+Pagination is implemented based on `PageHelper`, which is a pagination plugin for `MyBatis`. It supports multiple databases, is easy to use, and does not depend on any third-party components.
 
-## 依赖
+## Dependency
 
-在 `tang-commons/pom.xml` 中声明依赖 `pagehelper-spring-boot-starter`，详情可查看 [pagehelper-spring-boot-starter](https://gitee.com/tangllty/tang-boot/blob/master/tang-commons/pom.xml#L25-L28)
+Add the dependency for `pagehelper-spring-boot-starter` in the `tang-commons/pom.xml` file. See [pagehelper-spring-boot-starter](https://github.com/tangllty/tang-boot/blob/master/tang-commons/pom.xml#L25-L28) for details.
 
 ```xml
 <dependency>
@@ -15,11 +15,11 @@
 </dependency>
 ```
 
-## 使用
+## Usage
 
-1. 返回类型为 `PageResult`，`PageResult` 为分页结果集，包含分页信息和数据列表
-2. 使用 `PageUtils.startPage()` 开启分页，`PageUtils.startPage()` 会自动获取分页参数，分页参数为 `pageNum` 和 `pageSize`，分页参数默认值为 `pageNum = 1` 和 `pageSize = 10`
-3. 使用 `PageUtils.getDataTable(list)` 获取分页结果集，`list` 为分页数据列表
+1. The return type is `PageResult`, which represents the pagination result set that includes pagination information and data list.
+2. Use `PageUtils.startPage()` to enable pagination. `PageUtils.startPage()` automatically retrieves the pagination parameters (`pageNum` and `pageSize`). The default values for these parameters are `pageNum = 1` and `pageSize = 10`.
+3. Use `PageUtils.getDataTable(list)` to get the pagination result set. Here, `list` is the data list for pagination.
 
 :::tabs key:tabs
 
@@ -47,6 +47,6 @@ fun list(custom: Custom): PageResult {
 
 :::
 
-## 前端分页
+## Frontend Pagination
 
-[参考前端分页](/tang-vue/pagination.md)
+[Refer to Frontend Pagination](/en/tang-vue/pagination.md)
