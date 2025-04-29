@@ -59,4 +59,4 @@ pnpm run build
 
 ## 运行后端
 
-[参考后端运行](/tang-boot/getting-started.md)
+[参考后端运行](/zh/tang-boot/getting-started.md)

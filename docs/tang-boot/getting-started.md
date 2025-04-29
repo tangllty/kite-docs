@@ -108,4 +108,4 @@ The packaged file is in the tang-admin/target directory
 
 ## Run Frontend
 
-[Refer to run frontend](/en/tang-vue/getting-started.md)
+[Refer to run frontend](/tang-vue/getting-started.md)

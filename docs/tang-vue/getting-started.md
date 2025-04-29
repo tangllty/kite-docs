@@ -59,4 +59,4 @@ The bundled file is in the dist directory
 
 ## Run Backend
 
-[Refer to run backend](/en/tang-boot/getting-started.md)
+[Refer to run backend](/tang-boot/getting-started.md)

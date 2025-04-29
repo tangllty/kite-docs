@@ -108,4 +108,4 @@ sh bin/package.sh
 
 ## 运行前端
 
-[参考前端开始](/tang-vue/getting-started.md)
+[参考前端开始](/zh/tang-vue/getting-started.md)

@@ -49,4 +49,4 @@ fun list(custom: Custom): PageResult {
 
 ## Frontend Pagination
 
-[Refer to Frontend Pagination](/en/tang-vue/pagination.md)
+[Refer to Frontend Pagination](/tang-vue/pagination.md)

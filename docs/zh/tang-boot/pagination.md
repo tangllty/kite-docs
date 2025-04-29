@@ -49,4 +49,4 @@ fun list(custom: Custom): PageResult {
 
 ## 前端分页
 
-[参考前端分页](/tang-vue/pagination.md)
+[参考前端分页](/zh/tang-vue/pagination.md)
