@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import zh from './zh'
 import en from './en'
+import { injectSpeedInsights } from '@vercel/speed-insights'
+
+injectSpeedInsights()
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
