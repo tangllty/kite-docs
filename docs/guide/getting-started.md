@@ -69,3 +69,53 @@ import com.tang.kite.mapper.BaseMapper
 interface AccountMapper : BaseMapper<Account>
 ```
 :::
+
+ 5. Test the Mapper interface
+
+:::tabs key:kite
+== Java
+
+```java
+import com.tang.kite.io.Resources;
+import com.tang.kite.session.factory.SqlSessionFactoryBuilder;
+import com.tang.kite.session.mapper.AccountMapper;
+import org.junit.jupiter.api.Test;
+
+public class KiteTest {
+
+    @Test
+    public void test() {
+        var resource = Resources.getResourceAsStream("kite-config.yml");
+        var sqlSessionFactory = new SqlSessionFactoryBuilder().build(resource);
+        var sqlSession = sqlSessionFactory.openSession();
+        var accountMapper = sqlSession.getMapper(AccountMapper.class);
+        var list = accountMapper.select();
+        list.forEach(System.out::println);
+        sqlSession.close();
+    }
+
+}
+```
+== Kotlin
+
+```kotlin
+import com.tang.kite.io.Resources
+import com.tang.kite.session.factory.SqlSessionFactoryBuilder
+import com.tang.kite.session.mapper.AccountMapper
+import org.junit.jupiter.api.Test
+
+class KiteTest {
+
+    @Test
+    fun test() {
+        val resource = Resources.getResourceAsStream("kite-config.yml")
+        val sqlSessionFactory = SqlSessionFactoryBuilder().build(resource)
+        val sqlSession = sqlSessionFactory.openSession()
+        val accountMapper = sqlSession.getMapper(AccountMapper::class.java)
+        val list = accountMapper.select()
+        list.forEach { println(it) }
+        sqlSession.close()
+    }
+
+}
+```
