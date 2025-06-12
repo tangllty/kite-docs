@@ -49,7 +49,7 @@ spring:
     password: password
 ```
 
- 3. 集成 `BaseMapper` 接口以创建一个 Mapper 接口
+ 3. 继承 `BaseMapper` 接口以创建一个 Mapper 接口
 
 :::tabs key:kite
 == Java
