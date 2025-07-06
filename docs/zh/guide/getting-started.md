@@ -36,6 +36,13 @@ create table account (
   update_time date            default null,
   primary key (`id`)
 );
+
+insert into account (username, password, create_time, balance) values
+('admin', 'admin123', '2020-01-01 00:00:00', 1000.00),
+('user', 'user123', '2024-05-02 00:00:00', 100.00),
+('guest', 'guest123', '2022-03-03 00:00:00', 10.00),
+('tang', 'tang123', '2019-06-01 00:00:00', 1.00),
+('jeo', 'jeo123', '2024-07-01 00:00:00', 0.10);
 ```
 
  3. 在 `application.yml` 文件中配置您的数据库连接信息
