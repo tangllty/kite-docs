@@ -15,7 +15,7 @@ export default defineConfig({
   ignoreDeadLinks: [
     /^https?:\/\/localhost/
   ],
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/tang.svg' }]],
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/kite.svg' }]],
   locales: {
     root: en,
     zh: zh,

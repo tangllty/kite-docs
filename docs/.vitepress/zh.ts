@@ -81,7 +81,7 @@ export default {
   link: '/zh/',
   title: 'Kite 官方中文文档',
   themeConfig: {
-    logo: '/tang.svg',
+    logo: '/kite.svg',
     siteTitle: 'Kite',
     editLink: {
       pattern: 'https://github.com/tangllty/tang-docs/edit/master/docs/:path',

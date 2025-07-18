@@ -8,7 +8,7 @@ hero:
   text: Next Generation ORM Framework
   tagline: Elegant, lightweight, and efficient database operations made simple
   image:
-    src: /tang.svg
+    src: /kite.svg
     alt: Tang
   actions:
     - theme: brand
