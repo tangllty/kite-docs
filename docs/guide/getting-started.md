@@ -32,32 +32,78 @@ create table account (
   username    varchar(32)     default '',
   password    varchar(32)     default '',
   balance     decimal(10,2)   default '0.00',
-  create_time date            default null,
-  update_time date            default null,
+  create_time datetime        default null,
+  update_time datetime        default null,
   primary key (`id`)
 );
 
 insert into account (username, password, create_time, balance) values
-('admin', 'admin123', '2020-01-01 00:00:00', 1000.00),
-('user', 'user123', '2024-05-02 00:00:00', 100.00),
-('guest', 'guest123', '2022-03-03 00:00:00', 10.00),
-('tang', 'tang123', '2019-06-01 00:00:00', 1.00),
-('jeo', 'jeo123', '2024-07-01 00:00:00', 0.10);
-
+('admin', 'admin123', '2020-01-01 12:00:00', 1000.10),
+('user', 'user123', '2024-05-02 8:30:00', 101.00),
+('guest', 'guest123', '2022-03-03 15:00:00', 10.00),
+('tang', 'tang123', '2019-06-01 21:30:30', 1.88),
+('jeo', 'jeo123', '2024-07-01 5:59:59', 0.10);
 ```
 
- 3. Configure your database connection information in the `application.yml` file
+ 3. Configure your database connection information in the `kite-config.yml` file
 
 ```yaml
-spring:
+kite:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/kite-test
     username: root
     password: password
 ```
 
- 4. Extend the `BaseMapper` interface to create a Mapper interface
+ 4. Create a model class for the `account` table
+
+:::tabs key:kite
+== Java
+
+```java
+import com.tang.kite.annotation.id.Id;
+import com.tang.kite.annotation.id.IdType;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+public class Account {
+
+    @Id(type = IdType.AUTO)
+    private Long id;
+    private String username;
+    private String password;
+    private BigDecimal balance;
+    private LocalDateTime createTime;
+    private LocalDateTime updateTime;
+
+    // Getters and Setters
+}
+```
+
+== Kotlin
+
+```kotlin
+import com.tang.kite.annotation.id.Id
+import com.tang.kite.annotation.id.IdType
+import java.math.BigDecimal
+import java.time.LocalDateTime
+
+class Account (
+
+    @Id(type = IdType.AUTO)
+    var id: Long? = null,
+    var username: String = "",
+    var password: String = "",
+    var balance: BigDecimal? = null,
+    var createTime: LocalDateTime? = null,
+    var updateTime: LocalDateTime? = null
+
+)
+```
+:::
+
+ 5. Extend the `BaseMapper` interface to create a Mapper interface
 
 :::tabs key:kite
 == Java
@@ -78,7 +124,7 @@ interface AccountMapper : BaseMapper<Account>
 ```
 :::
 
- 5. Test the Mapper interface
+ 6. Test the Mapper interface
 
 :::tabs key:kite
 == Java
