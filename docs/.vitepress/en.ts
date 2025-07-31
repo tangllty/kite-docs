@@ -13,15 +13,22 @@ const nav: DefaultTheme.NavItem[] = [
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
-  '/guide/': [
+  '/': [
     {
       text: 'Getting Started',
       items: [
-      { text: 'Introduction', link: '/guide/introduction'},
-      { text: 'Discussion Group', link: '/guide/discussion-group' },
-      { text: 'Getting Started', link: '/guide/getting-started' },
-      { text: 'Spring Boot Integration', link: '/guide/spring-boot-integration' },
-    ],
+        { text: 'Introduction', link: '/guide/introduction'},
+        { text: 'Discussion Group', link: '/guide/discussion-group' },
+        { text: 'Getting Started', link: '/guide/getting-started' },
+        { text: 'Spring Boot Integration', link: '/guide/spring-boot-integration' },
+      ],
+      collapsed: false
+    },
+    {
+      text: 'Basic Features',
+      items: [
+        { text: 'Insert, Delete, Update', link: '/basic/insert-delete-update' },
+      ],
       collapsed: false
     }
   ],

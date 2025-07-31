@@ -13,15 +13,22 @@ const nav: DefaultTheme.NavItem[] = [
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
-  '/zh/guide/': [
+  '/zh/': [
     {
       text: '开始',
       items: [
-      { text: '介绍', link: '/zh/guide/introduction' },
-      { text: '交流群', link: '/zh/guide/discussion-group' },
-      { text: '快速开始', link: '/zh/guide/getting-started' },
-      { text: 'Spring Boot 集成', link: '/zh/guide/spring-boot-integration' },
-    ],
+        { text: '介绍', link: '/zh/guide/introduction' },
+        { text: '交流群', link: '/zh/guide/discussion-group' },
+        { text: '快速开始', link: '/zh/guide/getting-started' },
+        { text: 'Spring Boot 集成', link: '/zh/guide/spring-boot-integration' },
+      ],
+      collapsed: false
+    },
+    {
+      text: '基础功能',
+      items: [
+        { text: '增、删、改', link: '/zh/basic/insert-delete-update' },
+      ],
       collapsed: false
     }
   ],

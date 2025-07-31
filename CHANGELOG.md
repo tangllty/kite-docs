@@ -1,3 +1,9 @@
+## 1.0.1
+
+### Features
+
+ * Add basic Insert、Delete、Update operations documentation
+
 ## 1.0.0
 
 ### Dependencies
