@@ -17,10 +17,11 @@ const sidebar: DefaultTheme.Sidebar = {
     {
       text: '开始',
       items: [
-        { text: '介绍', link: '/zh/guide/introduction' },
-        { text: '快速开始', link: '/zh/guide/getting-started' },
-        { text: '交流群', link: '/zh/guide/discussion-group' },
-      ],
+      { text: '介绍', link: '/zh/guide/introduction' },
+      { text: '交流群', link: '/zh/guide/discussion-group' },
+      { text: '快速开始', link: '/zh/guide/getting-started' },
+      { text: 'Spring Boot 集成', link: '/zh/guide/spring-boot-integration' },
+    ],
       collapsed: false
     }
   ],

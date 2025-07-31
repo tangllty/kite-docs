@@ -17,10 +17,11 @@ const sidebar: DefaultTheme.Sidebar = {
     {
       text: 'Getting Started',
       items: [
-        { text: 'Introduction', link: '/guide/introduction'},
-        { text: 'Getting Started', link: '/guide/getting-started' },
-        { text: 'Discussion Group', link: '/guide/discussion-group' },
-      ],
+      { text: 'Introduction', link: '/guide/introduction'},
+      { text: 'Discussion Group', link: '/guide/discussion-group' },
+      { text: 'Getting Started', link: '/guide/getting-started' },
+      { text: 'Spring Boot Integration', link: '/guide/spring-boot-integration' },
+    ],
       collapsed: false
     }
   ],

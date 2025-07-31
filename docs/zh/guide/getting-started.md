@@ -110,7 +110,9 @@ class Account (
 
 ```java
 import com.tang.kite.mapper.BaseMapper;
+import com.tang.kite.spring.annotation.Mapper;
 
+@Mapper
 public interface AccountMapper extends BaseMapper<Account> {
 }
 ```
@@ -119,7 +121,9 @@ public interface AccountMapper extends BaseMapper<Account> {
 
 ```kotlin
 import com.tang.kite.mapper.BaseMapper
+import com.tang.kite.spring.annotation.Mapper
 
+@Mapper
 interface AccountMapper : BaseMapper<Account>
 ```
 :::
@@ -173,3 +177,4 @@ class KiteTest {
 
 }
 ```
+:::

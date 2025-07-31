@@ -10,3 +10,4 @@
  * Add tabs plugin to support syntax show content
  * Add vite-plugin-svg plugin documentation
  * Add `kite` introduction and getting started guides
+ * Add spring boot integration guide

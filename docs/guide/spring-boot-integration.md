@@ -1,4 +1,6 @@
-# Getting Started
+# Spring Boot Integration
+
+This section covers how to integrate Kite with Spring Boot applications.
 
  > Example for MySQL
 
@@ -45,12 +47,12 @@ insert into account (username, password, create_time, balance) values
 ('jeo', 'jeo123', '2024-07-01 5:59:59', 0.10);
 ```
 
- 3. Configure your database connection information in the `kite-config.yml` file
+ 3. Configure your database connection information in the `application.yml` file
 
 ```yaml
-kite:
+spring:
   datasource:
-    driver: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/kite-test
     username: root
     password: password
@@ -128,28 +130,66 @@ interface AccountMapper : BaseMapper<Account>
 ```
 :::
 
- 6. Test the Mapper interface
+ 6. Add the `@MapperScan` annotation to your Spring Boot application class
 
 :::tabs key:kite
 == Java
 
 ```java
-import com.tang.kite.io.Resources;
-import com.tang.kite.session.factory.SqlSessionFactoryBuilder;
-import com.tang.kite.session.mapper.AccountMapper;
-import org.junit.jupiter.api.Test;
+import com.tang.kite.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public class KiteTest {
+@MapperScan("com.tang.demo.mapper")
+@SpringBootApplication
+public class KiteApplication {
 
-    @Test
-    public void test() {
-        var resource = Resources.getResourceAsStream("kite-config.yml");
-        var sqlSessionFactory = new SqlSessionFactoryBuilder().build(resource);
-        var sqlSession = sqlSessionFactory.openSession();
-        var accountMapper = sqlSession.getMapper(AccountMapper.class);
-        var list = accountMapper.select();
-        list.forEach(System.out::println);
-        sqlSession.close();
+    public static void main(String[] args) {
+        SpringApplication.run(KiteApplication.class, args);
+    }
+
+}
+```
+
+== Kotlin
+
+```kotlin
+import com.tang.kite.spring.annotation.MapperScan
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
+
+@MapperScan(["com.tang.demo.mapper"])
+@SpringBootApplication
+class KiteApplication
+
+fun main(args: Array<String>) {
+	runApplication<KiteApplication>(*args)
+}
+```
+
+:::
+
+
+ 7. Test the Mapper interface
+
+:::tabs key:kite
+== Java
+
+```java
+import com.tang.demo.mapper.AccountMapper;
+import com.tang.kite.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@MapperScan("com.tang.demo.mapper")
+@SpringBootApplication
+public class KiteApplication {
+
+    public static void main(String[] args) {
+        var context = SpringApplication.run(KiteApplication.class, args);
+        var accountMapper = context.getBean(AccountMapper.class);
+        var accounts = accountMapper.select();
+        accounts.forEach(System.out::println);
     }
 
 }
@@ -157,24 +197,20 @@ public class KiteTest {
 == Kotlin
 
 ```kotlin
-import com.tang.kite.io.Resources
-import com.tang.kite.session.factory.SqlSessionFactoryBuilder
-import com.tang.kite.session.mapper.AccountMapper
-import org.junit.jupiter.api.Test
+import com.tang.demo.mapper.AccountMapper
+import com.tang.kite.spring.annotation.MapperScan
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 
-class KiteTest {
+@MapperScan(["com.tang.demo.mapper"])
+@SpringBootApplication
+class KiteApplication
 
-    @Test
-    fun test() {
-        val resource = Resources.getResourceAsStream("kite-config.yml")
-        val sqlSessionFactory = SqlSessionFactoryBuilder().build(resource)
-        val sqlSession = sqlSessionFactory.openSession()
-        val accountMapper = sqlSession.getMapper(AccountMapper::class.java)
-        val list = accountMapper.select()
-        list.forEach { println(it) }
-        sqlSession.close()
-    }
-
+fun main(args: Array<String>) {
+	val context = runApplication<KiteApplication>(*args)
+	val accountMapper = context.getBean(AccountMapper::class.java)
+	val accounts = accountMapper.select()
+	accounts.forEach { println(it) }
 }
 ```
 :::
