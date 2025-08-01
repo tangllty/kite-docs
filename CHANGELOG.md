@@ -7,6 +7,7 @@
 ### Features
 
  * Add basic Insert、Delete、Update operations documentation
+ * Add batch update methods
 
 ## 1.0.0
 

@@ -24,7 +24,16 @@ The `BaseMapper` of Kite framework provides basic CRUD operations for database t
 ## Update
 
  * `update(entity)`: Updates a single entity by primary key.
- * `update(entity, conditionEntity)`: Updates a single entity in the database table, with a specified condition.
+ * `update(entity, conditionEntity)`: Updates a single entity in the database table, with a specified condition entity.
  * `updateSelective(entity)`: Updates a single entity by primary key, only updating `non-null` fields.
+ * `updateSelective(entity, conditionEntity)`: Updates a single entity in the database table, with a specified condition entity, only updating `non-null` fields.
  * `updateWrapper()`: Updates a single entity in the database table, with a specified condition.
  * `updateWrapper(updateWrapper)`: Updates a single entity in the database table, with a specified condition.
+ * `batchUpdate(list)`: Updates a batch of entities in the database table.
+ * `batchUpdate(list, conditionEntity)`: Updates a batch of entities in the database table, with a specified condition entity.
+ * `batchUpdateSelective(list)`: Updates a batch of entities in the database table, only updating `non-null` fields.
+ * `batchUpdateSelective(list, conditionEntity)`: Updates a batch of entities in the database table, with a specified condition entity, only updating `non-null` fields.
+ * `batchUpdate(list, batchSize)`: Updates a batch of entities in the database table, with a specified batch size.
+ * `batchUpdate(list, conditionEntity, batchSize)`: Updates a batch of entities in the database table, with a specified condition entity, and a specified batch size.
+ * `batchUpdateSelective(list, batchSize)`: Updates a batch of entities in the database table, with a specified batch size, only updating `non-null` fields.
+ * `batchUpdateSelective(list, conditionEntity, batchSize)`: Updates a batch of entities in the database table, with a specified condition entity, and a specified batch size, only updating `non-null` fields.
