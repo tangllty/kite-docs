@@ -95,8 +95,8 @@ class Account (
 
     @Id(type = IdType.AUTO)
     var id: Long? = null,
-    var username: String = "",
-    var password: String = "",
+    var username: String? = null,
+    var password: String? = null,
     var balance: BigDecimal? = null,
     var createTime: LocalDateTime? = null,
     var updateTime: LocalDateTime? = null

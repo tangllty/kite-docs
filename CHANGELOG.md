@@ -1,5 +1,9 @@
 ## 1.0.1
 
+### Bug Fixes
+
+ * Change username and password fields to nullable
+
 ### Features
 
  * Add basic Insert、Delete、Update operations documentation
