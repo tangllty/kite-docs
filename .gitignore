@@ -23,6 +23,7 @@ dist-ssr
 *.sw?
 
 # VitePress
+.vitepress/cache
 docs/.vitepress/cache
 docs/.vitepress/dist
 
