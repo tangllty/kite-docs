@@ -17,6 +17,7 @@
  * Add batch update methods
  * Add `insertValues` methods
  * Add query methods documentation
+ * Add `@Table`, `@Id` annotations documentation
 
 ## 1.0.0
 

@@ -29,6 +29,7 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '增、删、改', link: '/zh/basic/insert-delete-update' },
         { text: '基础查询', link: '/zh/basic/query' },
+        { text: '注解', link: '/zh/basic/annotations' },
       ],
       collapsed: false
     }

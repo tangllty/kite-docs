@@ -29,6 +29,7 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'Insert, Delete, Update', link: '/basic/insert-delete-update' },
         { text: 'Basic Query', link: '/basic/query' },
+        { text: 'Annotations', link: '/basic/annotations' },
       ],
       collapsed: false
     }
