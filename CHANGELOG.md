@@ -16,6 +16,7 @@
  * Add basic Insert、Delete、Update operations documentation
  * Add batch update methods
  * Add `insertValues` methods
+ * Add query methods documentation
 
 ## 1.0.0
 
