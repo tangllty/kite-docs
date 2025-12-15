@@ -20,6 +20,7 @@
  * Add `@Table`, `@Id` annotations documentation
  * Update Maven and Gradle dependency references in getting started guide
  * Add CSS variables and styles for theme customization
+ * Add documentation for `@Column` annotation and custom result handler
 
 ## 1.0.0
 
