@@ -285,7 +285,7 @@ public class GenderResultHandler implements ResultHandler {
     // Custom default value for null
     @Override
     public <T> void setNullValue(Field field, T instance) {
-        Reflects.setValue(field, instance, "未设置");
+        Reflects.setValue(field, instance, "Not Specified");
     }
 
     @Override
@@ -307,7 +307,7 @@ class GenderResultHandler : ResultHandler {
 
     // Custom default value for null
     override fun <T> setNullValue(field: Field, instance: T) {
-        Reflects.setValue(field, instance, "未设置")
+        Reflects.setValue(field, instance, "Not Specified")
     }
 
     override fun <T> setValue(field: Field, instance: T, value: Any) {
