@@ -19,6 +19,7 @@
  * Add query methods documentation
  * Add `@Table`, `@Id` annotations documentation
  * Update Maven and Gradle dependency references in getting started guide
+ * Add CSS variables and styles for theme customization
 
 ## 1.0.0
 

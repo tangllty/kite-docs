@@ -3,6 +3,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import SpeedInsights from './SpeedInsights.vue'
+import './style/index.css'
 
 export default {
   extends: DefaultTheme,
