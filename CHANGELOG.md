@@ -21,6 +21,7 @@
  * Update Maven and Gradle dependency references in getting started guide
  * Add CSS variables and styles for theme customization
  * Add documentation for `@Column` annotation and custom result handler
+ * Add Global Configuration documentation in English and Chinese, and update navigation links
 
 ## 1.0.0
 

@@ -30,6 +30,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Insert, Delete, Update', link: '/basic/insert-delete-update' },
         { text: 'Basic Query', link: '/basic/query' },
         { text: 'Annotations', link: '/basic/annotations' },
+        { text: 'Global Configuration', link: '/basic/global-configuration' }
       ],
       collapsed: false
     }
@@ -105,4 +106,3 @@ export default {
     sidebar
   }
 }
-
