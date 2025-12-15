@@ -18,6 +18,7 @@
  * Add `insertValues` methods
  * Add query methods documentation
  * Add `@Table`, `@Id` annotations documentation
+ * Update Maven and Gradle dependency references in getting started guide
 
 ## 1.0.0
 

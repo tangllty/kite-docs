@@ -4,7 +4,7 @@
 
 ## Usage
 
- > Maven central: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
+ > Maven central: [kite](https://central.sonatype.com/artifact/io.github.tangllty/kite)
 
  1. Add the following dependencies to your project:
 
@@ -13,7 +13,7 @@
 ```xml
 <dependency>
    <groupId>io.github.tangllty</groupId>
-   <artifactId>kite-spring-boot-starter</artifactId>
+   <artifactId>kite</artifactId>
    <version>${kite.version}</version>
 </dependency>
 ```
@@ -21,7 +21,7 @@
  * Gradle
 
 ```kts
-implementation("io.github.tangllty:kite-spring-boot-starter:${kite.version}")
+implementation("io.github.tangllty:kite:${kite.version}")
 ```
 
   2. Create a table in your database
@@ -110,9 +110,7 @@ class Account (
 
 ```java
 import com.tang.kite.mapper.BaseMapper;
-import com.tang.kite.spring.annotation.Mapper;
 
-@Mapper
 public interface AccountMapper extends BaseMapper<Account> {
 }
 ```
@@ -121,9 +119,7 @@ public interface AccountMapper extends BaseMapper<Account> {
 
 ```kotlin
 import com.tang.kite.mapper.BaseMapper
-import com.tang.kite.spring.annotation.Mapper
 
-@Mapper
 interface AccountMapper : BaseMapper<Account>
 ```
 :::

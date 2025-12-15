@@ -4,7 +4,7 @@
 
 ## 使用
 
- > Maven central: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
+ > Maven central: [kite](https://central.sonatype.com/artifact/io.github.tangllty/kite)
 
  1. 将以下依赖添加到您的项目中：
 
@@ -13,7 +13,7 @@
 ```xml
 <dependency>
    <groupId>io.github.tangllty</groupId>
-   <artifactId>kite-spring-boot-starter</artifactId>
+   <artifactId>kite</artifactId>
    <version>${kite.version}</version>
 </dependency>
 ```
@@ -21,7 +21,7 @@
  * Gradle
 
 ```kts
-implementation("io.github.tangllty:kite-spring-boot-starter:${kite.version}")
+implementation("io.github.tangllty:kite:${kite.version}")
 ```
 
   2. 在数据库中创建以下表
@@ -110,9 +110,7 @@ class Account (
 
 ```java
 import com.tang.kite.mapper.BaseMapper;
-import com.tang.kite.spring.annotation.Mapper;
 
-@Mapper
 public interface AccountMapper extends BaseMapper<Account> {
 }
 ```
@@ -121,9 +119,7 @@ public interface AccountMapper extends BaseMapper<Account> {
 
 ```kotlin
 import com.tang.kite.mapper.BaseMapper
-import com.tang.kite.spring.annotation.Mapper
 
-@Mapper
 interface AccountMapper : BaseMapper<Account>
 ```
 :::
