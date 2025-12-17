@@ -30,8 +30,16 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '增、删、改', link: '/zh/basic/insert-delete-update' },
         { text: '基础查询', link: '/zh/basic/query' },
-        { text: '注解', link: '/zh/basic/annotations' },
         { text: '全局配置', link: '/zh/basic/global-configuration' },
+      ],
+      collapsed: false
+    },
+    {
+      text: '注解',
+      items: [
+        { text: 'Table 注解', link: '/zh/annotations/table' },
+        { text: 'Id 注解', link: '/zh/annotations/id' },
+        { text: 'Column 注解', link: '/zh/annotations/column' },
       ],
       collapsed: false
     }

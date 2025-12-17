@@ -30,8 +30,16 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'Insert, Delete, Update', link: '/basic/insert-delete-update' },
         { text: 'Basic Query', link: '/basic/query' },
-        { text: 'Annotations', link: '/basic/annotations' },
         { text: 'Global Configuration', link: '/basic/global-configuration' }
+      ],
+      collapsed: false
+    },
+    {
+      text: 'Annotations',
+      items: [
+        { text: 'Table', link: '/annotations/table' },
+        { text: 'Id', link: '/annotations/id' },
+        { text: 'Column', link: '/annotations/column' },
       ],
       collapsed: false
     }
