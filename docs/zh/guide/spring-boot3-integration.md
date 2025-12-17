@@ -1,12 +1,12 @@
-# Spring Boot 集成
+# Spring Boot 3 集成
 
-本节介绍如何将 Kite 集成到 Spring Boot 应用程序中。
+本节介绍如何将 Kite 集成到 Spring Boot 3 应用程序中。
 
 > MySQL 示例
 
 ## 使用方法
 
-> Maven 中央仓库: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
+> Maven 中央仓库: [kite-spring-boot3-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot3-starter)
 
 1. 向项目添加以下依赖：
 
@@ -15,7 +15,7 @@
 ```xml
 <dependency>
    <groupId>io.github.tangllty</groupId>
-   <artifactId>kite-spring-boot-starter</artifactId>
+   <artifactId>kite-spring-boot3-starter</artifactId>
    <version>${kite.version}</version>
 </dependency>
 ```
@@ -23,7 +23,7 @@
 - Gradle
 
 ```kts
-implementation("io.github.tangllty:kite-spring-boot-starter:${kite.version}")
+implementation("io.github.tangllty:kite-spring-boot3-starter:${kite.version}")
 ```
 
 2. 在数据库中创建表

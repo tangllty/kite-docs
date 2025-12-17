@@ -21,6 +21,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Discussion Group', link: '/guide/discussion-group' },
         { text: 'Getting Started', link: '/guide/getting-started' },
         { text: 'Spring Boot Integration', link: '/guide/spring-boot-integration' },
+        { text: 'Spring Boot 3 Integration', link: '/guide/spring-boot3-integration' },
       ],
       collapsed: false
     },

@@ -2,15 +2,15 @@
 
 This section covers how to integrate Kite with Spring Boot applications.
 
- > Example for MySQL
+> Example for MySQL
 
 ## Usage
 
- > Maven central: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
+> Maven central: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
 
- 1. Add the following dependencies to your project:
+1.  Add the following dependencies to your project:
 
- * Maven
+- Maven
 
 ```xml
 <dependency>
@@ -20,13 +20,13 @@ This section covers how to integrate Kite with Spring Boot applications.
 </dependency>
 ```
 
- * Gradle
+- Gradle
 
 ```kts
 implementation("io.github.tangllty:kite-spring-boot-starter:${kite.version}")
 ```
 
-  2. Create a table in your database
+2. Create a table in your database
 
 ```sql
 create table account (
@@ -47,7 +47,7 @@ insert into account (username, password, create_time, balance) values
 ('jeo', 'jeo123', '2024-07-01 5:59:59', 0.10);
 ```
 
- 3. Configure your database connection information in the `application.yml` file
+3.  Configure your database connection information in the `application.yml` file
 
 ```yaml
 spring:
@@ -58,7 +58,7 @@ spring:
     password: password
 ```
 
- 4. Create a model class for the `account` table
+4.  Create a model class for the `account` table
 
 :::tabs key:kite
 == Java
@@ -103,9 +103,10 @@ class Account (
 
 )
 ```
+
 :::
 
- 5. Extend the `BaseMapper` interface to create a Mapper interface
+5.  Extend the `BaseMapper` interface to create a Mapper interface
 
 :::tabs key:kite
 == Java
@@ -128,9 +129,10 @@ import com.tang.kite.spring.annotation.Mapper
 @Mapper
 interface AccountMapper : BaseMapper<Account>
 ```
+
 :::
 
- 6. Add the `@MapperScan` annotation to your Spring Boot application class
+6.  Add the `@MapperScan` annotation to your Spring Boot application class
 
 :::tabs key:kite
 == Java
@@ -169,8 +171,7 @@ fun main(args: Array<String>) {
 
 :::
 
-
- 7. Test the Mapper interface
+7.  Test the Mapper interface
 
 :::tabs key:kite
 == Java
@@ -194,6 +195,7 @@ public class KiteApplication {
 
 }
 ```
+
 == Kotlin
 
 ```kotlin
@@ -213,4 +215,5 @@ fun main(args: Array<String>) {
 	accounts.forEach { println(it) }
 }
 ```
+
 :::

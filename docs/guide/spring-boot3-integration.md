@@ -1,21 +1,21 @@
-# Spring Boot 集成
+# Spring Boot 3 Integration
 
-本节介绍如何将 Kite 集成到 Spring Boot 应用程序中。
+This section covers how to integrate Kite with Spring Boot 3 applications.
 
-> MySQL 示例
+> Example for MySQL
 
-## 使用方法
+## Usage
 
-> Maven 中央仓库: [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
+> Maven central: [kite-spring-boot3-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot3-starter)
 
-1. 向项目添加以下依赖：
+1.  Add the following dependencies to your project:
 
 - Maven
 
 ```xml
 <dependency>
    <groupId>io.github.tangllty</groupId>
-   <artifactId>kite-spring-boot-starter</artifactId>
+   <artifactId>kite-spring-boot3-starter</artifactId>
    <version>${kite.version}</version>
 </dependency>
 ```
@@ -23,10 +23,10 @@
 - Gradle
 
 ```kts
-implementation("io.github.tangllty:kite-spring-boot-starter:${kite.version}")
+implementation("io.github.tangllty:kite-spring-boot3-starter:${kite.version}")
 ```
 
-2. 在数据库中创建表
+2. Create a table in your database
 
 ```sql
 create table account (
@@ -47,7 +47,7 @@ insert into account (username, password, create_time, balance) values
 ('jeo', 'jeo123', '2024-07-01 5:59:59', 0.10);
 ```
 
-3. 在 `application.yml` 文件中配置数据库连接信息
+3.  Configure your database connection information in the `application.yml` file
 
 ```yaml
 spring:
@@ -58,7 +58,7 @@ spring:
     password: password
 ```
 
-4. 为 `account` 表创建模型类
+4.  Create a model class for the `account` table
 
 :::tabs key:kite
 == Java
@@ -106,7 +106,7 @@ class Account (
 
 :::
 
-5. 扩展 `BaseMapper` 接口创建 Mapper 接口
+5.  Extend the `BaseMapper` interface to create a Mapper interface
 
 :::tabs key:kite
 == Java
@@ -132,7 +132,7 @@ interface AccountMapper : BaseMapper<Account>
 
 :::
 
-6. 在 Spring Boot 应用类上添加 `@MapperScan` 注解
+6.  Add the `@MapperScan` annotation to your Spring Boot application class
 
 :::tabs key:kite
 == Java
@@ -171,7 +171,7 @@ fun main(args: Array<String>) {
 
 :::
 
-7. 测试 Mapper 接口
+7.  Test the Mapper interface
 
 :::tabs key:kite
 == Java
