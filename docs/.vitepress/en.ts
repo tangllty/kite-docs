@@ -37,9 +37,10 @@ const sidebar: DefaultTheme.Sidebar = {
     {
       text: 'Annotations',
       items: [
-        { text: 'Table', link: '/annotations/table' },
-        { text: 'Id', link: '/annotations/id' },
-        { text: 'Column', link: '/annotations/column' },
+        { text: '@Table', link: '/annotations/table' },
+        { text: '@Id', link: '/annotations/id' },
+        { text: '@Column', link: '/annotations/column' },
+        { text: '@Join', link: '/annotations/join' },
       ],
       collapsed: false
     }

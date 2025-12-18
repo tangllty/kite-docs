@@ -37,9 +37,10 @@ const sidebar: DefaultTheme.Sidebar = {
     {
       text: '注解',
       items: [
-        { text: 'Table 注解', link: '/zh/annotations/table' },
-        { text: 'Id 注解', link: '/zh/annotations/id' },
-        { text: 'Column 注解', link: '/zh/annotations/column' },
+        { text: '@Table', link: '/zh/annotations/table' },
+        { text: '@Id', link: '/zh/annotations/id' },
+        { text: '@Column', link: '/zh/annotations/column' },
+        { text: '@Join', link: '/zh/annotations/join' },
       ],
       collapsed: false
     }
