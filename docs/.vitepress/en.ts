@@ -41,6 +41,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: '@Id', link: '/annotations/id' },
         { text: '@Column', link: '/annotations/column' },
         { text: '@Join', link: '/annotations/join' },
+        { text: '@Param', link: '/annotations/param' },
       ],
       collapsed: false
     }
