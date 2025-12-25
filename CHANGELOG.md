@@ -26,6 +26,7 @@
  * Refactor annotations documentation: split into individual pages and add detailed descriptions for `Column`, `Id`, and `Table` annotations in English and Chinese
  * Add `@Join` annotation documentation in English and Chinese, and update sidebar links
  * Add `@Param` annotation documentation in English and Chinese, and update sidebar links
+ * Add Custom SQL documentation in English and Chinese, and update sidebar links
 
 ## 1.0.0
 

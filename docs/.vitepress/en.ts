@@ -30,7 +30,8 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'Insert, Delete, Update', link: '/basic/insert-delete-update' },
         { text: 'Basic Query', link: '/basic/query' },
-        { text: 'Global Configuration', link: '/basic/global-configuration' }
+        { text: 'Global Configuration', link: '/basic/global-configuration' },
+        { text: 'Custom SQL', link: '/basic/custom-sql' }
       ],
       collapsed: false
     },
