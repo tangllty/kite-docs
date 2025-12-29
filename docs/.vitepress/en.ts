@@ -102,7 +102,7 @@ export default {
   label: 'English',
   lang: 'en-US',
   link: '/',
-  title: 'Tang Official Documentation',
+  title: 'Kite Official Documentation',
   themeConfig: {
     logo: '/kite.svg',
     siteTitle: 'Kite',

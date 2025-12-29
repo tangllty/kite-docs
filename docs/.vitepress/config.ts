@@ -12,6 +12,8 @@ const giteeSvg = '<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-/
 export default defineConfig({
   cleanUrls: true,
   lang: 'en-US',
+  title: 'Kite Official Documentation',
+  description: 'Kite is a lightweight ORM framework for Kotlin and Java.',
   ignoreDeadLinks: [
     /^https?:\/\/localhost/
   ],
