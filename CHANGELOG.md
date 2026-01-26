@@ -27,6 +27,7 @@
  * Add `@Join` annotation documentation in English and Chinese, and update sidebar links
  * Add `@Param` annotation documentation in English and Chinese, and update sidebar links
  * Add Custom SQL documentation in English and Chinese, and update sidebar links
+ * Add `countWrapper` documentation in English and Chinese
 
 ## 1.0.0
 

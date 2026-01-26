@@ -20,6 +20,8 @@
 
  * `count()`: Select count of all entities.
  * `count(entity)`: Select count of entities, with a specified condition entity.
+ * `countWrapper()`: Select count of entities, with a specified count wrapper.
+ * `countWrapper(countWrapper)`: Select count of entities, with a specified count wrapper.
 
 ## Pagination
 

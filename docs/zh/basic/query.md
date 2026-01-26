@@ -20,6 +20,8 @@
 
  * `count()`: 查询所有实体的数量。
  * `count(entity)`: 查询满足条件实体的数量。
+ * `countWrapper()`: 查询所有实体的数量，使用指定的计数包装器。
+ * `countWrapper(countWrapper)`: 查询满足条件实体的数量，使用指定的计数包装器。
 
 ## 分页查询
 
