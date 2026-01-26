@@ -1,6 +1,6 @@
 {
   "name": "tang-docs",
-  "version": "1.0.0",
+  "version": "1.0.17",
   "description": "Kite is a lightweight ORM framework for Kotlin and Java.",
   "keywords": ["kite", "orm", "kotlin", "java", "database", "documentation"],
   "type": "module",
