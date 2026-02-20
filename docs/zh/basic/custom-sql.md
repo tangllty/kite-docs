@@ -242,20 +242,20 @@ price * (1 + discount)
 
 ## 方法支持
 
-| 方法名               | 功能描述                         | 支持的数据类型                     |
-| -------------------- | -------------------------------- | ---------------------------------- |
-| `length/size`        | 获取长度/大小                    | CharSequence, Iterable, Array, Map |
-| `isEmpty`            | 检查是否为空                     | CharSequence, Iterable, Array, Map |
-| `isNotEmpty`         | 检查是否非空                     | CharSequence, Iterable, Array, Map |
-| `contains`           | 检查是否包含指定元素             | CharSequence, Iterable, Array, Map |
-| `containsIgnoreCase` | 忽略大小写检查是否包含指定字符串 | CharSequence                       |
-| `isBlank`            | 检查是否为空白字符串             | CharSequence                       |
-| `isNotBlank`         | 检查是否非空白字符串             | CharSequence                       |
-| `toUpperCase`        | 转换为大写字母                   | CharSequence                       |
-| `toLowerCase`        | 转换为小写字母                   | CharSequence                       |
-| `startsWith`         | 检查是否以指定前缀开头           | CharSequence                       |
-| `endsWith`           | 检查是否以指定后缀结尾           | CharSequence                       |
-| `trim`               | 去除首尾空白字符                 | CharSequence                       |
+| 方法名               | 功能描述                         | 支持的数据类型                             |
+| -------------------- | -------------------------------- | ------------------------------------------ |
+| `length/size`        | 获取长度/大小                    | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `isEmpty`            | 检查是否为空                     | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `isNotEmpty`         | 检查是否非空                     | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `contains`           | 检查是否包含指定元素             | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `containsIgnoreCase` | 忽略大小写检查是否包含指定字符串 | `CharSequence`                             |
+| `isBlank`            | 检查是否为空白字符串             | `CharSequence`                             |
+| `isNotBlank`         | 检查是否非空白字符串             | `CharSequence`                             |
+| `toUpperCase`        | 转换为大写字母                   | `CharSequence`                             |
+| `toLowerCase`        | 转换为小写字母                   | `CharSequence`                             |
+| `startsWith`         | 检查是否以指定前缀开头           | `CharSequence`                             |
+| `endsWith`           | 检查是否以指定后缀结尾           | `CharSequence`                             |
+| `trim`               | 去除首尾空白字符                 | `CharSequence`                             |
 
 ### 使用示例
 

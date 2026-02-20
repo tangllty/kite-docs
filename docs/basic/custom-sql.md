@@ -242,20 +242,20 @@ Supports `if`, `else if`, `else` and nested `if` statements:
 
 ## Supported Methods
 
-| Method Name          | Function Description                             | Supported Data Types               |
-| -------------------- | ------------------------------------------------ | ---------------------------------- |
-| `length/size`        | Get length/size                                  | CharSequence, Iterable, Array, Map |
-| `isEmpty`            | Check if empty                                   | CharSequence, Iterable, Array, Map |
-| `isNotEmpty`         | Check if not empty                               | CharSequence, Iterable, Array, Map |
-| `contains`           | Check if contains specified element              | CharSequence, Iterable, Array, Map |
-| `containsIgnoreCase` | Check if contains specified string ignoring case | CharSequence                       |
-| `isBlank`            | Check if is blank string                         | CharSequence                       |
-| `isNotBlank`         | Check if is not blank string                     | CharSequence                       |
-| `toUpperCase`        | Convert to uppercase                             | CharSequence                       |
-| `toLowerCase`        | Convert to lowercase                             | CharSequence                       |
-| `startsWith`         | Check if starts with specified prefix            | CharSequence                       |
-| `endsWith`           | Check if ends with specified suffix              | CharSequence                       |
-| `trim`               | Remove leading and trailing whitespace           | CharSequence                       |
+| Method Name          | Function Description                             | Supported Data Types                       |
+| -------------------- | ------------------------------------------------ | ------------------------------------------ |
+| `length/size`        | Get length/size                                  | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `isEmpty`            | Check if empty                                   | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `isNotEmpty`         | Check if not empty                               | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `contains`           | Check if contains specified element              | `CharSequence`, `Iterable`, `Array`, `Map` |
+| `containsIgnoreCase` | Check if contains specified string ignoring case | `CharSequence`                             |
+| `isBlank`            | Check if is blank string                         | `CharSequence`                             |
+| `isNotBlank`         | Check if is not blank string                     | `CharSequence`                             |
+| `toUpperCase`        | Convert to uppercase                             | `CharSequence`                             |
+| `toLowerCase`        | Convert to lowercase                             | `CharSequence`                             |
+| `startsWith`         | Check if starts with specified prefix            | `CharSequence`                             |
+| `endsWith`           | Check if ends with specified suffix              | `CharSequence`                             |
+| `trim`               | Remove leading and trailing whitespace           | `CharSequence`                             |
 
 ### Usage Examples
 
