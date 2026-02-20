@@ -197,7 +197,7 @@ Supports arithmetic operations, comparison operations, logical operations, and p
 | Operator | Description | Example                          |
 | -------- | ----------- | -------------------------------- |
 | `&&`     | Logical AND | `age > 18 && status == 'ACTIVE'` |
-| `\|\|`   | Logical OR  | `role == 'ADMIN'                 |
+| `\|\|`   | Logical OR  | `role == 'ADMIN'`                |
 | `!`      | Logical NOT | `!isDeleted`                     |
 
 ### Parentheses Priority
