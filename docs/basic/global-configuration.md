@@ -8,15 +8,15 @@ The Kite ORM framework provides flexible global configuration options that allow
 
 ### Configuration Items
 
-| Configuration Item  | Type                                   | Default Value                                          | Description                                                                                           |
-| ------------------- | -------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| `banner`            | `Boolean`                              | `true`                                                 | Whether to display the Kite framework banner during application startup                               |
-| `selectiveStrategy` | `Function1<Any?, Boolean>`             | `DefaultSelectiveStrategy.isSelective(it)`             | Selective query strategy, used to determine which fields should be included in SQL queries            |
-| `batchSize`         | `Int`                                  | `1000`                                                 | Batch size for operations like inserts or updates                                                     |
-| `dialects`          | `MutableMap<DatabaseType, SqlDialect>` | `DefaultSqlDialectFactory().getDialects()`             | SQL dialect mappings for different database types                                                     |
-| `fillHandlers`      | `MutableMap<FillKey, FillHandler>`     | Contains TimeFillHandler for CreateTime and UpdateTime | Mapping of fill annotation handlers, used to process annotations like `@CreateTime` and `@UpdateTime` |
-| `page`              | `PageConfig`                           | `PageConfig` object                                    | Pagination-related configurations, references `PageConfig` object                                     |
-| `sql`               | `SqlConfig`                            | `SqlConfig` object                                     | SQL-related configurations, references `SqlConfig` object                                             |
+| Configuration Item  | Type                                   | Default Value                                                | Description                                                                                           |
+| ------------------- | -------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| `banner`            | `Boolean`                              | `true`                                                       | Whether to display the Kite framework banner during application startup                               |
+| `selectiveStrategy` | `Function1<Any?, Boolean>`             | `DefaultSelectiveStrategy.isSelective(it)`                   | Selective query strategy, used to determine which fields should be included in SQL queries            |
+| `batchSize`         | `Int`                                  | `1000`                                                       | Batch size for operations like inserts or updates                                                     |
+| `dialects`          | `MutableMap<DatabaseType, SqlDialect>` | `DefaultSqlDialectFactory().getDialects()`                   | SQL dialect mappings for different database types                                                     |
+| `fillHandlers`      | `MutableMap<FillKey, FillHandler>`     | Contains `TimeFillHandler` for `CreateTime` and `UpdateTime` | Mapping of fill annotation handlers, used to process annotations like `@CreateTime` and `@UpdateTime` |
+| `page`              | `PageConfig`                           | `PageConfig` object                                          | Pagination-related configurations, references `PageConfig` object                                     |
+| `sql`               | `SqlConfig`                            | `SqlConfig` object                                           | SQL-related configurations, references `SqlConfig` object                                             |
 
 ### Usage Examples
 
@@ -55,12 +55,12 @@ KiteConfig.selectiveStrategy = { it != null }
 
 ### Configuration Items
 
-| Configuration Item    | Type     | Default Value  | Description                                                           |
-| --------------------- | -------- | -------------- | --------------------------------------------------------------------- |
-| `pageNumber`          | `Long`   | `1`            | Default page number                                                   |
-| `pageSize`            | `Long`   | `10`           | Default number of records per page                                    |
-| `pageNumberParameter` | `String` | `"pageNumber"` | Page number parameter name, used to get the page number from requests |
-| `pageSizeParameter`   | `String` | `"pageSize"`   | Page size parameter name, used to get the page size from requests     |
+| Configuration Item    | Type     | Default Value | Description                                                           |
+| --------------------- | -------- | ------------- | --------------------------------------------------------------------- |
+| `pageNumber`          | `Long`   | `1`           | Default page number                                                   |
+| `pageSize`            | `Long`   | `10`          | Default number of records per page                                    |
+| `pageNumberParameter` | `String` | `pageNumber`  | Page number parameter name, used to get the page number from requests |
+| `pageSizeParameter`   | `String` | `pageSize`    | Page size parameter name, used to get the page size from requests     |
 
 ### Usage Examples
 
@@ -115,10 +115,10 @@ PageConfig.pageSizeParameter = "size"
 
 ### Method Descriptions
 
-| Method Name                 | Parameters                | Return Value | Description                                                  |
-| --------------------------- | ------------------------- | ------------ | ------------------------------------------------------------ |
-| `getSql(StringBuilder sql)` | `sql`: SQL string builder | `String`     | Formats SQL string according to `sqlLowercase` configuration |
-| `getSql(String sql)`        | `sql`: SQL string         | `String`     | Formats SQL string according to `sqlLowercase` configuration |
+| Method Name                  | Parameters                | Return Value | Description                                                  |
+| ---------------------------- | ------------------------- | ------------ | ------------------------------------------------------------ |
+| `getSql(sql: StringBuilder)` | `sql`: SQL string builder | `String`     | Formats SQL string according to `sqlLowercase` configuration |
+| `getSql(sql: String)`        | `sql`: SQL string         | `String`     | Formats SQL string according to `sqlLowercase` configuration |
 
 ### Usage Examples
 
