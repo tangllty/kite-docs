@@ -9,6 +9,7 @@ The `@Column` annotation is used to specify the mapping relationship between ent
 | `value`         | String                     | ""                     | The name of the database column                   |
 | `ignore`        | Boolean                    | false                  | Whether to ignore this column when generating SQL |
 | `resultHandler` | KClass\<out ResultHandler> | `ResultHandler::class` | The result handler for this column                |
+| `operator`      | `ColumnOperator`           | `ColumnOperator.EQUAL` | SQL operator (such as `EQUAL`) can be used for `condition entity` |
 
 ## Usage Example
 
@@ -31,6 +32,9 @@ public class User {
     @Column(resultHandler = GenderResultHandler.class)
     private String gender;
 
+    @Column(operator = ColumnOperator.LIKE)
+    private String nickname;
+
 }
 ```
 
@@ -41,16 +45,19 @@ import com.tang.kite.annotation.Column
 
 class User {
 
-    private val id: Long? = null
+    var id: Long? = null
 
     @Column("user_name")
-    private val username: String? = null
+    var username: String? = null
 
     @Column(ignore = true)
-    private val temporary: String? = null
+    var temporary: String? = null
 
     @Column(resultHandler = GenderResultHandler::class)
-    private val gender: String? = null
+    var gender: String? = null
+
+    @Column(operator = ColumnOperator.LIKE)
+    var nickname: String? = null
 
 }
 ```
@@ -107,3 +114,20 @@ class GenderResultHandler : ResultHandler {
 ```
 
 :::
+
+## Setting SQL Operator
+
+`ColumnOperator` enum defines common SQL operators, which can be specified through the `operator` parameter of the `@Column` annotation.
+
+> The default is `EQUAL`, which means using the equals operator.
+
+```sql
+# @Column(operator = ColumnOperator.LIKE)
+where nickname like '%value%'
+
+# @Column(operator = ColumnOperator.GT)
+where age > value
+
+# @Column(operator = ColumnOperator.IS_NULL)
+where deleted_time is null
+```

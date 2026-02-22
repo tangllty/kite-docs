@@ -4,11 +4,12 @@
 
 ## 参数说明
 
-| 参数名          | 类型                       | 默认值                 | 说明                    |
-| --------------- | -------------------------- | ---------------------- | ----------------------- |
-| `value`         | String                     | ""                     | 数据库列名              |
-| `ignore`        | Boolean                    | false                  | 生成 SQL 时是否忽略此列 |
-| `resultHandler` | KClass\<out ResultHandler> | `ResultHandler::class` | 此列的结果处理器        |
+| 参数名          | 类型                         | 默认值                 | 说明                                     |
+| --------------- | ---------------------------- | ---------------------- | ---------------------------------------- |
+| `value`         | `String`                     | `""`                   | 数据库列名                               |
+| `ignore`        | `Boolean`                    | `false`                | 生成 SQL 时是否忽略此列                  |
+| `resultHandler` | `KClass\<out ResultHandler>` | `ResultHandler::class` | 此列的结果处理器                         |
+| `operator`      | `ColumnOperator`             | `ColumnOperator.EQUAL` | SQL 操作符（如 `EQUAL`）可用于`条件实体` |
 
 ## 使用示例
 
@@ -31,6 +32,9 @@ public class User {
     @Column(resultHandler = GenderResultHandler.class)
     private String gender;
 
+    @Column(operator = ColumnOperator.LIKE)
+    private String nickname;
+
 }
 ```
 
@@ -41,16 +45,19 @@ import com.tang.kite.annotation.Column
 
 class User {
 
-    private val id: Long? = null
+    var id: Long? = null
 
     @Column("user_name")
-    private val username: String? = null
+    var username: String? = null
 
     @Column(ignore = true)
-    private val temporary: String? = null
+    var temporary: String? = null
 
     @Column(resultHandler = GenderResultHandler::class)
-    private val gender: String? = null
+    var gender: String? = null
+
+    @Column(operator = ColumnOperator.LIKE)
+    var nickname: String? = null
 
 }
 ```
@@ -107,3 +114,20 @@ class GenderResultHandler : ResultHandler {
 ```
 
 :::
+
+## 设置 SQL 操作符
+
+`ColumnOperator` 枚举定义了常用的 SQL 操作符，可以通过 `@Column` 注解的 `operator` 参数指定字段使用的操作符。
+
+> 默认为 `EQUAL`，表示使用等于操作符。
+
+```sql
+# @Column(operator = ColumnOperator.LIKE)
+where nickname like '%value%'
+
+# @Column(operator = ColumnOperator.GT)
+where age > value
+
+# @Column(operator = ColumnOperator.IS_NULL)
+where deleted_time is null
+```
