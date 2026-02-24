@@ -25,7 +25,8 @@ hero:
       link: https://gitee.com/tangllty/
 
 features:
-  - icon: ❤️
+  - icon:
+      src: /kite.svg
     title: kite
     details: Kite 是一个由 Kotlin 编写的轻量级 ORM 框架
     link: https://gitee.com/tangllty/kite

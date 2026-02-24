@@ -25,7 +25,8 @@ hero:
       link: https://gitee.com/tangllty/
 
 features:
-  - icon: ❤️
+  - icon:
+      src: /kite.svg
     title: kite
     details: kite is an lightweight ORM framework written in Kotlin
     link: https://github.com/tangllty/kite
