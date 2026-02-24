@@ -111,8 +111,8 @@ export default {
       text: 'Edit this page on GitHub',
     },
     footer: {
-      message: 'Built with ❤️ by Tang',
-      copyright: '© 2023-2025 Tang'
+      message: 'Released under the MIT License',
+      copyright: 'Copyright © 2023-present Tang'
     },
     nav,
     sidebar

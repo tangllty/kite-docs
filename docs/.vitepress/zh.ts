@@ -111,8 +111,8 @@ export default {
       text: '在 GitHub 上编辑此页'
     },
     footer: {
-      message: '由 Tang 用 ❤️ 构建',
-      copyright: '© 2023-2025 Tang'
+      message: '基于 MIT 许可发布',
+      copyright: '版权所有 © 2023-至今 Tang'
     },
     nav,
     sidebar
