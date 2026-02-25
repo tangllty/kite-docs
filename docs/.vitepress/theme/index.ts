@@ -13,7 +13,7 @@ export default {
   },
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'aside-outline-before': () => [h(SpeedInsights), h(Analytics)]
+      'layout-top': () => [h(SpeedInsights), h(Analytics)]
     })
   }
 } satisfies Theme
