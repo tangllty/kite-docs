@@ -6,11 +6,11 @@ The `@Table` annotation is used to mark a class as an entity and specify the cor
 
 ## Parameters
 
-| Parameter          | Type                               | Default Value                | Description                                                     |
-| ------------------ | ---------------------------------- | ---------------------------- | --------------------------------------------------------------- |
-| `value`            | String                             | (required)                   | The name of the database table                                  |
-| `alias`            | String                             | ""                           | An optional alias for the table, used in SQL queries with joins |
-| `dynamicTableName` | KClass\<out DynamicTableProcessor> | DynamicTableProcessor::class | The local dynamic table name processor([Local Configuration](../advanced/dynamic-table-name.md#local-configuration))                          |
+| Parameter          | Type                               | Default Value                | Description                                                                                                          |
+| ------------------ | ---------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `value`            | String                             | ""                           | The name of the database table                                                                                       |
+| `alias`            | String                             | ""                           | An optional alias for the table, used in SQL queries with joins                                                      |
+| `dynamicTableName` | KClass\<out DynamicTableProcessor> | DynamicTableProcessor::class | The local dynamic table name processor([Local Configuration](../advanced/dynamic-table-name.md#local-configuration)) |
 
 ## Usage Example
 
