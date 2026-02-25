@@ -7,6 +7,7 @@
 ### Features
 
 - Add advanced features section and dynamic table name documentation in English and Chinese
+- Add Analytics component and update package dependencies
 
 ## 1.0.17
 

@@ -3,6 +3,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import SpeedInsights from './SpeedInsights.vue'
+import Analytics from './Analytics.vue'
 import './style/index.css'
 
 export default {
@@ -12,7 +13,7 @@ export default {
   },
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'aside-outline-before': () => h(SpeedInsights)
+      'aside-outline-before': () => [h(SpeedInsights), h(Analytics)]
     })
   }
 } satisfies Theme
