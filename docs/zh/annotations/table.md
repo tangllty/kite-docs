@@ -6,10 +6,11 @@
 
 ## 参数说明
 
-| 参数名  | 类型   | 默认值 | 说明                        |
-| ------- | ------ | ------ | --------------------------- |
-| `value` | String | (必填) | 数据库表名                  |
-| `alias` | String | ""     | 表的别名，用于 SQL 联表查询 |
+| 参数名             | 类型                               | 默认值                       | 说明                        |
+| ------------------ | ---------------------------------- | ---------------------------- | --------------------------- |
+| `value`            | String                             | ""                           | 数据库表名                  |
+| `alias`            | String                             | ""                           | 表的别名，用于 SQL 联表查询 |
+| `dynamicTableName` | KClass\<out DynamicTableProcessor> | DynamicTableProcessor::class | 局部动态表名处理器（[局部配置](../advanced/dynamic-table-name.md#局部配置)）          |
 
 ## 使用示例
 

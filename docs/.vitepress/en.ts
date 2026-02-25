@@ -45,7 +45,13 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: '@Param', link: '/annotations/param' },
       ],
       collapsed: false
-    }
+    },
+    {
+      text: 'Advanced Features',
+      items: [
+        { text: 'Dynamic table name', link: '/advanced/dynamic-table-name' },
+      ],
+    },
   ],
   '/tang-vue/': [
     {

@@ -1,3 +1,13 @@
+## 1.0.18
+
+### Bug Fixes
+
+### Dependencies
+
+### Features
+
+- Add advanced features section and dynamic table name documentation in English and Chinese
+
 ## 1.0.17
 
 ### Bug Fixes
