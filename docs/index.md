@@ -25,27 +25,18 @@ hero:
       link: https://gitee.com/tangllty/
 
 features:
-  - icon:
-      src: /kite.svg
-    title: kite
-    details: kite is an lightweight ORM framework written in Kotlin
-    link: https://github.com/tangllty/kite
-  - icon: ❤️
-    title: tang-boot
-    details: tang-boot is a front-end and back-end separation permission management system based on Spring Boot3 + Spring Security + MyBatis + Redis + Jwt
-    link: https://github.com/tangllty/tang-boot
-  - icon: ❤️
-    title: tang-vue
-    details: tang-vue is a front-end and back-end separation permission management system based on Vue3 + Vite4 + Vue Router4 + TypeScript + Pinia + Element Plus
-    link: https://github.com/tangllty/tang-vue
-  - icon: ❤️
-    title: tang-docs
-    details: tang-docs is a Tang Permission Management System documentation based on VitePress
-    link: https://github.com/tangllty/tang-docs
-  - icon: ❤️
-    title: vite-plugin-svg
-    details: A lightweight Vite 5 plugin for SVG sprites.
-    link: https://github.com/tangllty/vite-plugin-svg
+  - icon: 🚀
+    title: Multi-language Compatibility
+    details: Kotlin-oriented API design with native compatibility with Java syntax.
+  - icon: 📚
+    title: Powerful SQL Construction Capabilities
+    details: Chain-invoked QueryWrapper, UpdateWrapper and DeleteWrapper support full-scenario SQL construction including conditional query, grouping, sorting, aggregation, etc.
+  - icon: 📖
+    title: Convenient Pagination Capabilities
+    details: Built-in pagination with flexibly configurable default parameters; automatically splices pagination SQL, adapts to different database dialects, and no need to integrate third-party pagination plugins.
+  - icon: 🛡️
+    title: Comprehensive Transaction Support
+    details: Built-in JDBC transaction factory, compatible with Spring declarative transactions, supports transaction commit and rollback, with transactions enabled by default.
 ---
 
 <style>

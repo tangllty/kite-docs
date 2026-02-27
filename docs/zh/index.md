@@ -25,27 +25,18 @@ hero:
       link: https://gitee.com/tangllty/
 
 features:
-  - icon:
-      src: /kite.svg
-    title: kite
-    details: Kite 是一个由 Kotlin 编写的轻量级 ORM 框架
-    link: https://gitee.com/tangllty/kite
-  - icon: ❤️
-    title: tang-boot
-    details: tang-boot 是基于 Spring Boot3 + Spring Security + MyBatis + Redis + Jwt 的前后端分离权限管理系统
-    link: https://gitee.com/tangllty/tang-boot
-  - icon: ❤️
-    title: tang-vue
-    details: tang-vue 是基于 Vue3 + Vite5 + Vue Router4 + TypeScript + Pinia + Element Plus 的前后端分离权限管理系统
-    link: https://gitee.com/tangllty/tang-vue
-  - icon: ❤️
-    title: tang-docs
-    details: tang-docs 是基于 VitePress 的糖猫猫权限管理系统文档
-    link: https://gitee.com/tangllty/tang-docs
-  - icon: ❤️
-    title: vite-plugin-svg
-    details: vite-plugin-svg 是一个基于 Vite5 的 SVG 插件
-    link: https://gitee.com/tangllty/vite-plugin-svg
+  - icon: 🚀
+    title: 多语言兼容
+    details: Kotlin API 设计，同时兼容 Java 语法。
+  - icon: 📚
+    title: 强大的 SQL 构建能力
+    details: 链式调用的 QueryWrapper、UpdateWrapper、DeleteWrapper，支持条件查询、分组、排序、聚合等全场景 SQL 构建。
+  - icon: 📖
+    title: 便捷的分页能力
+    details: 内置分页功能，默认参数可灵活配置，自动拼接分页 SQL，适配不同的数据库方言，无需集成第三方分页插件。
+  - icon: 🛡️
+    title: 完善的事务支持
+    details: 内置 JDBC 事务工厂，兼容 Spring 声明式事务，支持事务提交、回滚，默认开启事务。
 ---
 
 <style>
