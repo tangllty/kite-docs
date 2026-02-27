@@ -22,6 +22,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: '快速开始', link: '/zh/guide/getting-started' },
         { text: 'Spring Boot 集成', link: '/zh/guide/spring-boot-integration' },
         { text: 'Spring Boot 3 集成', link: '/zh/guide/spring-boot3-integration' },
+        { text: '性能测试', link: '/zh/guide/benchmark' },
       ],
       collapsed: false
     },

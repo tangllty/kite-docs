@@ -22,6 +22,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Getting Started', link: '/guide/getting-started' },
         { text: 'Spring Boot Integration', link: '/guide/spring-boot-integration' },
         { text: 'Spring Boot 3 Integration', link: '/guide/spring-boot3-integration' },
+        { text: 'Benchmark', link: '/guide/benchmark' },
       ],
       collapsed: false
     },
