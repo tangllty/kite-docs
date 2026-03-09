@@ -101,6 +101,7 @@ import com.tang.kite.handler.fill.TimeFillHandler;
 
 KiteConfig.getFillHandlers().put(new FillKey(CreateTime.class, SqlType.INSERT), new TimeFillHandler());
 ```
+
 == Kotlin
 
 ```kotlin
@@ -112,6 +113,7 @@ import com.tang.kite.handler.fill.TimeFillHandler
 
 KiteConfig.fillHandlers[FillKey(CreateTime::class, SqlType.INSERT)] = TimeFillHandler()
 ```
+
 :::
 
 ## Usage Example
