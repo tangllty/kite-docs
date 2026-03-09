@@ -51,6 +51,7 @@ const sidebar: DefaultTheme.Sidebar = {
       text: 'Advanced Features',
       items: [
         { text: 'Dynamic table name', link: '/advanced/dynamic-table-name' },
+        { text: 'Fill Handler', link: '/advanced/fill-handler' },
       ],
     },
   ],

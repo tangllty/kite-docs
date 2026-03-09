@@ -9,6 +9,7 @@
 - Add advanced features section and dynamic table name documentation in English and Chinese
 - Add Analytics component and update package dependencies
 - Add benchmark documentation in English and Chinese and update navigation
+- Add Fill Handler documentation in English and Chinese and update navigation
 
 ## 1.0.17
 
