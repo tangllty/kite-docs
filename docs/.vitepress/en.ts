@@ -52,6 +52,7 @@ const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: 'Dynamic table name', link: '/advanced/dynamic-table-name' },
         { text: 'Fill Handler', link: '/advanced/fill-handler' },
+        { text: 'Logical Deletion', link: '/advanced/logical-deletion' },
       ],
     },
   ],
