@@ -37,9 +37,9 @@ If you have any questions, suggestions, or find bugs, please submit an [Issues](
 
 ## License
 
-kite-docs uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/kite-docs/blob/master/LICENSE) files.
+kite-docs uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/kite-docs/blob/main/LICENSE) files.
 
 ## Discussion Group
 
 - QQ
-  - ![QQ](https://github.com/tangllty/kite-docs/raw/master/docs/public/qq.png)
+  - ![QQ](https://github.com/tangllty/kite-docs/raw/main/docs/public/qq.png)

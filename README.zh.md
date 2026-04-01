@@ -37,9 +37,9 @@ Kite 是一个高效的轻量级 ORM 框架，基于 Kotlin 编写，开箱即�
 
 ## 许可证
 
-kite-docs 使用 MIT 许可证。更多详情请查阅 [LICENSE](https://gitee.com/tangllty/kite-docs/blob/master/LICENSE) 文件。
+kite-docs 使用 MIT 许可证。更多详情请查阅 [LICENSE](https://gitee.com/tangllty/kite-docs/blob/main/LICENSE) 文件。
 
 ## 交流群
 
 - QQ
-  - ![QQ](https://gitee.com/tangllty/kite-docs/raw/master/docs/public/qq.png)
+  - ![QQ](https://gitee.com/tangllty/kite-docs/raw/main/docs/public/qq.png)
