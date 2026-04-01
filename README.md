@@ -22,7 +22,7 @@ You can read the [documentation](https://tangllty.eu.org/) for more information
 
 ## Environment Requirements
 
-- Node.js 18.15.0
+- Node.js 20.20.2
 
 ## Project Startup
 
