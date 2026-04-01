@@ -1,27 +1,28 @@
-# tang-docs
+# kite-docs
 
 **English** | [**简体中文**](./README.zh.md)
 
 ## Project Description
 
-tang-docs is a Tang Permission Management System documentation based on VitePress
+Kite is a high-performance, lightweight ORM framework written in Kotlin. It is designed to be ready to use out of the box, with built-in features for pagination, CRUD operations, and support for multi-table operations. Kite supports multiple databases such as PostgreSQL, MySQL, Derby, etc., and aims to simplify database operations, reduce code complexity, and enhance development efficiency.
 
 You can read the [documentation](https://tangllty.eu.org/) for more information
 
-* Using VitePress
+### Maven Central
 
-## Project Preview
+- [kite](https://central.sonatype.com/artifact/io.github.tangllty/kite)
+- [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
+- [kite-spring-boot3-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot3-starter)
 
-* Online Preview: [http://116.196.102.213/](http://116.196.102.213/)
-* Account password: admin / 123456
+### Documentation
 
-### Server Sponsorship
-
-* [@RyanHo97](https://github.com/RyanHo97/)
+- [Getting Started](https://tangllty.eu.org/guide/getting-started/)
+- [Spring Boot](https://tangllty.eu.org/guide/spring-boot-integration)
+- [Spring Boot 3](https://tangllty.eu.org/guide/spring-boot3-integration)
 
 ## Environment Requirements
 
-* Node.js 18.15.0
+- Node.js 18.15.0
 
 ## Project Startup
 
@@ -32,26 +33,13 @@ You can read the [documentation](https://tangllty.eu.org/) for more information
 
 ## Contributing
 
-If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/tang-docs/issues/new) or provide a [Pull Request](https://github.com/tangllty/tang-docs/pull/new) to help improve the project.
+If you have any questions, suggestions, or find bugs, please submit an [Issues](https://github.com/tangllty/kite-docs/issues/new) or provide a [Pull Request](https://github.com/tangllty/kite-docs/pull/new) to help improve the project.
 
 ## License
 
-tang-docs uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/tang-docs/blob/master/LICENSE) files.
-
-## Project Address
-
-| Project       | Gitee                                          | GitHub                                          | GitCode                                                 |
-| ------------- | ---------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------- |
-| Back End      | [tang-boot](https://gitee.com/tangllty/tang-boot) | [tang-boot](https://github.com/tangllty/tang-boot) | [tang-boot](https://gitcode.net/weixin_45456454/tang-boot) |
-| Front End     | [tang-vue](https://gitee.com/tangllty/tang-vue)   | [tang-vue](https://github.com/tangllty/tang-vue)   | [tang-vue](https://gitcode.net/weixin_45456454/tang-vue)   |
-| Documentation | [tang-docs](https://gitee.com/tangllty/tang-docs) | [tang-docs](https://github.com/tangllty/tang-docs) | [tang-docs](https://gitcode.net/weixin_45456454/tang-docs) |
+kite-docs uses the MIT license. For more details, please refer to [LICENSE](https://github.com/tangllty/kite-docs/blob/master/LICENSE) files.
 
 ## Discussion Group
 
-- WeChat
-
-  - ![WeChat](https://github.com/tangllty/tang-docs/raw/master/docs/public/wechat.png)
-- Telegram
 - QQ
-
-  - ![QQ](https://github.com/tangllty/tang-docs/raw/master/docs/public/qq.png)
+  - ![QQ](https://github.com/tangllty/kite-docs/raw/master/docs/public/qq.png)
