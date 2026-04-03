@@ -14,13 +14,13 @@ Kite 提供了逻辑删除的配置选项，你可以在 `LogicalDeletionConfig`
 import com.tang.kite.config.logical.LogicalDeletionConfig;
 
 // 启用逻辑删除
-LogicalDeletionConfig.enabled = true;
+LogicalDeletionConfig.setEnabled(true);
 
 // 设置逻辑删除字段名
-LogicalDeletionConfig.fieldName = "deleted";
+LogicalDeletionConfig.setFieldName("deleted");
 
 // 自定义逻辑删除处理器
-LogicalDeletionConfig.logicalDeletionProcessor = new CustomLogicalDeletionProcessor();
+LogicalDeletionConfig.setLogicalDeletionProcessor(new CustomLogicalDeletionProcessor());
 ```
 
 == Kotlin

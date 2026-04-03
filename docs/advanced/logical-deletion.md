@@ -14,13 +14,13 @@ Kite provides configuration options for logical deletion, which can be set in `L
 import com.tang.kite.config.logical.LogicalDeletionConfig;
 
 // Enable logical deletion
-LogicalDeletionConfig.enabled = true;
+LogicalDeletionConfig.setEnabled(true);
 
 // Set logical deletion field name
-LogicalDeletionConfig.fieldName = "deleted";
+LogicalDeletionConfig.setFieldName("deleted");
 
 // Custom logical deletion processor
-LogicalDeletionConfig.logicalDeletionProcessor = new CustomLogicalDeletionProcessor();
+LogicalDeletionConfig.setLogicalDeletionProcessor(new CustomLogicalDeletionProcessor());
 ```
 
 == Kotlin
