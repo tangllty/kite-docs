@@ -1,6 +1,6 @@
 {
-  "name": "tang-docs",
-  "version": "1.0.18",
+  "name": "kite-docs",
+  "version": "1.0.19",
   "description": "Kite is a lightweight ORM framework for Kotlin and Java.",
   "keywords": [
     "kite",
@@ -14,7 +14,7 @@
   "main": "index.js",
   "author": {
     "name": "Tang",
-    "url": "https://github.com/tangllty/tang-docs"
+    "url": "https://github.com/tangllty/kite-docs"
   },
   "license": "MIT",
   "scripts": {
