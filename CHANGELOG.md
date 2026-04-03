@@ -11,6 +11,7 @@
 - Add benchmark documentation in English and Chinese and update navigation
 - Add Fill Handler documentation in English and Chinese and update navigation
 - Add logical deletion documentation and update navigation
+- Add detailed SQL timing configuration options
 
 ## 1.0.17
 

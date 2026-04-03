@@ -105,13 +105,25 @@ PageConfig.pageSizeParameter = "size"
 
 ### 配置项说明
 
-| 配置项               | 类型           | 默认值                      | 说明                    |
-| -------------------- | -------------- | --------------------------- | ----------------------- |
-| `sqlLowercase`       | `Boolean`      | `true`                      | 生成的 SQL 是否使用小写 |
-| `sqlLogging`         | `Boolean`      | `true`                      | 是否记录生成的 SQL 语句 |
-| `sqlDurationLogging` | `Boolean`      | `true`                      | 是否记录 SQL 执行时间   |
-| `durationUnit`       | `DurationUnit` | `DurationUnit.MILLISECONDS` | SQL 执行时间的单位      |
-| `durationDecimals`   | `Int`          | `0`                         | SQL 执行时间的小数位数  |
+| 配置项              | 类型           | 默认值                      | 说明                    |
+| ------------------- | -------------- | --------------------------- | ----------------------- |
+| `sqlLowercase`      | `Boolean`      | `true`                      | 生成的 SQL 是否使用小写 |
+| `sqlLogging`        | `Boolean`      | `true`                      | 是否记录生成的 SQL 语句 |
+| `durationLogging`   | `Boolean`      | `true`                      | 是否记录 SQL 执行时间   |
+| `durationUnit`      | `DurationUnit` | `DurationUnit.MILLISECONDS` | SQL 执行时间的单位      |
+| `durationDecimals`  | `Int`          | `0`                         | SQL 执行时间的小数位数  |
+| `prepareLogging`    | `Boolean`      | `durationLogging`           | 是否记录 SQL 准备时间   |
+| `prepareUnit`       | `DurationUnit` | `durationUnit`              | SQL 准备时间的单位      |
+| `prepareDecimals`   | `Int`          | `durationDecimals`          | SQL 准备时间的小数位数  |
+| `executionLogging`  | `Boolean`      | `durationLogging`           | 是否记录 SQL 执行时间   |
+| `executionUnit`     | `DurationUnit` | `durationUnit`              | SQL 执行时间的单位      |
+| `executionDecimals` | `Int`          | `durationDecimals`          | SQL 执行时间的小数位数  |
+| `mappingLogging`    | `Boolean`      | `durationLogging`           | 是否记录 SQL 映射时间   |
+| `mappingUnit`       | `DurationUnit` | `durationUnit`              | SQL 映射时间的单位      |
+| `mappingDecimals`   | `Int`          | `durationDecimals`          | SQL 映射时间的小数位数  |
+| `elapsedLogging`    | `Boolean`      | `durationLogging`           | 是否记录 SQL 总耗时     |
+| `elapsedUnit`       | `DurationUnit` | `durationUnit`              | SQL 总耗时的单位        |
+| `elapsedDecimals`   | `Int`          | `durationDecimals`          | SQL 总耗时的小数位数    |
 
 ### 方法说明
 
@@ -137,6 +149,26 @@ SqlConfig.setDurationDecimals(2);
 
 // 生成大写 SQL
 SqlConfig.setSqlLowercase(false);
+
+// 配置 SQL 准备时间日志
+SqlConfig.setPrepareLogging(true);
+SqlConfig.setPrepareUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setPrepareDecimals(2);
+
+// 配置 SQL 执行时间日志
+SqlConfig.setExecutionLogging(true);
+SqlConfig.setExecutionUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setExecutionDecimals(2);
+
+// 配置 SQL 映射时间日志
+SqlConfig.setMappingLogging(true);
+SqlConfig.setMappingUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setMappingDecimals(2);
+
+// 配置 SQL 总耗时日志
+SqlConfig.setElapsedLogging(true);
+SqlConfig.setElapsedUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setElapsedDecimals(2);
 ```
 
 == Kotlin
@@ -153,6 +185,26 @@ SqlConfig.durationDecimals = 2
 
 // 生成大写 SQL
 SqlConfig.sqlLowercase = false
+
+// 配置 SQL 准备时间日志
+SqlConfig.prepareLogging = true
+SqlConfig.prepareUnit = DurationUnit.MILLISECONDS
+SqlConfig.prepareDecimals = 2
+
+// 配置 SQL 执行时间日志
+SqlConfig.executionLogging = true
+SqlConfig.executionUnit = DurationUnit.MILLISECONDS
+SqlConfig.executionDecimals = 2
+
+// 配置 SQL 映射时间日志
+SqlConfig.mappingLogging = true
+SqlConfig.mappingUnit = DurationUnit.MILLISECONDS
+SqlConfig.mappingDecimals = 2
+
+// 配置 SQL 总耗时日志
+SqlConfig.elapsedLogging = true
+SqlConfig.elapsedUnit = DurationUnit.MILLISECONDS
+SqlConfig.elapsedDecimals = 2
 ```
 
 :::

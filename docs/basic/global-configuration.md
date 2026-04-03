@@ -105,13 +105,25 @@ PageConfig.pageSizeParameter = "size"
 
 ### Configuration Items
 
-| Configuration Item   | Type           | Default Value               | Description                                     |
-| -------------------- | -------------- | --------------------------- | ----------------------------------------------- |
-| `sqlLowercase`       | `Boolean`      | `true`                      | Whether to use lowercase for generated SQL      |
-| `sqlLogging`         | `Boolean`      | `true`                      | Whether to log generated SQL statements         |
-| `sqlDurationLogging` | `Boolean`      | `true`                      | Whether to log SQL execution time               |
-| `durationUnit`       | `DurationUnit` | `DurationUnit.MILLISECONDS` | Unit of SQL execution time                      |
-| `durationDecimals`   | `Int`          | `0`                         | Number of decimal places for SQL execution time |
+| Configuration Item  | Type           | Default Value               | Description                                     |
+| ------------------- | -------------- | --------------------------- | ----------------------------------------------- |
+| `sqlLowercase`      | `Boolean`      | `true`                      | Whether to use lowercase for generated SQL      |
+| `sqlLogging`        | `Boolean`      | `true`                      | Whether to log generated SQL statements         |
+| `durationLogging`   | `Boolean`      | `true`                      | Whether to log SQL execution time               |
+| `durationUnit`      | `DurationUnit` | `DurationUnit.MILLISECONDS` | Unit of SQL execution time                      |
+| `durationDecimals`  | `Int`          | `0`                         | Number of decimal places for SQL execution time |
+| `prepareLogging`    | `Boolean`      | `durationLogging`           | Whether to log SQL prepare time                 |
+| `prepareUnit`       | `DurationUnit` | `durationUnit`              | Unit of SQL prepare time                        |
+| `prepareDecimals`   | `Int`          | `durationDecimals`          | Number of decimal places for SQL prepare time   |
+| `executionLogging`  | `Boolean`      | `durationLogging`           | Whether to log SQL execution time               |
+| `executionUnit`     | `DurationUnit` | `durationUnit`              | Unit of SQL execution time                      |
+| `executionDecimals` | `Int`          | `durationDecimals`          | Number of decimal places for SQL execution time |
+| `mappingLogging`    | `Boolean`      | `durationLogging`           | Whether to log SQL mapping time                 |
+| `mappingUnit`       | `DurationUnit` | `durationUnit`              | Unit of SQL mapping time                        |
+| `mappingDecimals`   | `Int`          | `durationDecimals`          | Number of decimal places for SQL mapping time   |
+| `elapsedLogging`    | `Boolean`      | `durationLogging`           | Whether to log SQL elapsed time                 |
+| `elapsedUnit`       | `DurationUnit` | `durationUnit`              | Unit of SQL elapsed time                        |
+| `elapsedDecimals`   | `Int`          | `durationDecimals`          | Number of decimal places for SQL elapsed time   |
 
 ### Method Descriptions
 
@@ -137,6 +149,26 @@ SqlConfig.setDurationDecimals(2);
 
 // Generate uppercase SQL
 SqlConfig.setSqlLowercase(false);
+
+// Configure SQL prepare time logging
+SqlConfig.setPrepareLogging(true);
+SqlConfig.setPrepareUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setPrepareDecimals(2);
+
+// Configure SQL execution time logging
+SqlConfig.setExecutionLogging(true);
+SqlConfig.setExecutionUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setExecutionDecimals(2);
+
+// Configure SQL mapping time logging
+SqlConfig.setMappingLogging(true);
+SqlConfig.setMappingUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setMappingDecimals(2);
+
+// Configure SQL elapsed time logging
+SqlConfig.setElapsedLogging(true);
+SqlConfig.setElapsedUnit(DurationUnit.MILLISECONDS);
+SqlConfig.setElapsedDecimals(2);
 ```
 
 == Kotlin
@@ -153,6 +185,26 @@ SqlConfig.durationDecimals = 2
 
 // Generate uppercase SQL
 SqlConfig.sqlLowercase = false
+
+// Configure SQL prepare time logging
+SqlConfig.prepareLogging = true
+SqlConfig.prepareUnit = DurationUnit.MILLISECONDS
+SqlConfig.prepareDecimals = 2
+
+// Configure SQL execution time logging
+SqlConfig.executionLogging = true
+SqlConfig.executionUnit = DurationUnit.MILLISECONDS
+SqlConfig.executionDecimals = 2
+
+// Configure SQL mapping time logging
+SqlConfig.mappingLogging = true
+SqlConfig.mappingUnit = DurationUnit.MILLISECONDS
+SqlConfig.mappingDecimals = 2
+
+// Configure SQL elapsed time logging
+SqlConfig.elapsedLogging = true
+SqlConfig.elapsedUnit = DurationUnit.MILLISECONDS
+SqlConfig.elapsedDecimals = 2
 ```
 
 :::
