@@ -4,6 +4,12 @@
 
 ### Dependencies
 
+- Bump @vercel/analytics from 1.6.1 to 2.0.1
+- Bump @vercel/speed-insights from 1.3.1 to 2.0.0
+- Bump vue from 3.5.25 to 3.5.31
+- Bump vue-router from 4.6.3 to 5.0.4
+- Bump vitepress-plugin-tabs from 0.5.0 to 0.8.0
+
 ### Features
 
 - Add advanced features section and dynamic table name documentation in English and Chinese
