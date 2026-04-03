@@ -114,17 +114,19 @@ Kite 提供了一个默认的逻辑删除处理器 `DefaultLogicalDeletionProces
 ```java
 import com.tang.kite.config.logical.LogicalDeletionProcessor;
 import com.tang.kite.config.logical.LogicalDeletionValue;
+import org.jspecify.annotations.NonNull;
+
 import java.lang.reflect.Field;
 
 public class CustomLogicalDeletionProcessor implements LogicalDeletionProcessor {
 
     @Override
-    public boolean isTableNeedProcessing(Class<?> tableClass) {
+    public boolean isTableNeedProcessing(@NonNull Class<?> tableClass) {
         return tableClass == Account.class;
     }
 
     @Override
-    public LogicalDeletionValue process(Field field) {
+    public @NonNull LogicalDeletionValue process(@NonNull Field field) {
         return new LogicalDeletionValue("N", "Y");
     }
 
