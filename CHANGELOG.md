@@ -12,6 +12,7 @@
 - Add Fill Handler documentation in English and Chinese and update navigation
 - Add logical deletion documentation and update navigation
 - Add detailed SQL timing configuration options
+- Add multi-tenant documentation for Kite framework
 
 ## 1.0.17
 
