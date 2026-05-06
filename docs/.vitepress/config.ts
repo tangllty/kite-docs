@@ -17,6 +17,9 @@ export default defineConfig({
   ignoreDeadLinks: [
     /^https?:\/\/localhost/
   ],
+  sitemap: {
+    hostname: 'https://tangllty.eu.org'
+  },
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/kite.svg' }]],
   locales: {
     root: en,

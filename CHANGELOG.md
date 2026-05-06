@@ -8,6 +8,7 @@
 
 - Update artifact names and package manager commands
 - Rename fillHandlers to fieldHandlers and add documentation
+- Add sitemap hostname configuration
 
 ## 1.0.18
 
