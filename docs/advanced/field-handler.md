@@ -1,10 +1,10 @@
-# Fill Handler
+# Field Handler
 
-The fill handler feature allows you to automatically set values for certain fields during CRUD operations without manually specifying them.
+The field handler feature allows you to automatically set values for certain fields during CRUD operations without manually specifying them.
 
 ## Official Implementation
 
-Kite provides a time fill handler `TimeFillHandler` that can automatically set creation and update time fields using `@CreateTime` and `@UpdateTime` annotations.
+Kite provides a time field handler `TimeFieldHandler` that can automatically set creation and update time fields using `@CreateTime` and `@UpdateTime` annotations.
 
 ## Define Annotations
 
@@ -40,7 +40,7 @@ annotation class CreateTime
 
 :::
 
-## Define Fill Handler
+## Define Field Handler
 
 You can return different values based on annotations and field types.
 
@@ -49,16 +49,16 @@ You can return different values based on annotations and field types.
 == Java
 
 ```java
-import com.tang.kite.handler.fill.FillHandler;
+import com.tang.kite.handler.field.FieldHandler;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.time.LocalDateTime;
 
-public class TimeFillHandler implements FillHandler {
+public class TimeFieldHandler implements FieldHandler {
 
     @Override
     @Nullable
-    public Object fillValue(@NotNull Annotation annotation, @NotNull Field field, @NotNull Object entity) {
+    public Object handleValue(@NotNull Annotation annotation, @NotNull Field field, @NotNull Object entity) {
         return LocalDateTime.now();
     }
 
@@ -68,14 +68,14 @@ public class TimeFillHandler implements FillHandler {
 == Kotlin
 
 ```kotlin
-import com.tang.kite.handler.fill.FillHandler
+import com.tang.kite.handler.field.FieldHandler
 import java.lang.annotation.Annotation
 import java.lang.reflect.Field
 import java.time.LocalDateTime
 
-class TimeFillHandler : FillHandler {
+class TimeFieldHandler : FieldHandler {
 
-    override fun fillValue(annotation: Annotation, field: Field, entity: Any): Any? {
+    override fun handleValue(annotation: Annotation, field: Field, entity: Any): Any? {
         return LocalDateTime.now()
     }
 
@@ -84,34 +84,34 @@ class TimeFillHandler : FillHandler {
 
 :::
 
-## Register Fill Handler
+## Register Field Handler
 
-You can register fill handlers in `KiteConfig`.
+You can register field handlers in `KiteConfig`.
 
 :::tabs key:kite
 
 == Java
 
 ```java
-import com.tang.kite.annotation.fill.CreateTime;
+import com.tang.kite.annotation.field.CreateTime;
 import com.tang.kite.config.KiteConfig;
 import com.tang.kite.enumeration.SqlType;
-import com.tang.kite.handler.fill.FillKey;
-import com.tang.kite.handler.fill.TimeFillHandler;
+import com.tang.kite.handler.field.FieldMetaKey;
+import com.tang.kite.handler.field.TimeFieldHandler;
 
-KiteConfig.getFillHandlers().put(new FillKey(CreateTime.class, SqlType.INSERT), new TimeFillHandler());
+KiteConfig.getFieldHandlers().put(new FieldMetaKey(CreateTime.class, SqlType.INSERT), new TimeFieldHandler());
 ```
 
 == Kotlin
 
 ```kotlin
-import com.tang.kite.annotation.fill.CreateTime
+import com.tang.kite.annotation.field.CreateTime
 import com.tang.kite.config.KiteConfig
 import com.tang.kite.enumeration.SqlType
-import com.tang.kite.handler.fill.FillKey
-import com.tang.kite.handler.fill.TimeFillHandler
+import com.tang.kite.handler.field.FieldMetaKey
+import com.tang.kite.handler.field.TimeFieldHandler
 
-KiteConfig.fillHandlers[FillKey(CreateTime::class, SqlType.INSERT)] = TimeFillHandler()
+KiteConfig.fieldHandlers[FieldMetaKey(CreateTime::class, SqlType.INSERT)] = TimeFieldHandler()
 ```
 
 :::

@@ -1,10 +1,10 @@
-# 填充处理器
+# 字段处理器
 
-填充处理器功能允许你在增删改查时，自动设置某些字段的值，而无需手动指定。
+字段处理器功能允许你在增删改查时，自动设置某些字段的值，而无需手动指定。
 
 ## 官方实现
 
-Kite 提供了一个时间填充处理器 `TimeFillHandler`，它可以使用 `@CreateTime` 和 `@UpdateTime` 注解自动设置创建时间和更新时间字段的值。
+Kite 提供了一个时间字段处理器 `TimeFieldHandler`，它可以使用 `@CreateTime` 和 `@UpdateTime` 注解自动设置创建时间和更新时间字段的值。
 
 ## 定义注解
 
@@ -40,7 +40,7 @@ annotation class CreateTime
 
 :::
 
-## 定义填充处理器
+## 定义字段处理器
 
 可以根据注解和字段类型来返回不同的值。
 
@@ -49,16 +49,16 @@ annotation class CreateTime
 == Java
 
 ```java
-import com.tang.kite.handler.fill.FillHandler;
+import com.tang.kite.handler.field.FieldMetaHandler;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.time.LocalDateTime;
 
-public class TimeFillHandler implements FillHandler {
+public class TimeFieldHandler implements FieldMetaHandler {
 
     @Override
     @Nullable
-    public Object fillValue(@NotNull Annotation annotation, @NotNull Field field, @NotNull Object entity) {
+    public Object handleValue(@NotNull Annotation annotation, @NotNull Field field, @NotNull Object entity) {
         return LocalDateTime.now();
     }
 
@@ -68,14 +68,14 @@ public class TimeFillHandler implements FillHandler {
 == Kotlin
 
 ```kotlin
-import com.tang.kite.handler.fill.FillHandler
+import com.tang.kite.handler.field.FieldMetaHandler
 import java.lang.annotation.Annotation
 import java.lang.reflect.Field
 import java.time.LocalDateTime
 
-class TimeFillHandler : FillHandler {
+class TimeFieldHandler : FieldMetaHandler {
 
-    override fun fillValue(annotation: Annotation, field: Field, entity: Any): Any? {
+    override fun handleValue(annotation: Annotation, field: Field, entity: Any): Any? {
         return LocalDateTime.now()
     }
 
@@ -84,34 +84,34 @@ class TimeFillHandler : FillHandler {
 
 :::
 
-## 注册填充处理器
+## 注册字段处理器
 
-你可以在 `KiteConfig` 中注册填充处理器。
+你可以在 `KiteConfig` 中注册字段处理器。
 
 :::tabs key:kite
 
 == Java
 
 ```java
-import com.tang.kite.annotation.fill.CreateTime;
+import com.tang.kite.annotation.field.CreateTime;
 import com.tang.kite.config.KiteConfig;
 import com.tang.kite.enumeration.SqlType;
-import com.tang.kite.handler.fill.FillKey;
-import com.tang.kite.handler.fill.TimeFillHandler;
+import com.tang.kite.handler.field.FieldMetaKey;
+import com.tang.kite.handler.field.TimeFieldHandler;
 
-KiteConfig.getFillHandlers().put(new FillKey(CreateTime.class, SqlType.INSERT), new TimeFillHandler());
+KiteConfig.getFieldHandlers().put(new FieldMetaKey(CreateTime.class, SqlType.INSERT), new TimeFieldHandler());
 ```
 
 == Kotlin
 
 ```kotlin
-import com.tang.kite.annotation.fill.CreateTime
+import com.tang.kite.annotation.field.CreateTime
 import com.tang.kite.config.KiteConfig
 import com.tang.kite.enumeration.SqlType
-import com.tang.kite.handler.fill.FillKey
-import com.tang.kite.handler.fill.TimeFillHandler
+import com.tang.kite.handler.field.FieldMetaKey
+import com.tang.kite.handler.field.TimeFieldHandler
 
-KiteConfig.fillHandlers[FillKey(CreateTime::class, SqlType.INSERT)] = TimeFillHandler()
+KiteConfig.fieldHandlers[FieldMetaKey(CreateTime::class, SqlType.INSERT)] = TimeFieldHandler()
 ```
 
 :::

@@ -51,7 +51,7 @@ const sidebar: DefaultTheme.Sidebar = {
       text: '高级功能',
       items: [
         { text: '动态表名', link: '/zh/advanced/dynamic-table-name' },
-        { text: '填充处理器', link: '/zh/advanced/fill-handler' },
+        { text: '字段处理器', link: '/zh/advanced/field-handler' },
         { text: '逻辑删除', link: '/zh/advanced/logical-deletion' },
         { text: '多租户', link: '/zh/advanced/multi-tenant' },
       ],

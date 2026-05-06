@@ -51,6 +51,8 @@
 - Add Custom SQL documentation in English and Chinese, and update sidebar links
 - Add `countWrapper` documentation in English and Chinese
 - Enhance documentation for `@Column` annotation and CRUD operations, including new operator parameter and improved formatting
+- Update artifact names and package manager commands
+- Rename fill handler to field handler and add documentation
 
 ## 1.0.0
 
