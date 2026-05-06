@@ -14,7 +14,7 @@ The Kite ORM framework provides flexible global configuration options that allow
 | `selectiveStrategy` | `Function1<Any?, Boolean>`             | `DefaultSelectiveStrategy.isSelective(it)`                   | Selective query strategy, used to determine which fields should be included in SQL queries            |
 | `batchSize`         | `Int`                                  | `1000`                                                       | Batch size for operations like inserts or updates                                                     |
 | `dialects`          | `MutableMap<DatabaseType, SqlDialect>` | `DefaultSqlDialectFactory().getDialects()`                   | SQL dialect mappings for different database types                                                     |
-| `fillHandlers`      | `MutableMap<FillKey, FillHandler>`     | Contains `TimeFillHandler` for `CreateTime` and `UpdateTime` | Mapping of fill annotation handlers, used to process annotations like `@CreateTime` and `@UpdateTime` |
+| `fieldHandlers`      | `MutableMap<FieldMetaKey, FieldHandler>`     | Contains `TimeFieldHandler` for `CreateTime` and `UpdateTime` | Mapping of field annotation handlers, used to process annotations like `@CreateTime` and `@UpdateTime` |
 | `page`              | `PageConfig`                           | `PageConfig` object                                          | Pagination-related configurations, references `PageConfig` object                                     |
 | `sql`               | `SqlConfig`                            | `SqlConfig` object                                           | SQL-related configurations, references `SqlConfig` object                                             |
 

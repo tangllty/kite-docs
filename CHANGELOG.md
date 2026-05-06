@@ -7,7 +7,7 @@
 ### Features
 
 - Update artifact names and package manager commands
-- Rename fill handler to field handler and add documentation
+- Rename fillHandlers to fieldHandlers and add documentation
 
 ## 1.0.18
 

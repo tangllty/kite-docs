@@ -8,15 +8,15 @@ Kite ORM 框架提供了灵活的全局配置选项，允许开发者根据需�
 
 ### 配置项说明
 
-| 配置项              | 类型                                   | 默认值                                                     | 说明                                                                   |
-| ------------------- | -------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `banner`            | `Boolean`                              | `true`                                                     | 是否在应用启动时显示 Kite 框架的 banner                                |
-| `selectiveStrategy` | `Function1<Any?, Boolean>`             | `DefaultSelectiveStrategy.isSelective(it)`                 | 选择性查询策略，用于确定哪些字段应该包含在 SQL 查询中                  |
-| `batchSize`         | `Int`                                  | `1000`                                                     | 批量操作（如插入或更新）的批量大小                                     |
-| `dialects`          | `MutableMap<DatabaseType, SqlDialect>` | `DefaultSqlDialectFactory().getDialects()`                 | 不同数据库类型对应的 SQL 方言映射                                      |
-| `fillHandlers`      | `MutableMap<FillKey, FillHandler>`     | 包含 `CreateTime` 和 `UpdateTime` 对应的 `TimeFillHandler` | 填充注解的处理程序映射，用于处理 `@CreateTime` 和 `@UpdateTime` 等注解 |
-| `page`              | `PageConfig`                           | `PageConfig` 对象                                          | 分页相关配置，引用 `PageConfig` 对象                                   |
-| `sql`               | `SqlConfig`                            | `SqlConfig` 对象                                           | SQL 相关配置，引用 `SqlConfig` 对象                                    |
+| 配置项              | 类型                                     | 默认值                                                      | 说明                                                                   |
+| ------------------- | ---------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `banner`            | `Boolean`                                | `true`                                                      | 是否在应用启动时显示 Kite 框架的 banner                                |
+| `selectiveStrategy` | `Function1<Any?, Boolean>`               | `DefaultSelectiveStrategy.isSelective(it)`                  | 选择性查询策略，用于确定哪些字段应该包含在 SQL 查询中                  |
+| `batchSize`         | `Int`                                    | `1000`                                                      | 批量操作（如插入或更新）的批量大小                                     |
+| `dialects`          | `MutableMap<DatabaseType, SqlDialect>`   | `DefaultSqlDialectFactory().getDialects()`                  | 不同数据库类型对应的 SQL 方言映射                                      |
+| `fieldHandlers`     | `MutableMap<FieldMetaKey, FieldHandler>` | 包含 `CreateTime` 和 `UpdateTime` 对应的 `TimeFieldHandler` | 字段注解的处理程序映射，用于处理 `@CreateTime` 和 `@UpdateTime` 等注解 |
+| `page`              | `PageConfig`                             | `PageConfig` 对象                                           | 分页相关配置，引用 `PageConfig` 对象                                   |
+| `sql`               | `SqlConfig`                              | `SqlConfig` 对象                                            | SQL 相关配置，引用 `SqlConfig` 对象                                    |
 
 ### 使用示例
 
