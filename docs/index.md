@@ -6,7 +6,7 @@ title: Kite
 hero:
   name: Kite
   text: Next Generation ORM Framework
-  tagline: Elegant, lightweight, and efficient database operations made simple
+  tagline: Elegant, lightweight, and efficient, let database operations more simple
   image:
     src: /kite.svg
     alt: Tang

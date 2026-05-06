@@ -6,7 +6,7 @@ title: Tang
 hero:
   name: Kite
   text: 下一代 ORM 框架
-  tagline: 优雅、轻量、高效的数据库操作变得简单
+  tagline: 优雅、轻量、高效，让数据库操作更简单
   image:
     src: /kite.svg
     alt: Tang
