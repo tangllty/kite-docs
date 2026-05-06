@@ -4,7 +4,7 @@
 
 ## 使用
 
- > Maven central: [kite](https://central.sonatype.com/artifact/io.github.tangllty/kite)
+ > Maven central: [kite](https://central.sonatype.com/artifact/io.github.tangllty/kite-core)
 
  1. 将以下依赖添加到您的项目中：
 
@@ -13,7 +13,7 @@
 ```xml
 <dependency>
    <groupId>io.github.tangllty</groupId>
-   <artifactId>kite</artifactId>
+   <artifactId>kite-core</artifactId>
    <version>${kite.version}</version>
 </dependency>
 ```
@@ -21,7 +21,7 @@
  * Gradle
 
 ```kts
-implementation("io.github.tangllty:kite:${kite.version}")
+implementation("io.github.tangllty:kite-core:${kite.version}")
 ```
 
   2. 在数据库中创建以下表

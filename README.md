@@ -10,7 +10,7 @@ You can read the [documentation](https://tangllty.eu.org/) for more information
 
 ### Maven Central
 
-- [kite](https://central.sonatype.com/artifact/io.github.tangllty/kite)
+- [kite-core](https://central.sonatype.com/artifact/io.github.tangllty/kite-core)
 - [kite-spring-boot-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot-starter)
 - [kite-spring-boot3-starter](https://central.sonatype.com/artifact/io.github.tangllty/kite-spring-boot3-starter)
 
@@ -27,7 +27,7 @@ You can read the [documentation](https://tangllty.eu.org/) for more information
 ## Project Startup
 
 1. ```bash
-   yarn && yarn run docs:dev
+   pnpm && pnpm run docs:dev
    ```
 2. Visit [http://localhost:5173/](http://localhost:5173/)
 
