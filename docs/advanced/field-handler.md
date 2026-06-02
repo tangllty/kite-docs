@@ -73,7 +73,7 @@ import java.lang.annotation.Annotation
 import java.lang.reflect.Field
 import java.time.LocalDateTime
 
-class TimeFieldHandler : FieldHandler {
+object TimeFieldHandler : FieldHandler {
 
     override fun handleValue(annotation: Annotation, field: Field, entity: Any): Any? {
         return LocalDateTime.now()
@@ -111,7 +111,7 @@ import com.tang.kite.enumeration.SqlType
 import com.tang.kite.handler.field.FieldMetaKey
 import com.tang.kite.handler.field.TimeFieldHandler
 
-KiteConfig.fieldHandlers[FieldMetaKey(CreateTime::class, SqlType.INSERT)] = TimeFieldHandler()
+KiteConfig.fieldHandlers[FieldMetaKey(CreateTime::class, SqlType.INSERT)] = TimeFieldHandler
 ```
 
 :::

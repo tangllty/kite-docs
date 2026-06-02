@@ -49,12 +49,12 @@ annotation class CreateTime
 == Java
 
 ```java
-import com.tang.kite.handler.field.FieldMetaHandler;
+import com.tang.kite.handler.field.FieldHandler;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.time.LocalDateTime;
 
-public class TimeFieldHandler implements FieldMetaHandler {
+public class TimeFieldHandler implements FieldHandler {
 
     @Override
     @Nullable
@@ -68,12 +68,12 @@ public class TimeFieldHandler implements FieldMetaHandler {
 == Kotlin
 
 ```kotlin
-import com.tang.kite.handler.field.FieldMetaHandler
+import com.tang.kite.handler.field.FieldHandler
 import java.lang.annotation.Annotation
 import java.lang.reflect.Field
 import java.time.LocalDateTime
 
-class TimeFieldHandler : FieldMetaHandler {
+object TimeFieldHandler : FieldHandler {
 
     override fun handleValue(annotation: Annotation, field: Field, entity: Any): Any? {
         return LocalDateTime.now()
@@ -111,7 +111,7 @@ import com.tang.kite.enumeration.SqlType
 import com.tang.kite.handler.field.FieldMetaKey
 import com.tang.kite.handler.field.TimeFieldHandler
 
-KiteConfig.fieldHandlers[FieldMetaKey(CreateTime::class, SqlType.INSERT)] = TimeFieldHandler()
+KiteConfig.fieldHandlers[FieldMetaKey(CreateTime::class, SqlType.INSERT)] = TimeFieldHandler
 ```
 
 :::
