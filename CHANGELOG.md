@@ -1,3 +1,13 @@
+## 1.0.20
+
+### Bug Fixes
+
+### Dependencies
+
+### Features
+
+- Add multiple data sources documentation
+
 ## 1.0.19
 
 ### Bug Fixes
