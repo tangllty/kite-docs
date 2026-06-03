@@ -1,3 +1,13 @@
+## 1.0.21
+
+### Bug Fixes
+
+### Dependencies
+
+### Features
+
+- Add schema sync documentation
+
 ## 1.0.20
 
 ### Bug Fixes
