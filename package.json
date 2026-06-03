@@ -1,6 +1,6 @@
 {
   "name": "kite-docs",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Kite is a lightweight ORM framework for Kotlin and Java.",
   "keywords": [
     "kite",
