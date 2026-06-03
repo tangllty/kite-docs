@@ -53,6 +53,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Dynamic table name', link: '/advanced/dynamic-table-name' },
         { text: 'Field Handler', link: '/advanced/field-handler' },
         { text: 'Logical Deletion', link: '/advanced/logical-deletion' },
+        { text: 'Multiple Data Sources', link: '/advanced/multiple-datasource' },
         { text: 'Multi-Tenant', link: '/advanced/multi-tenant' },
       ],
     },

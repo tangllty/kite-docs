@@ -53,6 +53,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: '动态表名', link: '/zh/advanced/dynamic-table-name' },
         { text: '字段处理器', link: '/zh/advanced/field-handler' },
         { text: '逻辑删除', link: '/zh/advanced/logical-deletion' },
+        { text: '多数据源', link: '/zh/advanced/multiple-datasource' },
         { text: '多租户', link: '/zh/advanced/multi-tenant' },
       ],
     },
