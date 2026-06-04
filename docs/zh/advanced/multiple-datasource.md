@@ -76,7 +76,7 @@ DataSourceRegistry.register("ds4", dataSource, DatabaseType.H2);
 
 // 支持覆盖已有数据源
 DataSourceConfig.override = true;
-  DataSourceRegistry.register("ds1", newDataSource, DatabaseType.POSTGRE_SQL);
+DataSourceRegistry.register("ds1", newDataSource, DatabaseType.POSTGRE_SQL);
 ```
 
 == Kotlin
@@ -145,7 +145,7 @@ class AccountMapper {
 
 ## 编程式切换
 
-`DataSourceContext` 基于 `ThreadLocal` 栈实现，支持嵌套切换。推荐始终使用 `with` 方法，执行完毕后自动释放，无需手动管理栈。
+`DataSourceContext` 基于 `ThreadLocal` 栈实现，支持嵌套切换。推荐始终使用 `DataSourceManager.with` 方法，执行完毕后自动释放，无需手动管理栈。
 
 **方法列表**
 
@@ -173,9 +173,9 @@ class AccountMapper {
 == Java
 
 ```java
-import com.tang.kite.datasource.DataSourceContext;
+import com.tang.kite.datasource.DataSourceManager;
 
-DataSourceContext.with("ds2", () -> {
+DataSourceManager.with("ds2", () -> {
   return accountMapper.selectById(2L);
 });
 ```
@@ -183,9 +183,9 @@ DataSourceContext.with("ds2", () -> {
 == Kotlin
 
 ```kotlin
-import com.tang.kite.datasource.DataSourceContext
+import com.tang.kite.datasource.DataSourceManager
 
-DataSourceContext.with("ds2") {
+DataSourceManager.with("ds2") {
   accountMapper.selectById(2L)
 }
 ```
@@ -194,7 +194,7 @@ DataSourceContext.with("ds2") {
 
 ### withDataSource 内联函数
 
-Kotlin 额外提供了 `withDataSource` 内联函数，与 `DataSourceContext.with` 用法相同。
+Kotlin 额外提供了 `withDataSource` 内联函数，与 `DataSourceManager.with` 用法相同。
 
 | 方法名                                           | 描述                    |
 |-----------------------------------------------|-----------------------|

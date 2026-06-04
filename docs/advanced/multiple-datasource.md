@@ -97,7 +97,8 @@ DataSourceRegistry.register("ds1", newDataSource, DatabaseType.POSTGRE_SQL)
 
 ## @DataSource Annotation
 
-The `@DataSource` annotation can be applied to classes or methods to specify which data source to use for the current operation. Method-level annotations take precedence over class-level annotations.
+The `@DataSource` annotation can be applied to classes or methods to specify which data source to use for the current operation.
+Method-level annotations take precedence over class-level annotations.
 
 :::tabs key:kite
 
@@ -145,7 +146,7 @@ class AccountMapper {
 
 ## Programmatic Switching
 
-`DataSourceContext` is implemented based on a `ThreadLocal` stack and supports nested switching. It is recommended to always use the `with` method, which automatically releases after execution without the need to manage the stack manually.
+`DataSourceContext` is implemented based on a `ThreadLocal` stack and supports nested switching. It is recommended to always use the `DataSourceManager.with` method, which automatically releases after execution without the need to manage the stack manually.
 
 **Method List**
 
@@ -153,16 +154,16 @@ class AccountMapper {
 
 == Java
 
-| Method                                          | Description                                                  |
-| ----------------------------------------------- | ------------------------------------------------------------ |
-| `with(key: String, runnable: Runnable)`         | Temporarily switch the data source and execute, no return value  |
-| `with(key: String, supplier: Supplier<T>): T`   | Temporarily switch the data source and execute, with return value |
+| Method                                        | Description                                                       |
+|-----------------------------------------------|-------------------------------------------------------------------|
+| `with(key: String, runnable: Runnable)`       | Temporarily switch the data source and execute, no return value   |
+| `with(key: String, supplier: Supplier<T>): T` | Temporarily switch the data source and execute, with return value |
 
 == Kotlin
 
-| Method                                     | Description                                                  |
-| ------------------------------------------ | ------------------------------------------------------------ |
-| `with(key: String, block: () -> T): T`     | Temporarily switch the data source and execute, with return value |
+| Method                                 | Description                                                       |
+|----------------------------------------|-------------------------------------------------------------------|
+| `with(key: String, block: () -> T): T` | Temporarily switch the data source and execute, with return value |
 
 :::
 
@@ -173,9 +174,9 @@ class AccountMapper {
 == Java
 
 ```java
-import com.tang.kite.datasource.DataSourceContext;
+import com.tang.kite.datasource.DataSourceManager;
 
-DataSourceContext.with("ds2", () -> {
+DataSourceManager.with("ds2", () -> {
     return accountMapper.selectById(2L);
 });
 ```
@@ -183,9 +184,9 @@ DataSourceContext.with("ds2", () -> {
 == Kotlin
 
 ```kotlin
-import com.tang.kite.datasource.DataSourceContext
+import com.tang.kite.datasource.DataSourceManager
 
-DataSourceContext.with("ds2") {
+DataSourceManager.with("ds2") {
     accountMapper.selectById(2L)
 }
 ```
@@ -194,11 +195,11 @@ DataSourceContext.with("ds2") {
 
 ### withDataSource Inline Function
 
-Kotlin additionally provides the `withDataSource` inline function, which has the same usage as `DataSourceContext.with`.
+Kotlin additionally provides the `withDataSource` inline function, which has the same usage as `DataSourceManager.with`.
 
-| Method                                          | Description                                                              |
-| ----------------------------------------------- | ------------------------------------------------------------------------ |
-| `withDataSource(key: String, block: () -> T)`   | Temporarily switch the data source and execute the code block, returning the result |
+| Method                                        | Description                                                                         |
+|-----------------------------------------------|-------------------------------------------------------------------------------------|
+| `withDataSource(key: String, block: () -> T)` | Temporarily switch the data source and execute the code block, returning the result |
 
 ```kotlin
 import com.tang.kite.datasource.withDataSource

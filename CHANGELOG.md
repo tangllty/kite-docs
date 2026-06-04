@@ -1,3 +1,13 @@
+## 1.0.22
+
+### Bug Fixes
+
+### Dependencies
+
+### Features
+
+- Update references from `DataSourceContext` to `DataSourceManager`
+
 ## 1.0.21
 
 ### Bug Fixes
