@@ -195,9 +195,7 @@ Kite provides the `LogicalDeletionManager` class for skipping logical deletion o
 
 | Method Name                         | Description                                                                     | Parameters                                    | Return Value                           |
 | ----------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------- |
-| `withLogical(block: () -> Unit)`    | Temporarily uses logical deletion to execute a code block                       | `block: () -> Unit` The code block to execute | None                                   |
 | `withLogical<T>(block: () -> T): T` | Temporarily uses logical deletion to execute a code block and return the result | `block: () -> T` The code block to execute    | `T` The return value of the code block |
-| `withSkip(block: () -> Unit)`       | Skips logical deletion to execute a code block                                  | `block: () -> Unit` The code block to execute | None                                   |
 | `withSkip<T>(block: () -> T): T`    | Skips logical deletion to execute a code block and return the result            | `block: () -> T` The code block to execute    | `T` The return value of the code block |
 
 :::

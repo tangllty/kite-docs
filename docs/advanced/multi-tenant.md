@@ -179,9 +179,7 @@ Kite provides the `TenantManager` class, which is used to skip multi-tenancy or 
 
 | Method Name                        | Description                                                           | Parameter                                 | Return Value                   |
 | ---------------------------------- | --------------------------------------------------------------------- | ----------------------------------------- | ------------------------------ |
-| `withTenant(block: () -> Unit)`    | Temporarily use multi-tenancy to execute code block                   | `block: () -> Unit` code block to execute | None                           |
 | `withTenant<T>(block: () -> T): T` | Temporarily use multi-tenancy to execute code block and return result | `block: () -> T` code block to execute    | `T` return value of code block |
-| `withSkip(block: () -> Unit)`      | Skip multi-tenancy to execute code block                              | `block: () -> Unit` code block to execute | None                           |
 | `withSkip<T>(block: () -> T): T`   | Skip multi-tenancy to execute code block and return result            | `block: () -> T` code block to execute    | `T` return value of code block |
 
 :::
