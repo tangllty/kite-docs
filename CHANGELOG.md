@@ -7,6 +7,7 @@
 ### Features
 
 - Update references from `DataSourceContext` to `DataSourceManager`
+- Add documentation for optimistic locking
 
 ## 1.0.21
 

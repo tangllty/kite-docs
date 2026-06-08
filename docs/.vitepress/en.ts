@@ -54,6 +54,7 @@ const sidebar: DefaultTheme.Sidebar = {
         { text: 'Field Handler', link: '/advanced/field-handler' },
         { text: 'Result Handler', link: '/advanced/result-handler' },
         { text: 'Schema Sync', link: '/advanced/schema-sync' },
+        { text: 'Optimistic Lock', link: '/advanced/optimistic-lock' },
         { text: 'Logical Deletion', link: '/advanced/logical-deletion' },
         { text: 'Multiple Data Sources', link: '/advanced/multiple-datasource' },
         { text: 'Multi-Tenant', link: '/advanced/multi-tenant' },
